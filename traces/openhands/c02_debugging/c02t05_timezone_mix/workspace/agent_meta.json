@@ -1,0 +1,8 @@
+{
+  "agent": "openhands",
+  "version": "1.11.0 (sdk 1.34.0)",
+  "started": "2026-10-04T11:01:16.810221",
+  "status": "ConversationExecutionStatus.FINISHED",
+  "duration_s": 220.4,
+  "conversation_id": "de41f53f-730a-451b-9680-9b931ee355e9"
+}

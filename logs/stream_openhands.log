@@ -500,3 +500,33 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benchmark/traces/openhands/c10_e2e/c10t05_plugin_calc/prompt1.txt'
 
 [2026-10-04T10:32:13] === stream end agent=openhands subtotal=0/0 ===
+[2026-10-04T10:33:50] === stream start agent=openhands tasks=50 ===
+[2026-10-04T10:33:50] RUN c01t01_bracket_validator agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:34:25] DONE c01t01_bracket_validator score=20/20 passed=True dur=31.9s
+[2026-10-04T10:34:25] RUN c01t02_flatten_dict agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:39:43] RETRY c01t02_flatten_dict (provider/timeout issue, attempt 1)
+[2026-10-04T10:40:52] DONE c01t02_flatten_dict score=20/20 passed=True dur=44.5s
+[2026-10-04T10:40:52] RUN c01t03_lru_cache agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:41:49] RETRY c01t03_lru_cache (provider/timeout issue, attempt 1)
+[2026-10-04T10:43:06] DONE c01t03_lru_cache score=20/20 passed=True dur=53.5s
+[2026-10-04T10:43:06] RUN c01t04_csv_parser agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:45:01] RETRY c01t04_csv_parser (provider/timeout issue, attempt 1)
+[2026-10-04T10:45:50] DONE c01t04_csv_parser score=20/20 passed=True dur=26.6s
+[2026-10-04T10:45:50] RUN c01t05_matrix_ops agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:47:05] RETRY c01t05_matrix_ops (provider/timeout issue, attempt 1)
+[2026-10-04T10:48:43] DONE c01t05_matrix_ops score=20/20 passed=True dur=75.2s
+[2026-10-04T10:48:43] RUN c02t01_binary_search agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:49:36] RETRY c02t01_binary_search (provider/timeout issue, attempt 1)
+[2026-10-04T10:53:56] DONE c02t01_binary_search score=20/20 passed=True dur=233.0s
+[2026-10-04T10:53:56] RUN c02t02_mutable_defaults agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:54:22] DONE c02t02_mutable_defaults score=20/20 passed=True dur=23.2s
+[2026-10-04T10:54:22] RUN c02t03_money_floats agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:56:46] RETRY c02t03_money_floats (provider/timeout issue, attempt 1)
+[2026-10-04T10:58:04] DONE c02t03_money_floats score=20/20 passed=True dur=54.0s
+[2026-10-04T10:58:04] RUN c02t04_email_regex agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T10:59:09] DONE c02t04_email_regex score=20/20 passed=True dur=59.4s
+[2026-10-04T10:59:09] RUN c02t05_timezone_mix agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:00:56] RETRY c02t05_timezone_mix (provider/timeout issue, attempt 1)
+[2026-10-04T11:05:00] DONE c02t05_timezone_mix score=20/20 passed=True dur=220.4s
+[2026-10-04T11:05:00] RUN c03t01_search agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:06:35] RETRY c03t01_search (provider/timeout issue, attempt 1)

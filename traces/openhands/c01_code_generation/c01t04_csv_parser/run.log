@@ -1,0 +1,32 @@
+agent: openhands
+category: c01_code_generation
+task: c01t04_csv_parser
+started: 2026-10-04T10:43:06.442430
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.11.0 (sdk 1.34.0)
+session_id: a94357cb-fd6d-4572-ae19-8f82fc1fcd92
+rc: 3
+duration_s: 26.6
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: False
+
+=== STDOUT ===
+[no final assistant message captured]
+
+=== STDERR ===
+Session                                    
+[10/04/26 10:45:28] INFO     Loaded 3 tools from spec                base.py:540
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+

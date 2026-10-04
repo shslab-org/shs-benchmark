@@ -1,0 +1,8 @@
+[2026-10-04T10:54:57] === stream start agent=opencode tasks=50 ===
+[2026-10-04T10:54:57] RUN c01t01_bracket_validator agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T10:59:51] DONE c01t01_bracket_validator score=0/2 passed=False dur=294.5s
+[2026-10-04T10:59:51] RUN c01t02_flatten_dict agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:00:23] DONE c01t02_flatten_dict score=0/2 passed=False dur=31.5s
+[2026-10-04T11:00:23] RUN c01t03_lru_cache agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:01:10] DONE c01t03_lru_cache score=0/2 passed=False dur=46.8s
+[2026-10-04T11:01:10] RUN c01t04_csv_parser agent=opencode steps=30 timeout=420s turns=1

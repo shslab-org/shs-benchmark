@@ -1,0 +1,12 @@
+Implement a bracket validator in the file `solution.py` in this directory.
+
+Required API:
+    def is_balanced(s: str) -> bool
+
+Rules:
+- It must handle three bracket types: (), [], {}
+- Every opening bracket must be closed by the same type in LIFO order
+- Non-bracket characters must be ignored
+- An empty string is balanced
+Return True when balanced, False otherwise. Use an explicit stack (no recursion
+on each character). Add a brief docstring. Do not create any other files.

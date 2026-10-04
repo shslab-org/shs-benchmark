@@ -88,7 +88,7 @@ def run_task(cat, tid, tdir):
     started = datetime.datetime.now()
     log(f"RUN {tid} agent={AGENT} steps={steps} timeout={timeout}s turns={len(prompts)}")
     attempt, meta, provider_error = 0, None, False
-    while attempt < 2:
+    while attempt < 3:
         attempt += 1
         try:
             meta = A.RUNNERS[AGENT](ws, prompts, steps, timeout)
@@ -102,10 +102,10 @@ def run_task(cat, tid, tdir):
         provider_error = ("429" in blob or "rate limit" in blob.lower() or "RateLimit" in blob
                           or meta.get("rc") == 124 or "overloaded" in blob.lower()
                           or "LAUNCH_ERROR" in blob or "Connection" in blob)
-        if not provider_error or attempt >= 2:
+        if not provider_error or attempt >= 3:
             break
         log(f"RETRY {tid} (provider/timeout issue, attempt {attempt})")
-        time.sleep(20)
+        time.sleep(30 * attempt)
 
     with open(os.path.join(trace, "run.log"), "w") as f:
         f.write(f"agent: {AGENT}\ncategory: {cat}\ntask: {tid}\nstarted: {started.isoformat()}\n"

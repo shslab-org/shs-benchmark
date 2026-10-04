@@ -1,0 +1,38 @@
+{
+  "agent": "openhands",
+  "category": "c02_debugging",
+  "task": "c02t01_binary_search",
+  "title": "Fix binary search",
+  "started": "2026-10-04T10:48:43.970512",
+  "duration_s": 233.0,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "8f05e586-da2e-4e5f-bd50-0c239ada97e5",
+  "rc": 3,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "search.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "extra edge cases (even length, empty, duplicates)",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T10:53:56.016459"
+}

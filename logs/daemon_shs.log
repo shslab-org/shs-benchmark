@@ -500,3 +500,17 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benchmark/traces/shs-code/c10_e2e/c10t05_plugin_calc/prompt1.txt'
 
 [2026-10-04T10:32:13] === stream end agent=shs-code subtotal=0/0 ===
+[2026-10-04T10:33:50] === stream start agent=shs-code tasks=50 ===
+[2026-10-04T10:33:50] RUN c01t01_bracket_validator agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T10:36:34] RETRY c01t01_bracket_validator (provider/timeout issue, attempt 1)
+[2026-10-04T10:40:49] DONE c01t01_bracket_validator score=20/20 passed=True dur=232.9s
+[2026-10-04T10:40:49] RUN c01t02_flatten_dict agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T10:43:47] RETRY c01t02_flatten_dict (provider/timeout issue, attempt 1)
+[2026-10-04T10:46:21] DONE c01t02_flatten_dict score=20/20 passed=True dur=131.7s
+[2026-10-04T10:46:21] RUN c01t03_lru_cache agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T10:50:07] RETRY c01t03_lru_cache (provider/timeout issue, attempt 1)
+[2026-10-04T10:53:53] DONE c01t03_lru_cache score=20/20 passed=True dur=203.7s
+[2026-10-04T10:53:53] RUN c01t04_csv_parser agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T10:59:12] RETRY c01t04_csv_parser (provider/timeout issue, attempt 1)
+[2026-10-04T11:06:19] DONE c01t04_csv_parser score=20/20 passed=True dur=405.0s
+[2026-10-04T11:06:19] RUN c01t05_matrix_ops agent=shs-code steps=30 timeout=420s turns=1

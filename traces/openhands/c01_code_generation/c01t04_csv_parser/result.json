@@ -1,0 +1,38 @@
+{
+  "agent": "openhands",
+  "category": "c01_code_generation",
+  "task": "c01t04_csv_parser",
+  "title": "CSV parser state machine",
+  "started": "2026-10-04T10:43:06.442430",
+  "duration_s": 26.6,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "a94357cb-fd6d-4572-ae19-8f82fc1fcd92",
+  "rc": 3,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "csvparse.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite",
+      "ok": true,
+      "points": 16,
+      "detail": "passed"
+    },
+    {
+      "name": "does not just import stdlib csv",
+      "ok": true,
+      "points": 2,
+      "detail": "task requires implementing the parser yourself"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T10:45:50.928902"
+}

@@ -1,0 +1,30 @@
+{
+  "task": "c02t03",
+  "agent": "openhands",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "money.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes (exact cent arithmetic)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "uses decimal or integer cents (no raw float math)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "format_usd still exists with same signature",
+      "ok": true,
+      "points": 2
+    }
+  ]
+}

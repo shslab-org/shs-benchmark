@@ -67,9 +67,9 @@ def run_opencode(ws, prompts, steps, timeout):
     t0 = time.time()
     for i, p in enumerate(prompts):
         if i == 0:
-            cmd = [OPENCODE, "run", "-m", "agnes/agnes-3.0-flash", "--format", "json", p]
+            cmd = [OPENCODE, "run", "--dir", ws, "-m", "agnes/agnes-3.0-flash", "--format", "json", p]
         else:
-            cmd = [OPENCODE, "run", "-m", "agnes/agnes-3.0-flash", "-s", session_id, p]
+            cmd = [OPENCODE, "run", "--dir", ws, "-m", "agnes/agnes-3.0-flash", "-s", session_id, p]
         try:
             r = subprocess.run(cmd, cwd=ws, capture_output=True, text=True, timeout=timeout, stdin=subprocess.DEVNULL)
             raw = r.stdout

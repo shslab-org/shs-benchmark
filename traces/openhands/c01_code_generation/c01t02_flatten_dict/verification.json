@@ -1,0 +1,20 @@
+{
+  "task": "c01t02",
+  "agent": "openhands",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "flatten.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite",
+      "ok": true,
+      "points": 18,
+      "detail": "all hidden tests passed"
+    }
+  ]
+}
