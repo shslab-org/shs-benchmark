@@ -1,0 +1,20 @@
+{
+  "task": "c03t05",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "inventory.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "discount feature + bounds validation + regression",
+      "ok": true,
+      "points": 18,
+      "detail": "passed"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Now, based on what we agreed earlier, create a file `config.py` in this
+directory defining three constants:
+
+    CODENAME = ...   # the project codename we agreed on
+    PORT = ...       # the port number we agreed on
+    HTTP_LIBRARY = ...   # the HTTP library name we agreed on
+
+Use exactly the values from our earlier discussion.

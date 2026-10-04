@@ -1,0 +1,29 @@
+agent: hermes
+category: c02_debugging
+task: c02t03_money_floats
+started: 2026-10-04T14:30:49.844726
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_143315_0f2c26
+rc: 0
+duration_s: 26.3
+steps_cap: 30
+timeout_cap: 420
+attempts: 3
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 ---
+custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+
+Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 202610041433363414913824N3SlVd2)
+
+/home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
+  minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
+
+session_id: 20261004_143315_0f2c26
+
+
+=== STDERR ===
+

@@ -32,7 +32,7 @@ def run_shs_code(ws, prompts, steps, timeout):
     for i, p in enumerate(prompts):
         cmd = [SHS, "--session", sid, "--max-steps", str(steps), "--no-color", p]
         if i > 0:
-            cmd.insert(2, "--continue")
+            cmd.insert(3, "--continue")  # after --session <sid>
         r = subprocess.run(cmd, cwd=ws, capture_output=True, text=True, timeout=timeout)
         outs.append(f"--- TURN {i+1} rc={r.returncode} ---\n{r.stdout[-6000:]}\n[stderr]\n{r.stderr[-2000:]}")
     return {"rc": 0, "stdout": "\n".join(outs), "stderr": "", "duration_s": round(time.time() - t0, 1),

@@ -1,0 +1,9 @@
+We are building a tiny notes app in this directory. Working agreement:
+
+1. Keep a decision log in a file called MEMORY.md: every time we make a
+   decision, you record the date, the decision, and a one-line rationale.
+2. Decision made RIGHT NOW: "Storage format: JSON (not CSV) - because our
+   data is nested and JSON round-trips types losslessly."
+
+For this first turn: just create MEMORY.md recording that decision and
+acknowledge. Do not write any code yet.

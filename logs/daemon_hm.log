@@ -10,3 +10,104 @@
 [2026-10-04T14:07:35] RETRY c01t03_lru_cache (provider/timeout issue, attempt 2)
 [2026-10-04T14:08:53] DONE c01t03_lru_cache score=0/2 passed=False dur=18.1s
 [2026-10-04T14:08:53] RUN c01t04_csv_parser agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:11:21] RETRY c01t04_csv_parser (provider/timeout issue, attempt 1)
+[2026-10-04T14:14:38] RETRY c01t04_csv_parser (provider/timeout issue, attempt 2)
+[2026-10-04T14:22:40] DONE c01t04_csv_parser score=20/20 passed=True dur=420.1s
+[2026-10-04T14:22:40] RUN c01t05_matrix_ops agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:23:04] RETRY c01t05_matrix_ops (provider/timeout issue, attempt 1)
+[2026-10-04T14:24:25] RETRY c01t05_matrix_ops (provider/timeout issue, attempt 2)
+[2026-10-04T14:25:44] DONE c01t05_matrix_ops score=20/20 passed=True dur=17.1s
+[2026-10-04T14:25:44] RUN c02t01_binary_search agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:26:00] RETRY c02t01_binary_search (provider/timeout issue, attempt 1)
+[2026-10-04T14:26:51] RETRY c02t01_binary_search (provider/timeout issue, attempt 2)
+[2026-10-04T14:28:12] DONE c02t01_binary_search score=2/20 passed=False dur=16.8s
+[2026-10-04T14:28:12] RUN c02t02_mutable_defaults agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:28:29] RETRY c02t02_mutable_defaults (provider/timeout issue, attempt 1)
+[2026-10-04T14:29:22] RETRY c02t02_mutable_defaults (provider/timeout issue, attempt 2)
+[2026-10-04T14:30:49] DONE c02t02_mutable_defaults score=2/20 passed=False dur=24.7s
+[2026-10-04T14:30:49] RUN c02t03_money_floats agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:31:05] RETRY c02t03_money_floats (provider/timeout issue, attempt 1)
+[2026-10-04T14:32:11] RETRY c02t03_money_floats (provider/timeout issue, attempt 2)
+[2026-10-04T14:33:40] DONE c02t03_money_floats score=20/20 passed=True dur=26.3s
+[2026-10-04T14:33:40] RUN c02t04_email_regex agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:33:57] RETRY c02t04_email_regex (provider/timeout issue, attempt 1)
+[2026-10-04T14:35:21] RETRY c02t04_email_regex (provider/timeout issue, attempt 2)
+[2026-10-04T14:37:34] DONE c02t04_email_regex score=20/20 passed=True dur=68.6s
+[2026-10-04T14:37:34] RUN c02t05_timezone_mix agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:38:16] RETRY c02t05_timezone_mix (provider/timeout issue, attempt 1)
+[2026-10-04T14:39:36] RETRY c02t05_timezone_mix (provider/timeout issue, attempt 2)
+[2026-10-04T14:41:08] DONE c02t05_timezone_mix score=20/20 passed=True dur=29.3s
+[2026-10-04T14:41:08] RUN c03t01_search agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:41:25] RETRY c03t01_search (provider/timeout issue, attempt 1)
+[2026-10-04T14:42:26] RETRY c03t01_search (provider/timeout issue, attempt 2)
+[2026-10-04T14:44:01] DONE c03t01_search score=20/20 passed=True dur=32.6s
+[2026-10-04T14:44:01] RUN c03t02_remove_stock agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:44:17] RETRY c03t02_remove_stock (provider/timeout issue, attempt 1)
+[2026-10-04T14:45:55] RETRY c03t02_remove_stock (provider/timeout issue, attempt 2)
+[2026-10-04T14:47:16] DONE c03t02_remove_stock score=20/20 passed=True dur=18.5s
+[2026-10-04T14:47:16] RUN c03t03_export_csv agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:48:44] RETRY c03t03_export_csv (provider/timeout issue, attempt 1)
+[2026-10-04T14:49:54] RETRY c03t03_export_csv (provider/timeout issue, attempt 2)
+[2026-10-04T14:51:21] DONE c03t03_export_csv score=20/20 passed=True dur=24.8s
+[2026-10-04T14:51:21] RUN c03t04_event_log agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:52:40] RETRY c03t04_event_log (provider/timeout issue, attempt 1)
+[2026-10-04T14:53:39] RETRY c03t04_event_log (provider/timeout issue, attempt 2)
+[2026-10-04T14:54:58] DONE c03t04_event_log score=20/20 passed=True dur=17.4s
+[2026-10-04T14:54:58] RUN c03t05_discount agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:55:58] DONE c03t05_discount score=20/20 passed=True dur=56.5s
+[2026-10-04T14:55:58] RUN c04t01_stringutils_qa agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:56:16] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T14:58:29] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 2)
+[2026-10-04T14:59:49] DONE c04t01_stringutils_qa score=0/4 passed=False dur=20.8s
+[2026-10-04T14:59:49] RUN c04t02_stats_qa agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:01:06] RETRY c04t02_stats_qa (provider/timeout issue, attempt 1)
+[2026-10-04T15:02:30] RETRY c04t02_stats_qa (provider/timeout issue, attempt 2)
+[2026-10-04T15:04:00] DONE c04t02_stats_qa score=20/20 passed=True dur=25.3s
+[2026-10-04T15:04:00] RUN c04t03_argparse_qa agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:04:22] RETRY c04t03_argparse_qa (provider/timeout issue, attempt 1)
+[2026-10-04T15:05:40] DONE c04t03_argparse_qa score=0/4 passed=False dur=48.4s
+[2026-10-04T15:05:40] RUN c04t04_jsonutils_qa agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:05:56] RETRY c04t04_jsonutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T15:08:20] RETRY c04t04_jsonutils_qa (provider/timeout issue, attempt 2)
+[2026-10-04T15:09:36] DONE c04t04_jsonutils_qa score=0/4 passed=False dur=15.5s
+[2026-10-04T15:09:36] RUN c04t05_regression_daterange agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:10:42] RETRY c04t05_regression_daterange (provider/timeout issue, attempt 1)
+[2026-10-04T15:12:18] RETRY c04t05_regression_daterange (provider/timeout issue, attempt 2)
+[2026-10-04T15:14:44] DONE c04t05_regression_daterange score=20/20 passed=True dur=81.3s
+[2026-10-04T15:14:44] RUN c05t01_dedupe agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:15:04] RETRY c05t01_dedupe (provider/timeout issue, attempt 1)
+[2026-10-04T15:17:07] RETRY c05t01_dedupe (provider/timeout issue, attempt 2)
+[2026-10-04T15:20:24] DONE c05t01_dedupe score=20/20 passed=True dur=134.9s
+[2026-10-04T15:20:24] RUN c05t02_globals_to_class agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:20:41] RETRY c05t02_globals_to_class (provider/timeout issue, attempt 1)
+[2026-10-04T15:21:45] RETRY c05t02_globals_to_class (provider/timeout issue, attempt 2)
+[2026-10-04T15:23:11] DONE c05t02_globals_to_class score=20/20 passed=True dur=23.7s
+[2026-10-04T15:23:11] RUN c05t03_god_function agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:23:28] RETRY c05t03_god_function (provider/timeout issue, attempt 1)
+[2026-10-04T15:25:55] RETRY c05t03_god_function (provider/timeout issue, attempt 2)
+[2026-10-04T15:28:56] DONE c05t03_god_function score=20/20 passed=True dur=119.4s
+[2026-10-04T15:28:56] RUN c05t04_naming_docs agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:29:13] RETRY c05t04_naming_docs (provider/timeout issue, attempt 1)
+[2026-10-04T15:30:42] RETRY c05t04_naming_docs (provider/timeout issue, attempt 2)
+[2026-10-04T15:34:19] DONE c05t04_naming_docs score=5/20 passed=False dur=155.6s
+[2026-10-04T15:34:19] RUN c05t05_error_handling agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:36:16] RETRY c05t05_error_handling (provider/timeout issue, attempt 1)
+[2026-10-04T15:37:49] RETRY c05t05_error_handling (provider/timeout issue, attempt 2)
+[2026-10-04T15:39:17] DONE c05t05_error_handling score=20/20 passed=True dur=26.2s
+[2026-10-04T15:39:17] RUN c06t01_init_commits agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:41:29] DONE c06t01_init_commits score=20/20 passed=True dur=131.7s
+[2026-10-04T15:41:29] RUN c06t02_branch_fix_merge agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:42:45] RETRY c06t02_branch_fix_merge (provider/timeout issue, attempt 1)
+[2026-10-04T15:43:56] RETRY c06t02_branch_fix_merge (provider/timeout issue, attempt 2)
+[2026-10-04T15:45:38] DONE c06t02_branch_fix_merge score=8/20 passed=False dur=40.4s
+[2026-10-04T15:45:38] RUN c06t03_changelog agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:45:54] RETRY c06t03_changelog (provider/timeout issue, attempt 1)
+[2026-10-04T15:47:51] RETRY c06t03_changelog (provider/timeout issue, attempt 2)
+[2026-10-04T15:54:19] DONE c06t03_changelog score=2/13 passed=False dur=328.1s
+[2026-10-04T15:54:19] RUN c06t04_conflict agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:54:36] RETRY c06t04_conflict (provider/timeout issue, attempt 1)
+[2026-10-04T15:55:24] RETRY c06t04_conflict (provider/timeout issue, attempt 2)
+[2026-10-04T15:56:45] DONE c06t04_conflict score=8/20 passed=False dur=19.0s
+[2026-10-04T15:56:45] RUN c06t05_rebase agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T15:57:02] RETRY c06t05_rebase (provider/timeout issue, attempt 1)
+[2026-10-04T15:58:35] RETRY c06t05_rebase (provider/timeout issue, attempt 2)

@@ -1,0 +1,36 @@
+{
+  "task": "c07t04",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "all 4 hidden tests pass (2 bug fixes)",
+      "ok": true,
+      "points": 8,
+      "detail": "passed"
+    },
+    {
+      "name": "backup feature exists (shop/backup.py with backup_json)",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "tests for backup added",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "README updated (cart + pricing/backup mentioned)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "work committed with git (>= 2 commits)",
+      "ok": true,
+      "points": 4,
+      "detail": "3 commits"
+    }
+  ]
+}

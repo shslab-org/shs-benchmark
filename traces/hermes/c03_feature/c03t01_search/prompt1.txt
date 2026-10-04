@@ -1,0 +1,15 @@
+This directory contains a small inventory package: `inventory.py` (class
+Inventory) and `test_inventory.py` (existing, passing tests).
+
+Add a NEW feature to the Inventory class:
+
+    def search(self, keyword: str) -> list
+        # returns all items whose name contains keyword, case-insensitive,
+        # in the same sorted-by-name order as list_items()
+
+Requirements:
+- Existing methods and their behavior must remain unchanged
+- Existing tests must keep passing
+- Add at least 2 new tests for search() to test_inventory.py (append, do not
+  remove anything)
+- Run the full suite and make sure everything passes

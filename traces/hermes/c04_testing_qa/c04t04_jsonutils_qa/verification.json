@@ -1,0 +1,14 @@
+{
+  "task": "c04t04",
+  "agent": "hermes",
+  "points": 0,
+  "max_points": 4,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_jsonutils.py exists",
+      "ok": false,
+      "points": 4
+    }
+  ]
+}

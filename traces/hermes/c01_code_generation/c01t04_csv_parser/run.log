@@ -1,0 +1,20 @@
+agent: hermes
+category: c01_code_generation
+task: c01t04_csv_parser
+started: 2026-10-04T14:08:53.531505
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51
+session_id: None
+rc: 124
+duration_s: 420.1
+steps_cap: 30
+timeout_cap: 420
+attempts: 3
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 TIMEOUT after 420s ---
+
+=== STDERR ===
+timeout

@@ -1,0 +1,26 @@
+{
+  "task": "c02t02",
+  "agent": "hermes",
+  "points": 2,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "cart.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": false,
+      "points": 14,
+      "detail": "e state\nE   assert [{'price': 2, 'sku': 'A'}, {'price': 3, 'sku': 'B'}] != [{'price': 2, 'sku': 'A'}, {'price': 3, 'sku': 'B'}]\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_jmg9iv36/test_public.py::test_add_item_isolated\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.10s\n"
+    },
+    {
+      "name": "no mutable default arguments remain",
+      "ok": false,
+      "points": 4,
+      "detail": "still present in: ['add_item', 'add_tagged', 'add_tagged']"
+    }
+  ]
+}

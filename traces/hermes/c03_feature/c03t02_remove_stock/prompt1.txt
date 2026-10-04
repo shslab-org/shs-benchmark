@@ -1,0 +1,14 @@
+This directory contains a small inventory package: `inventory.py` (class
+Inventory) and `test_inventory.py` (existing, passing tests).
+
+Add a NEW feature to the Inventory class:
+
+    def remove_stock(self, sku: str, qty: int) -> None
+        # decreases available qty by qty
+        # raises ValueError when: sku unknown, qty <= 0, or qty > available
+
+Requirements:
+- Existing methods and their behavior must remain unchanged
+- Existing tests must keep passing
+- Add at least 3 new tests for remove_stock to test_inventory.py (append only)
+- Run the full suite and make sure everything passes

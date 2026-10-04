@@ -1,0 +1,2 @@
+Refactor `pricing.py` in this directory. Read HINT.md first.
+Goal: remove the duplicated rounding/tax logic by extracting helper function(s) and reusing them from both public functions. Behavior must stay EXACTLY identical (same rounding, same results). Keep the public API unchanged. Verify with a few examples before finishing.

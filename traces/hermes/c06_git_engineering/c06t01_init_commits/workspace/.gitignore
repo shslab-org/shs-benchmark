@@ -1,0 +1,4 @@
+# Scratch and transient files must never be tracked
+notes.txt
+*.log
+*.tmp

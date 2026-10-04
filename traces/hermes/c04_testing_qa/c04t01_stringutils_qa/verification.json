@@ -1,0 +1,14 @@
+{
+  "task": "c04t01",
+  "agent": "hermes",
+  "points": 0,
+  "max_points": 4,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_stringutils.py exists",
+      "ok": false,
+      "points": 4
+    }
+  ]
+}

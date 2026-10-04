@@ -1,0 +1,20 @@
+{
+  "task": "c03t01",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "inventory.py still exists (behavior preserved)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "search() feature + regression tests",
+      "ok": true,
+      "points": 18,
+      "detail": "passed"
+    }
+  ]
+}

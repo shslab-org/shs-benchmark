@@ -1,0 +1,15 @@
+{
+  "task": "c08t01",
+  "agent": "shs-code",
+  "points": 0,
+  "max_points": 5,
+  "passed": false,
+  "checks": [
+    {
+      "name": "config file exists",
+      "ok": false,
+      "points": 5,
+      "detail": "None"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+`money.py` handles currency amounts as floats and its tests in
+`test_money.py` FAIL because binary floating point cannot represent decimal
+cents exactly (0.1 + 0.2 != 0.3, etc).
+
+Fix `money.py` so that:
+- add_prices(0.1, 0.2) returns exactly 0.3
+- total_price accumulates with exact cent precision (work in integer cents
+  internally or use decimal.Decimal — both are acceptable)
+- apply_tax rounds half-up to the cent: apply_tax(19.99, 0.0725) == 21.44
+- format_usd keeps formatting with exactly two decimals
+
+Keep every public function name/signature unchanged. Make ALL tests pass.
+Do NOT modify test_money.py, do not create new files.

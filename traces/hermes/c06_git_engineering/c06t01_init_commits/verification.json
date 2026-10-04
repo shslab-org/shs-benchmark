@@ -1,0 +1,42 @@
+{
+  "task": "c06t01",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repository initialized",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "at least 3 commits",
+      "ok": true,
+      "points": 5,
+      "detail": "4 commits"
+    },
+    {
+      "name": "app code tracked",
+      "ok": true,
+      "points": 3,
+      "detail": "['.gitignore', 'README.md', 'app.py', 'utils.py']"
+    },
+    {
+      "name": "scratch notes NOT tracked",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": ".gitignore exists and covers notes",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "commit messages are descriptive",
+      "ok": true,
+      "points": 2,
+      "detail": "['Add project documentation', 'Add utility helper module', 'Add application entry point', 'Ignore scratch and transient files']"
+    }
+  ]
+}

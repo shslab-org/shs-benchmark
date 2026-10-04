@@ -1,0 +1,16 @@
+{
+  "codes": {
+    "fi6escjzjkav": "https://example.com/a/very/long/url",
+    "docs": "https://example.com/docs",
+    "bkpqkt1j3mkvz": "https://example.com/x",
+    "mylink": "https://example.com/y",
+    "taken": "https://a.com"
+  },
+  "urls": {
+    "https://example.com/a/very/long/url": "fi6escjzjkav",
+    "https://example.com/docs": "docs",
+    "https://example.com/x": "bkpqkt1j3mkvz",
+    "https://example.com/y": "mylink",
+    "https://a.com": "taken"
+  }
+}

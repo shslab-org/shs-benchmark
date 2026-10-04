@@ -1,0 +1,17 @@
+========================================
+SALES REPORT
+========================================
+
+Total revenue: 313.00
+Number of unique orders: 8
+
+Revenue by product (descending):
+  Gizmo: 132.00
+  Gadget: 100.00
+  Widget: 81.00
+
+Revenue by region (alphabetical):
+  east: 36.00
+  north: 123.00
+  south: 70.00
+  west: 84.00

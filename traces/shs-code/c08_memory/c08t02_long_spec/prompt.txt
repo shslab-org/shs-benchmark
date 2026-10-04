@@ -1,0 +1,17 @@
+We are designing a user management module. Here is the FULL specification
+we agreed on - remember it, we will implement it later (do NOT write code
+yet, just acknowledge):
+
+1. create_user(username, email, password) returns a user dict
+2. emails are stored lowercased
+3. usernames are unique, case-insensitively (second registration of the same
+   name in any casing raises ValueError)
+4. usernames are stored lowercased
+5. minimum password length is 12 characters (shorter raises ValueError)
+6. the returned dict has keys: username, email, password_hash, created_at
+7. passwords are never returned in plain text - password_hash contains a
+   salted sha256 hexdigest, and repr() of the user never shows the plain
+   password
+8. duplicate email registrations raise ValueError
+9. all errors are ValueError (no bare exceptions)
+10. the module is a single file usermgmt.py with no external dependencies

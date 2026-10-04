@@ -1,0 +1,32 @@
+{
+  "task": "c05t01",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "pricing.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "behavior preserved (hidden tests)",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "rounding logic extracted (appears once)",
+      "ok": true,
+      "points": 4,
+      "detail": "tax+round block appears 1x"
+    },
+    {
+      "name": "new helper function defined",
+      "ok": true,
+      "points": 2,
+      "detail": "functions: ['_subtotal', '_apply_tax', '_round_cents', 'retail_total', 'wholesale_total']"
+    }
+  ]
+}

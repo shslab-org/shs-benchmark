@@ -1,0 +1,54 @@
+{
+  "agent": "shs-code",
+  "category": "c06_git_engineering",
+  "task": "c06t04_conflict",
+  "title": "Resolve merge conflict",
+  "started": "2026-10-04T14:54:41.739818",
+  "duration_s": 215.9,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c06t04_conflict",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "no conflict markers left",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "combined greeting produced",
+      "ok": true,
+      "points": 6,
+      "detail": "Hey there, valued user of DemoApp (v2)!"
+    },
+    {
+      "name": "merge commit exists on main",
+      "ok": true,
+      "points": 4,
+      "detail": "8e9414f Merge feature/b-casual-greeting"
+    },
+    {
+      "name": "combined-greeting test added",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "test suite passes on final state",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T15:03:39.168378"
+}

@@ -1,0 +1,31 @@
+{
+  "task": "c02t04",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "validators.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "still regex-based validation (kept approach)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden edge cases",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ]
+}

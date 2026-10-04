@@ -1,0 +1,44 @@
+{
+  "task": "c06t02",
+  "agent": "hermes",
+  "points": 8,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "branch fix/divide-by-zero exists",
+      "ok": true,
+      "points": 4,
+      "detail": "* fix/divide-by-zero"
+    },
+    {
+      "name": "main has >= 2 commits (initial + fix via merge/ff)",
+      "ok": false,
+      "points": 3,
+      "detail": "1"
+    },
+    {
+      "name": "fix branch has its own commit",
+      "ok": false,
+      "points": 3,
+      "detail": "1"
+    },
+    {
+      "name": "tests PASS on main after merge",
+      "ok": false,
+      "points": 6,
+      "detail": "ro\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_p5i_jn4r/test_final.py::test_divide_by_zero_should_return_none\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.08s\n"
+    },
+    {
+      "name": "clean working tree",
+      "ok": true,
+      "points": 1,
+      "detail": ""
+    }
+  ]
+}

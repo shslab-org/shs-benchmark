@@ -1,0 +1,21 @@
+{
+  "task": "c09t01",
+  "agent": "openhands",
+  "points": 6,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "all 4 files exist",
+      "ok": true,
+      "points": 6,
+      "detail": "{'textutils': '/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t01_three_modules/textutils.py', 'validators': '/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t01_three_modules/validators.py', 'formatters': '/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t01_three_modules/formatters.py', 'main': '/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t01_three_modules/main.py'}"
+    },
+    {
+      "name": "unit + integration tests pass",
+      "ok": false,
+      "points": 14,
+      "detail": " test_integration\n    assert isinstance(rep, str) and \"@\" in rep\nE   AssertionError: assert (True and '@' in '| ----------------- | ----------- |')\nE    +  where True = isinstance('| ----------------- | ----------- |', str)\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_ezbq_o7q/test_hidden.py::test_integration\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 1 passed in 0.09s\n"
+    }
+  ]
+}

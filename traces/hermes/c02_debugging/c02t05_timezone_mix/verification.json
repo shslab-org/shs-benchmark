@@ -1,0 +1,30 @@
+{
+  "task": "c02t05",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "schedule.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "same three public functions kept",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "no silent tzinfo stripping remains",
+      "ok": true,
+      "points": 1
+    }
+  ]
+}

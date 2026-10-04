@@ -1,0 +1,11 @@
+`validators.py` validates emails with a broken regex; `test_validators.py`
+documents the expected behavior and currently FAILS.
+
+Diagnose the regex problems (it rejects many valid addresses and accepts some
+invalid ones), then fix `is_valid_email` so ALL tests pass, keeping:
+- the same function name/signature
+- a regex-based implementation (still use `re`)
+
+Practical email syntax to support: local part letters/digits/._%+- (no leading
+or consecutive dots), @, domain labels with hyphens, TLD of 2+ letters.
+Do NOT modify test_validators.py, do not create new files.

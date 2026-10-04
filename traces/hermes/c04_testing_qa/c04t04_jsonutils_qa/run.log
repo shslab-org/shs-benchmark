@@ -1,0 +1,27 @@
+agent: hermes
+category: c04_testing_qa
+task: c04t04_jsonutils_qa
+started: 2026-10-04T15:05:40.685729
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_150925_607bed
+rc: 0
+duration_s: 15.5
+steps_cap: 30
+timeout_cap: 420
+attempts: 3
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 ---
+custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+
+Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 20261004150935813503855W2UqrnSa)
+
+
+session_id: 20261004_150925_607bed
+
+
+=== STDERR ===
+

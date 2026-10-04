@@ -1,0 +1,11 @@
+Extend phone.py with a SECOND function:
+
+    def format_intl(p: str) -> str
+        # normalizes the phone number using normalize_phone (reuse it!), then
+        # formats as: +<country_code> <rest with spaces every 3 digits>
+        # country code rule: the first 1 digit when the number starts with 1,
+        # otherwise the first 2 digits; the remainder is grouped in chunks
+        # of 3 (left to right), joined by single spaces:
+        # "+1 (555) 123-4567" -> "+1 555 123 456 7"
+        # "44 20 7123 0000"   -> "+44 207 123 000 0"
+If the input has no digits, return "". Verify both functions still work.

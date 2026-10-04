@@ -1,0 +1,31 @@
+{
+  "task": "c06t03",
+  "agent": "hermes",
+  "points": 2,
+  "max_points": 13,
+  "passed": false,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "3 version tags exist",
+      "ok": false,
+      "points": 4,
+      "detail": "['v0.1.0']"
+    },
+    {
+      "name": "6 history commits recreated (extra commits allowed)",
+      "ok": false,
+      "points": 4,
+      "detail": "1 commits"
+    },
+    {
+      "name": "CHANGELOG.md exists",
+      "ok": false,
+      "points": 3
+    }
+  ]
+}

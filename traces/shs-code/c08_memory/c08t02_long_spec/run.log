@@ -1,0 +1,47 @@
+agent: shs-code
+category: c08_memory
+task: c08t02_long_spec
+started: 2026-10-04T15:52:25.274784
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: v4.4.0 (897b5d6)
+session_id: bench-c08t02_long_spec
+rc: 0
+duration_s: 78.3
+steps_cap: 25
+timeout_cap: 330
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 rc=0 ---
+⚙ SYSTEM: Session bench-c08t02_long_spec not found — starting a new session.
+🤖 ASSISTANT
+Spec is now confirmed persisted in MEMORY.md. No action needed.                 
+⚙ SYSTEM: session: 77c3d18b-2b1
+
+[stderr]
+15:53:44 | WARNING  | SHSCode@2 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [CredentialPool] Key ...84oG8c exhausted, cooling 60s
+15:53:44 | WARNING  | SHSCode@2 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+15:53:46 | WARNING  | SHSCode@2 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.2s — state preserved.
+15:53:56 | WARNING  | SHSCode@3 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+15:53:58 | WARNING  | SHSCode@3 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.6s — state preserved.
+15:54:16 | WARNING  | SHSCode@5 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+15:54:18 | WARNING  | SHSCode@5 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.3s — state preserved.
+15:54:21 | WARNING  | SHSCode@5 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.5s — state preserved.
+15:54:27 | WARNING  | SHSCode@5 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 8.3s — state preserved.
+15:54:35 | WARNING  | SHSCode@5 [93e62f33-cd1b-4846-a6e9-d3c65e2892ad] — [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 12.6s — state preserved.
+
+--- TURN 2 rc=2 ---
+
+[stderr]
+usage: SHSCode [-h] [--skin {default,ares,mono,slate}] [--model MODEL]
+               [--profile PROFILE] [--session ID] [--continue] [--no-color]
+               [--max-steps N] [--detach] [--runs] [--attach RUN_ID]
+               [--version]
+               [prompt ...]
+SHSCode: error: argument --session: expected one argument
+
+
+=== STDERR ===
+

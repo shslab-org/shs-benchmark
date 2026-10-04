@@ -1,0 +1,49 @@
+{
+  "agent": "shs-code",
+  "category": "c05_refactoring",
+  "task": "c05t04_naming_docs",
+  "title": "Rename + document",
+  "started": "2026-10-04T14:13:09.819626",
+  "duration_s": 152.0,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c05t04_naming_docs",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 10,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "taskrunner.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "renamed public API works (behavior preserved)",
+      "ok": false,
+      "points": 10,
+      "detail": "1': False} == {'t1': True}\nE     \nE     Differing items:\nE     {'t1': False} != {'t1': True}\nE     Use -v to get more diff)\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_eofefug7/test_hidden.py::test_success_after_retries\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.08s\n"
+    },
+    {
+      "name": "cryptic names gone",
+      "ok": true,
+      "points": 4,
+      "detail": "[]"
+    },
+    {
+      "name": "docstrings on all functions",
+      "ok": true,
+      "points": 3,
+      "detail": "missing: []"
+    },
+    {
+      "name": "module docstring updated (not the old placeholder)",
+      "ok": true,
+      "points": 1
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T14:20:19.091795"
+}

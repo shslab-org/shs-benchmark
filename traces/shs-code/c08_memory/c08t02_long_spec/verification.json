@@ -1,0 +1,15 @@
+{
+  "task": "c08t02",
+  "agent": "shs-code",
+  "points": 0,
+  "max_points": 4,
+  "passed": false,
+  "checks": [
+    {
+      "name": "user management module found",
+      "ok": false,
+      "points": 4,
+      "detail": "None"
+    }
+  ]
+}

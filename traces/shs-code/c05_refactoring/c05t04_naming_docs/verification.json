@@ -1,0 +1,37 @@
+{
+  "task": "c05t04",
+  "agent": "shs-code",
+  "points": 10,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "taskrunner.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "renamed public API works (behavior preserved)",
+      "ok": false,
+      "points": 10,
+      "detail": "1': False} == {'t1': True}\nE     \nE     Differing items:\nE     {'t1': False} != {'t1': True}\nE     Use -v to get more diff)\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_eofefug7/test_hidden.py::test_success_after_retries\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.08s\n"
+    },
+    {
+      "name": "cryptic names gone",
+      "ok": true,
+      "points": 4,
+      "detail": "[]"
+    },
+    {
+      "name": "docstrings on all functions",
+      "ok": true,
+      "points": 3,
+      "detail": "missing: []"
+    },
+    {
+      "name": "module docstring updated (not the old placeholder)",
+      "ok": true,
+      "points": 1
+    }
+  ]
+}

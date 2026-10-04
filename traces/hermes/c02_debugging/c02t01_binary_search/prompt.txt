@@ -1,0 +1,10 @@
+The file `search.py` in this directory contains `binary_search`, and
+`test_search.py` contains its test suite. The tests are FAILING.
+
+1. Run the tests to see the failures (python -m pytest test_search.py -q)
+2. Identify the root cause of the bug(s) in binary_search
+3. Fix `search.py` so that ALL tests pass
+4. Re-run the tests to confirm
+
+Rules: keep the same function signature and O(log n) complexity. Do NOT modify
+test_search.py. Do not create new files.

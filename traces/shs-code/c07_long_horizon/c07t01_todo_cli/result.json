@@ -1,0 +1,50 @@
+{
+  "agent": "shs-code",
+  "category": "c07_long_horizon",
+  "task": "c07t01_todo_cli",
+  "title": "TODO CLI app",
+  "started": "2026-10-04T15:11:44.734264",
+  "duration_s": 347.0,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c07t01_todo_cli",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "todo.py exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c07_long_horizon/c07t01_todo_cli/todo.py"
+    },
+    {
+      "name": "add command works",
+      "ok": true,
+      "points": 3,
+      "detail": "added item 1: Write benchmark report\n"
+    },
+    {
+      "name": "list shows added items",
+      "ok": true,
+      "points": 4,
+      "detail": "1. [ ] Write benchmark report\n2. [ ] Ship it\n"
+    },
+    {
+      "name": "done marks item (visible in list)",
+      "ok": true,
+      "points": 4,
+      "detail": "1. [x] Write benchmark report\n2. [ ] Ship it\n"
+    },
+    {
+      "name": "state persisted to JSON between runs",
+      "ok": true,
+      "points": 5
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T15:23:47.792208"
+}

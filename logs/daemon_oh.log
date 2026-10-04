@@ -607,3 +607,35 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T14:08:37] RUN c08t03_resume_reuse agent=openhands steps=25 timeout=330s turns=2
 [2026-10-04T14:09:44] DONE c08t03_resume_reuse score=20/20 passed=True dur=63.5s
 [2026-10-04T14:09:44] RUN c08t04_memory_file agent=openhands steps=25 timeout=330s turns=2
+[2026-10-04T14:13:23] RETRY c08t04_memory_file (provider/timeout issue, attempt 1)
+[2026-10-04T14:17:00] DONE c08t04_memory_file score=20/20 passed=True dur=196.0s
+[2026-10-04T14:17:00] RUN c08t05_arch_decision agent=openhands steps=25 timeout=330s turns=2
+[2026-10-04T14:17:33] DONE c08t05_arch_decision score=20/20 passed=True dur=30.0s
+[2026-10-04T14:17:33] RUN c09t01_three_modules agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T14:24:33] RETRY c09t01_three_modules (provider/timeout issue, attempt 1)
+[2026-10-04T14:31:48] DONE c09t01_three_modules score=6/20 passed=False dur=411.5s
+[2026-10-04T14:31:48] RUN c09t02_service_contract agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T14:33:36] DONE c09t02_service_contract score=20/20 passed=True dur=104.0s
+[2026-10-04T14:33:36] RUN c09t03_code_docs_match agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T14:34:54] DONE c09t03_code_docs_match score=16/20 passed=False dur=75.1s
+[2026-10-04T14:34:54] RUN c09t04_transforms agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T14:36:01] RETRY c09t04_transforms (provider/timeout issue, attempt 1)
+[2026-10-04T14:37:51] DONE c09t04_transforms score=20/20 passed=True dur=86.0s
+[2026-10-04T14:37:51] RUN c09t05_tdd agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T14:42:05] RETRY c09t05_tdd (provider/timeout issue, attempt 1)
+[2026-10-04T14:45:13] DONE c09t05_tdd score=20/20 passed=True dur=162.2s
+[2026-10-04T14:45:13] RUN c10t01_url_shortener agent=openhands steps=45 timeout=540s turns=1
+[2026-10-04T14:48:03] RETRY c10t01_url_shortener (provider/timeout issue, attempt 1)
+[2026-10-04T14:50:27] DONE c10t01_url_shortener score=20/20 passed=True dur=120.7s
+[2026-10-04T14:50:27] RUN c10t02_md_tasks agent=openhands steps=45 timeout=540s turns=1
+[2026-10-04T14:53:06] RETRY c10t02_md_tasks (provider/timeout issue, attempt 1)
+[2026-10-04T14:55:57] DONE c10t02_md_tasks score=20/20 passed=True dur=149.4s
+[2026-10-04T14:55:57] RUN c10t03_json_api agent=openhands steps=45 timeout=540s turns=1
+[2026-10-04T15:04:57] RETRY c10t03_json_api (provider/timeout issue, attempt 1)
+[2026-10-04T15:06:20] DONE c10t03_json_api score=20/20 passed=True dur=60.2s
+[2026-10-04T15:06:20] RUN c10t04_report_gen agent=openhands steps=45 timeout=540s turns=1
+[2026-10-04T15:07:59] DONE c10t04_report_gen score=20/20 passed=True dur=97.6s
+[2026-10-04T15:07:59] RUN c10t05_plugin_calc agent=openhands steps=45 timeout=540s turns=1
+[2026-10-04T15:13:28] RETRY c10t05_plugin_calc (provider/timeout issue, attempt 1)
+[2026-10-04T15:15:34] DONE c10t05_plugin_calc score=20/20 passed=True dur=102.5s
+[2026-10-04T15:15:34] === stream end agent=openhands subtotal=957/1000 ===

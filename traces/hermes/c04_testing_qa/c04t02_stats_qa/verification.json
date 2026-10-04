@@ -1,0 +1,37 @@
+{
+  "task": "c04t02",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_stats.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (stats.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": " NOT RAISE <class 'ValueError'>\n=========================== short test summary info ============================\nFAILED ../benchverify_98gios7z/t_buggy.py::test_mean_empty_raises_value_error\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 3 passed in 0.29s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 20"
+    }
+  ]
+}

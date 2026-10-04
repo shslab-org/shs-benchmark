@@ -569,3 +569,51 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T14:02:14] DONE c05t02_globals_to_class score=20/20 passed=True dur=216.4s
 [2026-10-04T14:02:14] RUN c05t03_god_function agent=shs-code steps=30 timeout=420s turns=1
 [2026-10-04T14:09:14] RETRY c05t03_god_function (provider/timeout issue, attempt 1)
+[2026-10-04T14:13:09] DONE c05t03_god_function score=20/20 passed=True dur=213.0s
+[2026-10-04T14:13:09] RUN c05t04_naming_docs agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:17:24] RETRY c05t04_naming_docs (provider/timeout issue, attempt 1)
+[2026-10-04T14:20:19] DONE c05t04_naming_docs score=10/20 passed=False dur=152.0s
+[2026-10-04T14:20:19] RUN c05t05_error_handling agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:24:03] RETRY c05t05_error_handling (provider/timeout issue, attempt 1)
+[2026-10-04T14:27:51] DONE c05t05_error_handling score=20/20 passed=True dur=205.8s
+[2026-10-04T14:27:51] RUN c06t01_init_commits agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:34:48] RETRY c06t01_init_commits (provider/timeout issue, attempt 1)
+[2026-10-04T14:36:33] DONE c06t01_init_commits score=20/20 passed=True dur=84.2s
+[2026-10-04T14:36:33] RUN c06t02_branch_fix_merge agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:40:19] RETRY c06t02_branch_fix_merge (provider/timeout issue, attempt 1)
+[2026-10-04T14:43:42] DONE c06t02_branch_fix_merge score=20/20 passed=True dur=180.5s
+[2026-10-04T14:43:42] RUN c06t03_changelog agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:50:42] RETRY c06t03_changelog (provider/timeout issue, attempt 1)
+[2026-10-04T14:54:41] DONE c06t03_changelog score=20/20 passed=True dur=219.2s
+[2026-10-04T14:54:41] RUN c06t04_conflict agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:59:40] RETRY c06t04_conflict (provider/timeout issue, attempt 1)
+[2026-10-04T15:03:39] DONE c06t04_conflict score=20/20 passed=True dur=215.9s
+[2026-10-04T15:03:39] RUN c06t05_rebase agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T15:07:42] RETRY c06t05_rebase (provider/timeout issue, attempt 1)
+[2026-10-04T15:11:44] DONE c06t05_rebase score=20/20 passed=True dur=222.7s
+[2026-10-04T15:11:44] RUN c07t01_todo_cli agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T15:17:40] RETRY c07t01_todo_cli (provider/timeout issue, attempt 1)
+[2026-10-04T15:23:47] DONE c07t01_todo_cli score=20/20 passed=True dur=347.0s
+[2026-10-04T15:23:47] RUN c07t02_site_generator agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T15:27:59] RETRY c07t02_site_generator (provider/timeout issue, attempt 1)
+[2026-10-04T15:30:01] DONE c07t02_site_generator score=20/20 passed=True dur=102.1s
+[2026-10-04T15:30:01] RUN c07t03_http_client agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T15:34:11] RETRY c07t03_http_client (provider/timeout issue, attempt 1)
+[2026-10-04T15:36:48] DONE c07t03_http_client score=20/20 passed=True dur=131.0s
+[2026-10-04T15:36:48] RUN c07t04_repo_maintenance agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T15:44:35] RETRY c07t04_repo_maintenance (provider/timeout issue, attempt 1)
+[2026-10-04T15:48:21] DONE c07t04_repo_maintenance score=20/20 passed=True dur=203.6s
+[2026-10-04T15:48:21] RUN c07t05_data_pipeline agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T15:50:09] DONE c07t05_data_pipeline score=16/20 passed=False dur=108.4s
+[2026-10-04T15:50:09] RUN c08t01_config_facts agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T15:51:22] RETRY c08t01_config_facts (provider/timeout issue, attempt 1)
+[2026-10-04T15:52:25] DONE c08t01_config_facts score=0/5 passed=False dur=42.6s
+[2026-10-04T15:52:25] RUN c08t02_long_spec agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T15:53:14] RETRY c08t02_long_spec (provider/timeout issue, attempt 1)
+[2026-10-04T15:54:52] DONE c08t02_long_spec score=0/4 passed=False dur=78.3s
+[2026-10-04T15:54:52] RUN c08t03_resume_reuse agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T15:55:23] DONE c08t03_resume_reuse score=3/20 passed=False dur=28.7s
+[2026-10-04T15:55:23] RUN c08t04_memory_file agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T15:57:31] RETRY c08t04_memory_file (provider/timeout issue, attempt 1)
+[2026-10-04T16:00:04] DONE c08t04_memory_file score=9/13 passed=False dur=132.4s
+[2026-10-04T16:00:04] RUN c08t05_arch_decision agent=shs-code steps=25 timeout=330s turns=2

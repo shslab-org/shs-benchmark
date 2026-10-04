@@ -1,0 +1,37 @@
+{
+  "task": "c05t04",
+  "agent": "hermes",
+  "points": 5,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "taskrunner.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "renamed public API works (behavior preserved)",
+      "ok": false,
+      "points": 10,
+      "detail": "roject/bench_ws/hermes/c05_refactoring/c05t04_naming_docs/taskrunner.py)\n=========================== short test summary info ============================\nERROR ../../../../../../../tmp/benchverify_ty0pb6og/test_hidden.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+    },
+    {
+      "name": "cryptic names gone",
+      "ok": false,
+      "points": 4,
+      "detail": "['def go(', '(l,', 'def go']"
+    },
+    {
+      "name": "docstrings on all functions",
+      "ok": true,
+      "points": 3,
+      "detail": "missing: []"
+    },
+    {
+      "name": "module docstring updated (not the old placeholder)",
+      "ok": false,
+      "points": 1
+    }
+  ]
+}

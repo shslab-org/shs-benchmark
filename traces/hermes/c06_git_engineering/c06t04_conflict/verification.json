@@ -1,0 +1,42 @@
+{
+  "task": "c06t04",
+  "agent": "hermes",
+  "points": 8,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "no conflict markers left",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "combined greeting produced",
+      "ok": false,
+      "points": 6,
+      "detail": "Hello, valued user of DemoApp"
+    },
+    {
+      "name": "merge commit exists on main",
+      "ok": false,
+      "points": 4,
+      "detail": ""
+    },
+    {
+      "name": "combined-greeting test added",
+      "ok": false,
+      "points": 2
+    },
+    {
+      "name": "test suite passes on final state",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ]
+}

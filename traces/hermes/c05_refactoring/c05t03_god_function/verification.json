@@ -1,0 +1,31 @@
+{
+  "task": "c05t03",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "report.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "behavior preserved (hidden tests)",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "split into >= 4 functions total",
+      "ok": true,
+      "points": 4,
+      "detail": "functions: ['parse_line', 'parse_all', 'compute_line_total', 'aggregate', 'process_orders']"
+    },
+    {
+      "name": "process_orders still public entry",
+      "ok": true,
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "task": "c04t05",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_daterange_regression.py exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "no source tampering (daterange.py untouched)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "regression test FAILS on shipped buggy code (reproduces issue)",
+      "ok": true,
+      "points": 8,
+      "detail": "fd8c4e413d0>.overlaps\n=========================== short test summary info ============================\nFAILED ../benchverify_5d2e194x/t_buggy.py::test_touching_ranges_share_boundary_day_issue_47_repro\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.29s\n"
+    },
+    {
+      "name": "regression test PASSES after correct fix (targeted, not over-broad)",
+      "ok": true,
+      "points": 7,
+      "detail": "passed"
+    }
+  ]
+}

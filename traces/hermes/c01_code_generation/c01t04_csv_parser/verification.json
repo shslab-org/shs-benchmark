@@ -1,0 +1,26 @@
+{
+  "task": "c01t04",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "csvparse.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite",
+      "ok": true,
+      "points": 16,
+      "detail": "passed"
+    },
+    {
+      "name": "does not just import stdlib csv",
+      "ok": true,
+      "points": 2,
+      "detail": "task requires implementing the parser yourself"
+    }
+  ]
+}

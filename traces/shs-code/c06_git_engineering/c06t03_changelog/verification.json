@@ -1,0 +1,41 @@
+{
+  "task": "c06t03",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "3 version tags exist",
+      "ok": true,
+      "points": 4,
+      "detail": "['v0.1.0', 'v0.2.0', 'v0.3.0']"
+    },
+    {
+      "name": "6 history commits recreated (extra commits allowed)",
+      "ok": true,
+      "points": 4,
+      "detail": "8 commits"
+    },
+    {
+      "name": "CHANGELOG.md exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "sections for all three versions",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "content derived from history (mentions ping/metrics/healthcheck)",
+      "ok": true,
+      "points": 4
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "agent": "shs-code",
+  "category": "c07_long_horizon",
+  "task": "c07t04_repo_maintenance",
+  "title": "Repo maintenance batch",
+  "started": "2026-10-04T15:36:48.432913",
+  "duration_s": 203.6,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c07t04_repo_maintenance",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "all 4 hidden tests pass (2 bug fixes)",
+      "ok": true,
+      "points": 8,
+      "detail": "passed"
+    },
+    {
+      "name": "backup feature exists (shop/backup.py with backup_json)",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "tests for backup added",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "README updated (cart + pricing/backup mentioned)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "work committed with git (>= 2 commits)",
+      "ok": true,
+      "points": 4,
+      "detail": "3 commits"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T15:48:21.065015"
+}

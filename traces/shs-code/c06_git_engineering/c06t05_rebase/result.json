@@ -1,0 +1,59 @@
+{
+  "agent": "shs-code",
+  "category": "c06_git_engineering",
+  "task": "c06t05_rebase",
+  "title": "Rebase + ff-merge linear",
+  "started": "2026-10-04T15:03:39.179386",
+  "duration_s": 222.7,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c06t05_rebase",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "linear history (no merge commits on main)",
+      "ok": true,
+      "points": 5,
+      "detail": ""
+    },
+    {
+      "name": "all 5 commits present on main after ff-merge",
+      "ok": true,
+      "points": 4,
+      "detail": "Continue feature\nAdd feature\nAdd three\nAdd two\nAdd one\n"
+    },
+    {
+      "name": "main.txt contains one/two/three",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "feature.txt contains feature work + continuation",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "root commit is 'Add one' (real history)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "clean working tree",
+      "ok": true,
+      "points": 3,
+      "detail": ""
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T15:11:44.726815"
+}
