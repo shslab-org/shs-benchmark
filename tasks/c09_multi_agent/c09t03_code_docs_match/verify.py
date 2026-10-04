@@ -18,14 +18,26 @@ if api and docs:
     doc = open(docs).read()
     names_ok = all(n in doc for n in need)
     checks.append({"name": "docs mention all 4 functions", "ok": names_ok, "points": 3})
-    # signature match: docs contain def lines matching code
+    # signature match: for each function, the docs must document the same
+    # parameter name sequence as the code (types/defaults/markdown allowed).
+    import re as _re
+    plain = _re.sub(r"[`*]", "", doc)
     mismatch = []
     for n in need & set(fns):
         args = [a.arg for a in fns[n].args.args if a.arg != "self"]
-        sig = ", ".join(args)
-        if sig and f"({sig})" not in doc.replace("self, ", ""):
-            mismatch.append(n + "(" + sig + ")")
-    checks.append({"name": "documented signatures match code", "ok": not mismatch,
+        m = _re.search(rf"\b{re.escape(n) if False else n.replace('_', '_')}\s*\(([^)]*)\)", plain)
+        if not m:
+            mismatch.append(n + ": not documented with a signature")
+            continue
+        toks = [t.strip() for t in m.group(1).split(",") if t.strip() and t.strip() != "..."]
+        doc_args = []
+        for t in toks:
+            ident = _re.match(r"([A-Za-z_][A-Za-z0-9_]*)", t)
+            if ident:
+                doc_args.append(ident.group(1))
+        if doc_args != args:
+            mismatch.append(f"{n}: docs={doc_args} code={args}")
+    checks.append({"name": "documented parameter sequences match code", "ok": not mismatch,
                    "points": 4, "detail": "mismatched: " + str(mismatch)})
     rc, out = vlib.write_and_run_pytest(ws, '''
 import sys, os

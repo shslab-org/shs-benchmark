@@ -1,0 +1,259 @@
+{
+  "benchmark": "shs-benchmark (4 agents x 10 categories x 5 tasks x 20 pts)",
+  "model": "agnes-3.0-flash via Agnes AI",
+  "generated": "2026-10-04T19:44:53.752560",
+  "agents": {
+    "shs-code": {
+      "agent": "shs-code",
+      "total_points": 968,
+      "max_points": 1000,
+      "percentage": 96.8,
+      "normalized_out_of_1000": 968,
+      "tasks_completed": 50,
+      "tasks_total": 50,
+      "tasks_passed_full": 47,
+      "completion_rate": 100.0,
+      "per_category": {
+        "c01_code_generation": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c02_debugging": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c03_feature": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c04_testing_qa": {
+          "points": 94,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c05_refactoring": {
+          "points": 90,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c06_git_engineering": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c07_long_horizon": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c08_memory": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c09_multi_agent": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c10_e2e": {
+          "points": 84,
+          "max": 100,
+          "tasks_done": 5
+        }
+      }
+    },
+    "openhands": {
+      "agent": "openhands",
+      "total_points": 965,
+      "max_points": 1000,
+      "percentage": 96.5,
+      "normalized_out_of_1000": 965,
+      "tasks_completed": 50,
+      "tasks_total": 50,
+      "tasks_passed_full": 45,
+      "completion_rate": 100.0,
+      "per_category": {
+        "c01_code_generation": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c02_debugging": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c03_feature": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c04_testing_qa": {
+          "points": 82,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c05_refactoring": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c06_git_engineering": {
+          "points": 97,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c07_long_horizon": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c08_memory": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c09_multi_agent": {
+          "points": 86,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c10_e2e": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        }
+      }
+    },
+    "opencode": {
+      "agent": "opencode",
+      "total_points": 945,
+      "max_points": 1000,
+      "percentage": 94.5,
+      "normalized_out_of_1000": 945,
+      "tasks_completed": 50,
+      "tasks_total": 50,
+      "tasks_passed_full": 42,
+      "completion_rate": 100.0,
+      "per_category": {
+        "c01_code_generation": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c02_debugging": {
+          "points": 98,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c03_feature": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c04_testing_qa": {
+          "points": 88,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c05_refactoring": {
+          "points": 90,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c06_git_engineering": {
+          "points": 79,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c07_long_horizon": {
+          "points": 94,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c08_memory": {
+          "points": 96,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c09_multi_agent": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c10_e2e": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        }
+      }
+    },
+    "hermes": {
+      "agent": "hermes",
+      "total_points": 939,
+      "max_points": 1000,
+      "percentage": 93.9,
+      "normalized_out_of_1000": 939,
+      "tasks_completed": 50,
+      "tasks_total": 50,
+      "tasks_passed_full": 44,
+      "completion_rate": 100.0,
+      "per_category": {
+        "c01_code_generation": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c02_debugging": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c03_feature": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c04_testing_qa": {
+          "points": 74,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c05_refactoring": {
+          "points": 90,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c06_git_engineering": {
+          "points": 97,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c07_long_horizon": {
+          "points": 98,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c08_memory": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c09_multi_agent": {
+          "points": 80,
+          "max": 100,
+          "tasks_done": 5
+        },
+        "c10_e2e": {
+          "points": 100,
+          "max": 100,
+          "tasks_done": 5
+        }
+      }
+    }
+  }
+}

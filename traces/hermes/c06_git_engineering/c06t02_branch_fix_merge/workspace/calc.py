@@ -6,4 +6,6 @@ def add(a, b):
 
 
 def divide(a, b):
-    return a / b        # BUG: ZeroDivisionError instead of None
+    if b == 0:
+        return None
+    return a / b

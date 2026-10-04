@@ -1,0 +1,55 @@
+{
+  "agent": "openhands",
+  "category": "c09_multi_agent",
+  "task": "c09t03_code_docs_match",
+  "title": "API + consistent docs",
+  "started": "2026-10-04T14:33:36.128599",
+  "duration_s": 75.1,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "48f6c18e-d974-42e8-85d8-ac5f50a9a958",
+  "rc": 3,
+  "provider_error_retry": false,
+  "points": 16,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "api.py exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t03_code_docs_match/api.py"
+    },
+    {
+      "name": "DOCS.md exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t03_code_docs_match/DOCS.md"
+    },
+    {
+      "name": "4 required functions implemented",
+      "ok": true,
+      "points": 5
+    },
+    {
+      "name": "docs mention all 4 functions",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "documented signatures match code",
+      "ok": false,
+      "points": 4,
+      "detail": "mismatched: ['create_task(title)', 'delete_task(task_id)', 'complete_task(task_id)']"
+    },
+    {
+      "name": "task lifecycle works",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T14:34:54.375102"
+}

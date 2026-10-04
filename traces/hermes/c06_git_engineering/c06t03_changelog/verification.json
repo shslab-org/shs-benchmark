@@ -1,9 +1,9 @@
 {
   "task": "c06t03",
   "agent": "hermes",
-  "points": 2,
-  "max_points": 13,
-  "passed": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
   "checks": [
     {
       "name": "git repo exists",
@@ -12,20 +12,30 @@
     },
     {
       "name": "3 version tags exist",
-      "ok": false,
+      "ok": true,
       "points": 4,
-      "detail": "['v0.1.0']"
+      "detail": "['v0.1.0', 'v0.2.0', 'v0.3.0']"
     },
     {
       "name": "6 history commits recreated (extra commits allowed)",
-      "ok": false,
+      "ok": true,
       "points": 4,
-      "detail": "1 commits"
+      "detail": "6 commits"
     },
     {
       "name": "CHANGELOG.md exists",
-      "ok": false,
+      "ok": true,
       "points": 3
+    },
+    {
+      "name": "sections for all three versions",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "content derived from history (mentions ping/metrics/healthcheck)",
+      "ok": true,
+      "points": 4
     }
   ]
 }

@@ -1,14 +1,37 @@
 {
   "task": "c04t04",
   "agent": "hermes",
-  "points": 0,
-  "max_points": 4,
-  "passed": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
   "checks": [
     {
       "name": "tests_agent/test_jsonutils.py exists",
-      "ok": false,
+      "ok": true,
       "points": 4
+    },
+    {
+      "name": "no source tampering (jsonutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "========================= short test summary info ============================\nFAILED ../benchverify_2y6ra_pl/t_buggy.py::TestSafeGet::test_non_numeric_index_on_list_returns_default_no_throw\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.31s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 31"
     }
   ]
 }

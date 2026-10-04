@@ -1,14 +1,20 @@
-"""Shopping cart utilities. BUG: mutable default arguments accumulate state."""
+"""Shopping cart utilities. No mutable default arguments; state never leaks between calls."""
 
 import json
 
 
-def add_item(item, cart=[]):          # BUG: shared mutable default
+def add_item(item, cart=None):
+    if cart is None:
+        cart = []
     cart.append(item)
     return cart
 
 
-def add_tagged(item, tags=[], extra={}):   # BUG: two shared mutable defaults
+def add_tagged(item, tags=None, extra=None):
+    if tags is None:
+        tags = []
+    if extra is None:
+        extra = {}
     tags.append(item["sku"])
     extra["last"] = item["sku"]
     return {"sku": item["sku"], "tags": tags, "extra": extra}

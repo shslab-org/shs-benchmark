@@ -1,37 +1,48 @@
 agent: hermes
 category: c08_memory
 task: c08t04_memory_file
-started: 2026-10-04T16:37:56.249636
+started: 2026-10-04T19:34:49.644252
 model: agnes-3.0-flash
 provider: Agnes AI (https://apihub.agnes-ai.com/v1)
 version: git.8b66a51 (2026.9.24)
-session_id: 20261004_164136_35bb65
+session_id: 20261004_193453_08b359
 rc: 0
-duration_s: 35.6
+duration_s: 80.8
 steps_cap: 25
 timeout_cap: 330
-attempts: 3
-provider_error_flag: True
+attempts: 1
+provider_error_flag: False
 
 === STDOUT ===
 --- TURN 1 ---
-custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+Created `MEMORY.md` in the working directory with a decision log.
 
-Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 202610041641504836914bJOcaJ8)
+Recorded under **2026-10-04**:
+- **Storage format: JSON (not CSV)** — rationale: data is nested and JSON round-trips types losslessly.
+
+No code written yet. Ready for the next decision.
 
 /home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
   minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
 
-session_id: 20261004_164136_35bb65
+session_id: 20261004_193453_08b359
 
 --- TURN 2 ---
-custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+Done, following the decision log (JSON, not CSV):
 
-Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 20261004164206762322359LXfdeQqk)
+**storage.py** — `storage.py` in the working directory:
+- `save_notes(notes, path)` — writes JSON, creates parent dirs if needed, UTF-8/`ensure_ascii=False` so unicode survives
+- `load_notes(path)` — returns `[]` for a missing file; raises `ValueError` for corrupt JSON
 
-↻ Resumed session 20261004_164136_35bb65 (1 user message, 3 total messages)
+**Verification** — ran a round-trip test: nested dicts, unicode (`héllo ✓`), empty lists, and a missing path all behave as specified. Output: `OK: round-trip verified (nested + unicode), missing file -> []`
 
-session_id: 20261004_164136_35bb65
+**MEMORY.md** — added a second line under 2026-10-04: "Implemented storage.py (JSON save_notes/load_notes, load of missing file returns []) — per the 2026-10-04 JSON decision above; round-trip verified with nested + unicode data."
+
+↻ Resumed session 20261004_193453_08b359 (1 user message, 6 total messages)
+/home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
+  minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
+
+session_id: 20261004_193453_08b359
 
 
 === STDERR ===

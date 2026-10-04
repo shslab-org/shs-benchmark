@@ -1,7 +1,7 @@
 {
   "task": "c05t04",
   "agent": "hermes",
-  "points": 5,
+  "points": 10,
   "max_points": 20,
   "passed": false,
   "checks": [
@@ -14,13 +14,13 @@
       "name": "renamed public API works (behavior preserved)",
       "ok": false,
       "points": 10,
-      "detail": "roject/bench_ws/hermes/c05_refactoring/c05t04_naming_docs/taskrunner.py)\n=========================== short test summary info ============================\nERROR ../../../../../../../tmp/benchverify_ty0pb6og/test_hidden.py\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.11s\n"
+      "detail": "1': False} == {'t1': True}\nE     \nE     Differing items:\nE     {'t1': False} != {'t1': True}\nE     Use -v to get more diff)\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_6kgj1x01/test_hidden.py::test_success_after_retries\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.08s\n"
     },
     {
       "name": "cryptic names gone",
-      "ok": false,
+      "ok": true,
       "points": 4,
-      "detail": "['def go(', '(l,', 'def go']"
+      "detail": "[]"
     },
     {
       "name": "docstrings on all functions",
@@ -30,7 +30,7 @@
     },
     {
       "name": "module docstring updated (not the old placeholder)",
-      "ok": false,
+      "ok": true,
       "points": 1
     }
   ]

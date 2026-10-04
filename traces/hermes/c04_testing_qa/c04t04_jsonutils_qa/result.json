@@ -1,0 +1,49 @@
+{
+  "agent": "hermes",
+  "category": "c04_testing_qa",
+  "task": "c04t04_jsonutils_qa",
+  "title": "JSON utils QA suite",
+  "started": "2026-10-04T19:01:16.799806",
+  "duration_s": 420.1,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "git.8b66a51",
+  "session_id": null,
+  "rc": 124,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_jsonutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (jsonutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "========================= short test summary info ============================\nFAILED ../benchverify_2y6ra_pl/t_buggy.py::TestSafeGet::test_non_numeric_index_on_list_returns_default_no_throw\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.31s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 31"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T19:23:52.146430"
+}

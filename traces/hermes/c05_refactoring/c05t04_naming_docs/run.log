@@ -1,28 +1,33 @@
 agent: hermes
 category: c05_refactoring
 task: c05t04_naming_docs
-started: 2026-10-04T15:28:56.877817
+started: 2026-10-04T19:23:52.169986
 model: agnes-3.0-flash
 provider: Agnes AI (https://apihub.agnes-ai.com/v1)
 version: git.8b66a51 (2026.9.24)
-session_id: 20261004_153146_5f0468
+session_id: 20261004_192356_7c23aa
 rc: 0
-duration_s: 155.6
+duration_s: 100.1
 steps_cap: 30
 timeout_cap: 420
-attempts: 3
-provider_error_flag: True
+attempts: 1
+provider_error_flag: False
 
 === STDOUT ===
 --- TURN 1 ---
-custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+Refactored `taskrunner.py` in `/home/z/my-project/bench_ws/hermes/c05_refactoring/c05t04_naming_docs`:
 
-Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 20261004153416814135839W1F5oHgE)
+- Public API is now `run_tasks(tasks, retries=3, backoff_seconds=0.5)`; renamed `go→run_tasks`, `l→tasks`, `n→retries`, `w→backoff_seconds`, `r→results`, `x→task`, `ok→succeeded`, and the per-task key `"fn"→"action"`.
+- Added docstrings to the module and `run_tasks` (params + return).
+- Behavior per spec: each task's action runs up to `retries` times, sleeps `backoff_seconds` before every attempt, stops on first success, returns `{task_id: True/False}`. This fixed a latent bug in the original — `if not ok: break` stopped retrying on first *failure* instead of success.
+- No callers of the old API exist in the directory (searched), so nothing else needed updating.
+
+Verified with a quick test (temp file, removed after passing): `{a: True, b: True, c: False, d: False}` — success-on-first-tried task called once, one-failure-then-success called twice, always-failing tasks called exactly 3 times (retries exhausted), signature and docstring confirmed.
 
 /home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
   minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
 
-session_id: 20261004_153146_5f0468
+session_id: 20261004_192356_7c23aa
 
 
 === STDERR ===

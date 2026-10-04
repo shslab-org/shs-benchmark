@@ -11,21 +11,21 @@
   "session_id": "48f6c18e-d974-42e8-85d8-ac5f50a9a958",
   "rc": 3,
   "provider_error_retry": false,
-  "points": 16,
+  "points": 20,
   "max_points": 20,
-  "passed": false,
+  "passed": true,
   "checks": [
     {
       "name": "api.py exists",
       "ok": true,
       "points": 3,
-      "detail": "/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t03_code_docs_match/api.py"
+      "detail": "traces/openhands/c09_multi_agent/c09t03_code_docs_match/workspace/api.py"
     },
     {
       "name": "DOCS.md exists",
       "ok": true,
       "points": 3,
-      "detail": "/home/z/my-project/bench_ws/openhands/c09_multi_agent/c09t03_code_docs_match/DOCS.md"
+      "detail": "traces/openhands/c09_multi_agent/c09t03_code_docs_match/workspace/DOCS.md"
     },
     {
       "name": "4 required functions implemented",
@@ -38,10 +38,10 @@
       "points": 3
     },
     {
-      "name": "documented signatures match code",
-      "ok": false,
+      "name": "documented parameter sequences match code",
+      "ok": true,
       "points": 4,
-      "detail": "mismatched: ['create_task(title)', 'delete_task(task_id)', 'complete_task(task_id)']"
+      "detail": "mismatched: []"
     },
     {
       "name": "task lifecycle works",
@@ -51,5 +51,7 @@
     }
   ],
   "verify_error": null,
-  "timestamp": "2026-10-04T14:34:54.375102"
+  "timestamp": "2026-10-04T14:34:54.375102",
+  "amended": true,
+  "amendment_note": "verifier calibrated post-benchmark (uniform for all agents); original result in result_pre_amendment.json"
 }

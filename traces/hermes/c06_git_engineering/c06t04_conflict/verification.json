@@ -1,9 +1,9 @@
 {
   "task": "c06t04",
   "agent": "hermes",
-  "points": 8,
+  "points": 20,
   "max_points": 20,
-  "passed": false,
+  "passed": true,
   "checks": [
     {
       "name": "git repo exists",
@@ -17,19 +17,19 @@
     },
     {
       "name": "combined greeting produced",
-      "ok": false,
+      "ok": true,
       "points": 6,
-      "detail": "Hello, valued user of DemoApp"
+      "detail": "Hey there, valued user of DemoApp (v2)!"
     },
     {
       "name": "merge commit exists on main",
-      "ok": false,
+      "ok": true,
       "points": 4,
-      "detail": ""
+      "detail": "ad44edd Merge feature/b-casual-greeting"
     },
     {
       "name": "combined-greeting test added",
-      "ok": false,
+      "ok": true,
       "points": 2
     },
     {

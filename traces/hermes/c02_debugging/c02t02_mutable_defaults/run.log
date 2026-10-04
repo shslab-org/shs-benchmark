@@ -1,28 +1,33 @@
 agent: hermes
 category: c02_debugging
 task: c02t02_mutable_defaults
-started: 2026-10-04T14:28:12.964068
+started: 2026-10-04T18:53:00.002979
 model: agnes-3.0-flash
 provider: Agnes AI (https://apihub.agnes-ai.com/v1)
 version: git.8b66a51 (2026.9.24)
-session_id: 20261004_143027_41e26f
+session_id: 20261004_185304_c410f7
 rc: 0
-duration_s: 24.7
+duration_s: 31.1
 steps_cap: 30
 timeout_cap: 420
-attempts: 3
-provider_error_flag: True
+attempts: 1
+provider_error_flag: False
 
 === STDOUT ===
 --- TURN 1 ---
-custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+Fixed. The bug was classic mutable-default-argument state leaking: `add_item(item, cart=[])` and `add_tagged(item, tags=[], extra={})` created their default list/dict once at def time, so every call with no explicit container shared the same objects.
 
-Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 20261004143046410417854bxBBsEHE)
+Changes in `cart.py` (public API and call signatures unchanged — callers can still pass explicit list/dict or nothing):
+- `add_item(item, cart=None)` — creates a fresh `[]` when `cart is None`
+- `add_tagged(item, tags=None, extra=None)` — creates fresh `[]`/`{}` when either is `None`
+- Updated the module docstring that advertised the bug
+
+Verification: `uv run --with pytest pytest test_cart.py -q` (system python3 has no pytest; project is PEP 668-managed, so I ran it via uv without creating new files) → 3 passed. `test_cart.py` untouched.
 
 /home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
   minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
 
-session_id: 20261004_143027_41e26f
+session_id: 20261004_185304_c410f7
 
 
 === STDERR ===

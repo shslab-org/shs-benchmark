@@ -27,12 +27,15 @@ if rep:
                        "ok": "total" in blob and "region" in blob and "product" in blob, "points": 5})
         # expected cleaned rows: 1001,1002,1004,1006,1008,1009,1010 = 7 rows (1011 has no region, 1012 no price)
         n_cleaned = r.get("cleaned_rows") or (r.get("row_counts") or {}).get("cleaned_rows")
-        checks.append({"name": "cleaned_rows == 7 (exact computation)", "ok": n_cleaned == 7,
+        # AMENDED (uniform for all agents): spec did not explicitly require
+        # dropping rows with an EMPTY region; both 7 (drop) and 8 (keep, as
+        # its own "" region group) are spec-compliant readings.
+        checks.append({"name": "cleaned_rows == 7 or 8 (exact computation)", "ok": n_cleaned in (7, 8),
                        "points": 2, "detail": "got: " + str(n_cleaned)})
         # total: 2*9.99 + 1*24.50 + 3*5.00 + 4*9.99 + 2*5.00 + 1*5.00 + 12*1.50 = 19.98+24.5+15+39.96+10+5+18 = 132.44
         total = r.get("total_sales")
-        ok_total = isinstance(total, (int, float)) and abs(total - 132.44) < 0.05
-        checks.append({"name": "total_sales == 132.44 (+-0.05)", "ok": ok_total, "points": 2,
+        ok_total = isinstance(total, (int, float)) and min(abs(total - 132.44), abs(total - 142.44)) < 0.05
+        checks.append({"name": "total_sales == 132.44 or 142.44 (+-0.05)", "ok": ok_total, "points": 2,
                        "detail": "got: " + str(total)})
     except Exception as e:
         checks.append({"name": "report parseable JSON", "ok": False, "points": 15, "detail": str(e)[:150]})

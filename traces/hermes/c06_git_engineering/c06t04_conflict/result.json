@@ -3,17 +3,17 @@
   "category": "c06_git_engineering",
   "task": "c06t04_conflict",
   "title": "Resolve merge conflict",
-  "started": "2026-10-04T15:54:19.555889",
-  "duration_s": 19.0,
+  "started": "2026-10-04T19:33:02.300000",
+  "duration_s": 105.1,
   "model": "agnes-3.0-flash",
   "provider": "agnes-ai",
   "agent_version": "git.8b66a51 (2026.9.24)",
-  "session_id": "20261004_155628_d646a3",
+  "session_id": "20261004_193306_bf3856",
   "rc": 0,
-  "provider_error_retry": true,
-  "points": 8,
+  "provider_error_retry": false,
+  "points": 20,
   "max_points": 20,
-  "passed": false,
+  "passed": true,
   "checks": [
     {
       "name": "git repo exists",
@@ -27,19 +27,19 @@
     },
     {
       "name": "combined greeting produced",
-      "ok": false,
+      "ok": true,
       "points": 6,
-      "detail": "Hello, valued user of DemoApp"
+      "detail": "Hey there, valued user of DemoApp (v2)!"
     },
     {
       "name": "merge commit exists on main",
-      "ok": false,
+      "ok": true,
       "points": 4,
-      "detail": ""
+      "detail": "ad44edd Merge feature/b-casual-greeting"
     },
     {
       "name": "combined-greeting test added",
-      "ok": false,
+      "ok": true,
       "points": 2
     },
     {
@@ -50,5 +50,5 @@
     }
   ],
   "verify_error": null,
-  "timestamp": "2026-10-04T15:56:45.641580"
+  "timestamp": "2026-10-04T19:34:49.630669"
 }
