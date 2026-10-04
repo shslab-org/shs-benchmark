@@ -1,0 +1,48 @@
+{
+  "agent": "opencode",
+  "category": "c08_memory",
+  "task": "c08t05_arch_decision",
+  "title": "Architecture decision retention + QA",
+  "started": "2026-10-04T13:19:34.267213",
+  "duration_s": 54.3,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef8ee1b3bffeK0zMm7XKnYoK5X",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "storage module exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/opencode/c08_memory/c08t05_arch_decision/db.py"
+    },
+    {
+      "name": "uses sqlite (per architecture decision)",
+      "ok": true,
+      "points": 6
+    },
+    {
+      "name": "no postgres dependency (decision respected)",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "put/get works (hidden test)",
+      "ok": true,
+      "points": 4,
+      "detail": "passed"
+    },
+    {
+      "name": "SQLite rationale retained in answer (local/embedded/no-server reasons)",
+      "ok": true,
+      "points": 2
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T13:20:30.789869"
+}

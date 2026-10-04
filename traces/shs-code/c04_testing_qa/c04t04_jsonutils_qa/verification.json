@@ -1,0 +1,37 @@
+{
+  "task": "c04t04",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_jsonutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (jsonutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "'b'\")\n=========================== short test summary info ============================\nFAILED ../benchverify_fv5_tyae/t_buggy.py::test_safe_get_bad_list_index_part_returns_default_not_raises\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 7 passed in 0.29s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 38"
+    }
+  ]
+}

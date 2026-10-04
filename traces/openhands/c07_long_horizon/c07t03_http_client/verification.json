@@ -1,0 +1,33 @@
+{
+  "task": "c07t03",
+  "agent": "openhands",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "httpclient.py with fetch_with_retry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/openhands/c07_long_horizon/c07t03_http_client/httpclient.py"
+    },
+    {
+      "name": "agent-authored tests exist",
+      "ok": true,
+      "points": 4,
+      "detail": "['/home/z/my-project/bench_ws/openhands/c07_long_horizon/c07t03_http_client/tests/test_httpclient.py']"
+    },
+    {
+      "name": "hidden behavior tests (retry-then-succeed + give-up)",
+      "ok": true,
+      "points": 9,
+      "detail": "passed"
+    },
+    {
+      "name": "agent's own tests pass",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "agent": "opencode",
+  "category": "c07_long_horizon",
+  "task": "c07t03_http_client",
+  "title": "Retrying HTTP client + tests",
+  "started": "2026-10-04T13:01:15.736118",
+  "duration_s": 224.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef8fede88ffeoRl4SM2G5ttixy",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 14,
+  "max_points": 18,
+  "passed": false,
+  "checks": [
+    {
+      "name": "httpclient.py with fetch_with_retry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/opencode/c07_long_horizon/c07t03_http_client/httpclient.py"
+    },
+    {
+      "name": "agent-authored tests exist",
+      "ok": false,
+      "points": 4,
+      "detail": "[]"
+    },
+    {
+      "name": "hidden behavior tests (retry-then-succeed + give-up)",
+      "ok": true,
+      "points": 9,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T13:05:02.324190"
+}

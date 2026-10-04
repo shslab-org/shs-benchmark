@@ -1,0 +1,13 @@
+{
+  "retail_basic": 32.97,
+  "retail_zero_items": 0.0,
+  "retail_negative": -5.17,
+  "retail_half_cent": 0.01,
+  "retail_exact_boundary": 1.38,
+  "wholesale_discount_applies": 110.0,
+  "wholesale_no_discount": 11.0,
+  "wholesale_custom_min": 143.6,
+  "wholesale_negative": -18.32,
+  "wholesale_zero_items": 0.0,
+  "retail_float_prec": 0.33
+}

@@ -1,0 +1,27 @@
+{
+  "task": "c07t03",
+  "agent": "opencode",
+  "points": 14,
+  "max_points": 18,
+  "passed": false,
+  "checks": [
+    {
+      "name": "httpclient.py with fetch_with_retry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/opencode/c07_long_horizon/c07t03_http_client/httpclient.py"
+    },
+    {
+      "name": "agent-authored tests exist",
+      "ok": false,
+      "points": 4,
+      "detail": "[]"
+    },
+    {
+      "name": "hidden behavior tests (retry-then-succeed + give-up)",
+      "ok": true,
+      "points": 9,
+      "detail": "passed"
+    }
+  ]
+}

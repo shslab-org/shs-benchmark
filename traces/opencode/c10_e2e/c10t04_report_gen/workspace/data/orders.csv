@@ -1,0 +1,9 @@
+order_id,customer,product,qty,unit_price,region
+5001,Acme,Gadget,3,25.00,north
+5002,Globex,Widget,10,4.50,south
+5003,Acme,Widget,2,4.50,east
+5004,Initech,Gizmo,5,12.00,west
+5005,Globex,Gadget,1,25.00,south
+5006,Acme,Gizmo,4,12.00,north
+5007,Initech,Widget,6,4.50,east
+5008,Globex,Gizmo,2,12.00,west

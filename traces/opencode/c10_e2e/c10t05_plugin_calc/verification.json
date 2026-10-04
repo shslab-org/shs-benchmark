@@ -1,0 +1,33 @@
+{
+  "task": "c10t05",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "calculator core with registry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/opencode/c10_e2e/c10t05_plugin_calc/calculator.py"
+    },
+    {
+      "name": "registry + calculate semantics",
+      "ok": true,
+      "points": 8,
+      "detail": "passed"
+    },
+    {
+      "name": "4 operation plugins registered",
+      "ok": true,
+      "points": 4,
+      "detail": "5 registrations in 7 plugin files"
+    },
+    {
+      "name": "tests exist and pass",
+      "ok": true,
+      "points": 3,
+      "detail": "['/home/z/my-project/bench_ws/opencode/c10_e2e/c10t05_plugin_calc/tests/test_calculator.py']"
+    }
+  ]
+}

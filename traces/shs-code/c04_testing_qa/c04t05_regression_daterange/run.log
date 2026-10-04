@@ -1,0 +1,42 @@
+agent: shs-code
+category: c04_testing_qa
+task: c04t05_regression_daterange
+started: 2026-10-04T13:30:24.653293
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: v4.4.0 (897b5d6)
+session_id: bench-c04t05_regression_daterange
+rc: 0
+duration_s: 261.0
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 rc=0 ---
+⚙ SYSTEM: Session bench-c04t05_regression_daterange not found — starting a new 
+session.
+🤖 ASSISTANT
+Plan is 100% complete and both verification directions are proven. All sub-goals
+done; time to terminate.                                                        
+⚙ SYSTEM: session: 82c8c45a-041
+
+[stderr]
+3:37:30 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+13:37:32 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [CredentialPool] Key ...84oG8c exhausted, cooling 60s
+13:37:32 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.2s — state preserved.
+13:37:35 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 4.9s — state preserved.
+13:37:40 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 8.3s — state preserved.
+13:37:49 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 12.6s — state preserved.
+13:38:01 | WARNING  | SHSCode@8 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 6/40). Retry-After=None. Waiting 19.6s — state preserved.
+13:38:52 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [CredentialPool] Key ...84oG8c exhausted, cooling 60s
+13:38:52 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+13:38:54 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.7s — state preserved.
+13:38:57 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 6.1s — state preserved.
+13:39:04 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 9.9s — state preserved.
+13:39:13 | WARNING  | SHSCode@13 [644a733e-42ac-4698-b546-f604ae173b64] — [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 15.6s — state preserved.
+
+
+=== STDERR ===
+

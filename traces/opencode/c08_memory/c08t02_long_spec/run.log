@@ -1,0 +1,32 @@
+agent: opencode
+category: c08_memory
+task: c08t02_long_spec
+started: 2026-10-04T13:13:14.034198
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef8f3e8a0fferNc1dRw5YHDdlQ
+rc: 0
+duration_s: 168.0
+steps_cap: 25
+timeout_cap: 330
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Acknowledged — I've noted all 10 spec points for `usermgmt.py` and will reference them when we implement.
+--- TURN 2 ---
+Implemented `usermgmt.py` and verified against all 10 spec points:
+
+- `create_user` returns a dict with `username`, `email`, `password_hash`, `created_at`
+- username/email lowercased; username uniqueness is case-insensitive; duplicate email raises
+- password < 12 chars raises `ValueError`
+- `password_hash` is salted sha256 hexdigest, plain password never appears in the dict or its `repr`
+- all errors are `ValueError`, single file, no external dependencies
+
+All checks passed.
+
+
+=== STDERR ===
+

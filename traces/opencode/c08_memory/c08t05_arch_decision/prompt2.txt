@@ -1,0 +1,11 @@
+Two things now:
+
+1. Implement `db.py` in this directory with the engine we decided on earlier:
+
+       def put(key: str, value) -> None      # value is JSON-serializable
+       def get(key: str, default=None)
+   persisting to ./appdata.db. Verify put/get round-trips.
+
+2. Then answer this question in your final reply (and write it to WHY.md):
+   Why did we choose SQLite for this project? Give the reasons from our
+   earlier discussion.

@@ -1,0 +1,33 @@
+{
+  "agent": "opencode",
+  "category": "c10_e2e",
+  "task": "c10t01_url_shortener",
+  "title": "URL shortener lib",
+  "started": "2026-10-04T13:41:22.625980",
+  "duration_s": 319.5,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef8da2492ffetNTZcEMB5CNOt8",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "shortener module exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/opencode/c10_e2e/c10t01_url_shortener/shortener.py"
+    },
+    {
+      "name": "shorten/resolve semantics (5 hidden tests)",
+      "ok": true,
+      "points": 16,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T13:46:44.416680"
+}

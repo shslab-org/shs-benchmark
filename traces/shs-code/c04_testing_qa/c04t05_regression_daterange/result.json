@@ -1,0 +1,43 @@
+{
+  "agent": "shs-code",
+  "category": "c04_testing_qa",
+  "task": "c04t05_regression_daterange",
+  "title": "Issue #47 regression test",
+  "started": "2026-10-04T13:30:24.653293",
+  "duration_s": 261.0,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c04t05_regression_daterange",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_daterange_regression.py exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "no source tampering (daterange.py untouched)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "regression test FAILS on shipped buggy code (reproduces issue)",
+      "ok": true,
+      "points": 8,
+      "detail": "ect at 0x7ff28337e390>.overlaps\n=========================== short test summary info ============================\nFAILED ../benchverify_fv8z1iqh/t_buggy.py::test_overlaps_touching_at_end_start_of_other\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.26s\n"
+    },
+    {
+      "name": "regression test PASSES after correct fix (targeted, not over-broad)",
+      "ok": true,
+      "points": 7,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T13:39:50.665605"
+}

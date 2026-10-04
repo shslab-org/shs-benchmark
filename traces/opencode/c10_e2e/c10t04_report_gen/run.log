@@ -1,0 +1,28 @@
+agent: opencode
+category: c10_e2e
+task: c10t04_report_gen
+started: 2026-10-04T13:52:38.426536
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef8cfd496ffeEES3SmMIHwALF6
+rc: 0
+duration_s: 83.7
+steps_cap: 45
+timeout_cap: 540
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done.
+
+- `generate_report.py` written and run → `report.txt` generated.
+- Total revenue: **313.00** — matches the hand calculation `3*25 + 10*4.5 + 2*4.5 + 5*12 + 1*25 + 4*12 + 6*4.5 + 2*12 = 313.0` ✓
+- By product (desc): Gizmo 132.00, Gadget 100.00, Widget 81.00
+- By region (alpha): east 36.00, north 123.00, south 70.00, west 84.00
+- Unique orders: 8
+- `data/orders.csv` untouched (md5 unchanged: `64d17843...`)
+
+=== STDERR ===
+

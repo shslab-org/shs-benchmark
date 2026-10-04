@@ -1,0 +1,35 @@
+agent: opencode
+category: c07_long_horizon
+task: c07t05_data_pipeline
+started: 2026-10-04T13:10:41.850628
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef8f63aa7ffegdD7R0Ok6W13ey
+rc: 0
+duration_s: 141.1
+steps_cap: 45
+timeout_cap: 540
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done. 
+
+- **pipeline.py**: reads `data/sales_raw.csv`, applies all 4 cleaning rules (invalid qty, invalid/empty price, region title-case normalization, first-occurrence dedup on order_id), computes totals, and writes `report.json`.
+- **report.json** (in repo root) matches hand verification exactly:
+
+| metric | value |
+|---|---|
+| input_rows | 13 |
+| cleaned_rows | 8 |
+| dropped_rows | 5 (1003 qty=0, 1005 qty=-2, 1007 bad price, dup 1001, 1012 empty price) |
+| total_sales | 142.44 |
+| by region | West 59.94, East 42.50, North 20.00, South 10.00, "" 10.00 |
+| by product | Widget 77.94, Gadget 34.50, Gizmo 30.00 |
+
+`data/sales_raw.csv` was not modified (read-only access; checksum confirmed unchanged).
+
+=== STDERR ===
+

@@ -1,0 +1,21 @@
+{
+  "task": "c09t01",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "all 4 files exist",
+      "ok": true,
+      "points": 6,
+      "detail": "{'textutils': '/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t01_three_modules/textutils.py', 'validators': '/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t01_three_modules/validators.py', 'formatters': '/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t01_three_modules/formatters.py', 'main': '/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t01_three_modules/main.py'}"
+    },
+    {
+      "name": "unit + integration tests pass",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    }
+  ]
+}

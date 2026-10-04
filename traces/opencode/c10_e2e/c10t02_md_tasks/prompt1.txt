@@ -1,0 +1,18 @@
+End-to-end task: a markdown-backed task manager.
+
+Product requirement: tasks live as human-editable markdown files.
+
+Build:
+1. `tasks_cli.py`: `python tasks_cli.py <command> [args]`
+   - `add <title> [--priority low|med|high]` - creates one markdown file per
+     task in the tasks directory (path from TASKS_DIR env var, default ./tasks):
+     the file contains the title as heading, a status line (open/done), and
+     the priority
+   - `list [--all]` - prints open tasks (or all with --all) as a table with
+     id, status, priority, title
+   - `done <id>` - flips the status to done (updates the markdown file)
+   - `rm <id>` - deletes the task file
+2. IDs are stable small integers (1, 2, ...).
+3. README.md with usage.
+4. Self-test the full lifecycle before finishing. Verification runs the CLI
+   as a black box against TASKS_DIR.

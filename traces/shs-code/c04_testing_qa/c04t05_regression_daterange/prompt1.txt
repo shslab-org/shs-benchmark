@@ -1,0 +1,5 @@
+Your job for task c04t05 is described in `ISSUE_47.md` and `daterange.py`
+docstrings in this directory. Write ONLY the regression test:
+`tests_agent/test_daterange_regression.py` (create the directory). It must
+FAIL against the shipped module and PASS against a correctly fixed module.
+Do NOT modify daterange.py.

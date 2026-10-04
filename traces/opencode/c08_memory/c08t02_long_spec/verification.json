@@ -1,0 +1,21 @@
+{
+  "task": "c08t02",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "user management module found",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/opencode/c08_memory/c08t02_long_spec/usermgmt.py"
+    },
+    {
+      "name": "constraints from turn-1 spec enforced (5 hidden checks)",
+      "ok": true,
+      "points": 16,
+      "detail": "passed"
+    }
+  ]
+}

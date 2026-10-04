@@ -1,0 +1,2 @@
+[2026-10-04T14:00:45] === stream start agent=hermes tasks=50 ===
+[2026-10-04T14:00:45] RUN c01t01_bracket_validator agent=hermes steps=30 timeout=420s turns=1

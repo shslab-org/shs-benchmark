@@ -1,0 +1,10 @@
+Now, consulting our decision log (MEMORY.md), implement `storage.py` in
+this directory implementing the storage backend we chose (and explicitly
+NOT the one we rejected):
+
+    def save_notes(notes: list, path: str) -> None
+    def load_notes(path: str) -> list
+        # round-trip save/load; load of a missing file returns []
+
+Add a line to MEMORY.md recording that storage.py was implemented per the
+earlier decision. Verify save/load round-trips before finishing.

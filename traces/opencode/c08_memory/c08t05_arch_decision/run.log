@@ -1,0 +1,37 @@
+agent: opencode
+category: c08_memory
+task: c08t05_arch_decision
+started: 2026-10-04T13:19:34.267213
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef8ee1b3bffeK0zMm7XKnYoK5X
+rc: 0
+duration_s: 54.3
+steps_cap: 25
+timeout_cap: 330
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Acknowledged. Recording the architecture decision:
+
+- **Storage engine:** SQLite via Python stdlib `sqlite3` — not Postgres, not MongoDB
+- **Rationale:** Local-first on a laptop with zero external services; SQLite is embedded and file-based, requiring no server
+
+No files created. Ready to build on this in a later step.
+--- TURN 2 ---
+Done.
+
+**1. `db.py`** — implemented with stdlib `sqlite3`, persisting to `./appdata.db`. `put`/`get` round-trip verified (nested JSON, overwrite, and default-missing-key all pass).
+
+**2. `WHY.md`** — written with the rationale from our earlier discussion:
+- **Local-first:** the app must run fully local-first on a laptop with zero external services.
+- **Embedded & file-based:** SQLite needs no server — it's a single file.
+- **Stdlib available:** ships with Python as `sqlite3`, no extra dependencies.
+- **Explicitly ruled out:** Postgres (server) and MongoDB (external service) don't meet the local-first constraint.
+
+
+=== STDERR ===
+

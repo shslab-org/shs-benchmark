@@ -73,3 +73,43 @@
 [2026-10-04T12:54:11] RETRY c06t05_rebase (provider/timeout issue, attempt 1)
 [2026-10-04T12:57:00] DONE c06t05_rebase score=17/20 passed=False dur=139.6s
 [2026-10-04T12:57:00] RUN c07t01_todo_cli agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T12:58:13] DONE c07t01_todo_cli score=20/20 passed=True dur=72.4s
+[2026-10-04T12:58:13] RUN c07t02_site_generator agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:01:15] DONE c07t02_site_generator score=20/20 passed=True dur=182.4s
+[2026-10-04T13:01:15] RUN c07t03_http_client agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:05:02] DONE c07t03_http_client score=14/18 passed=False dur=224.2s
+[2026-10-04T13:05:02] RUN c07t04_repo_maintenance agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:10:41] DONE c07t04_repo_maintenance score=20/20 passed=True dur=337.3s
+[2026-10-04T13:10:41] RUN c07t05_data_pipeline agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:13:02] DONE c07t05_data_pipeline score=16/20 passed=False dur=141.1s
+[2026-10-04T13:13:02] RUN c08t01_config_facts agent=opencode steps=25 timeout=330s turns=2
+[2026-10-04T13:13:14] DONE c08t01_config_facts score=20/20 passed=True dur=11.0s
+[2026-10-04T13:13:14] RUN c08t02_long_spec agent=opencode steps=25 timeout=330s turns=2
+[2026-10-04T13:16:04] DONE c08t02_long_spec score=20/20 passed=True dur=168.0s
+[2026-10-04T13:16:04] RUN c08t03_resume_reuse agent=opencode steps=25 timeout=330s turns=2
+[2026-10-04T13:18:18] DONE c08t03_resume_reuse score=16/20 passed=False dur=131.9s
+[2026-10-04T13:18:18] RUN c08t04_memory_file agent=opencode steps=25 timeout=330s turns=2
+[2026-10-04T13:19:34] DONE c08t04_memory_file score=20/20 passed=True dur=75.9s
+[2026-10-04T13:19:34] RUN c08t05_arch_decision agent=opencode steps=25 timeout=330s turns=2
+[2026-10-04T13:20:30] DONE c08t05_arch_decision score=20/20 passed=True dur=54.3s
+[2026-10-04T13:20:30] RUN c09t01_three_modules agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T13:25:11] DONE c09t01_three_modules score=20/20 passed=True dur=278.5s
+[2026-10-04T13:25:11] RUN c09t02_service_contract agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T13:28:49] DONE c09t02_service_contract score=20/20 passed=True dur=215.8s
+[2026-10-04T13:28:49] RUN c09t03_code_docs_match agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T13:33:45] DONE c09t03_code_docs_match score=16/20 passed=False dur=293.2s
+[2026-10-04T13:33:45] RUN c09t04_transforms agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T13:37:10] DONE c09t04_transforms score=20/20 passed=True dur=202.8s
+[2026-10-04T13:37:10] RUN c09t05_tdd agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T13:41:22] DONE c09t05_tdd score=20/20 passed=True dur=248.2s
+[2026-10-04T13:41:22] RUN c10t01_url_shortener agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:46:44] DONE c10t01_url_shortener score=20/20 passed=True dur=319.5s
+[2026-10-04T13:46:44] RUN c10t02_md_tasks agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:48:00] DONE c10t02_md_tasks score=20/20 passed=True dur=76.2s
+[2026-10-04T13:48:00] RUN c10t03_json_api agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:52:38] DONE c10t03_json_api score=20/20 passed=True dur=275.5s
+[2026-10-04T13:52:38] RUN c10t04_report_gen agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:54:02] DONE c10t04_report_gen score=20/20 passed=True dur=83.7s
+[2026-10-04T13:54:02] RUN c10t05_plugin_calc agent=opencode steps=45 timeout=540s turns=1
+[2026-10-04T13:57:14] DONE c10t05_plugin_calc score=20/20 passed=True dur=189.8s
+[2026-10-04T13:57:14] === stream end agent=opencode subtotal=937/1000 ===

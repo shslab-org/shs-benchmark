@@ -1,0 +1,43 @@
+{
+  "task": "c09t03",
+  "agent": "opencode",
+  "points": 16,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "api.py exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t03_code_docs_match/api.py"
+    },
+    {
+      "name": "DOCS.md exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/opencode/c09_multi_agent/c09t03_code_docs_match/DOCS.md"
+    },
+    {
+      "name": "4 required functions implemented",
+      "ok": true,
+      "points": 5
+    },
+    {
+      "name": "docs mention all 4 functions",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "documented signatures match code",
+      "ok": false,
+      "points": 4,
+      "detail": "mismatched: ['delete_task(task_id)', 'create_task(title)', 'complete_task(task_id)']"
+    },
+    {
+      "name": "task lifecycle works",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "agent": "openhands",
+  "category": "c06_git_engineering",
+  "task": "c06t05_rebase",
+  "title": "Rebase + ff-merge linear",
+  "started": "2026-10-04T13:21:48.729094",
+  "duration_s": 96.6,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "12261e42-1fbe-4667-8579-0f6d625389f7",
+  "rc": 3,
+  "provider_error_retry": true,
+  "points": 17,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "linear history (no merge commits on main)",
+      "ok": true,
+      "points": 5,
+      "detail": ""
+    },
+    {
+      "name": "all 5 commits present on main after ff-merge",
+      "ok": true,
+      "points": 4,
+      "detail": "Continue feature\nAdd feature\nAdd three\nAdd two\nAdd one\n"
+    },
+    {
+      "name": "main.txt contains one/two/three",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "feature.txt contains feature work + continuation",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "root commit is 'Add one' (real history)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "clean working tree",
+      "ok": false,
+      "points": 3,
+      "detail": "?? TASK.md\n?? agent_events.jsonl\n?? agent_meta.json\n?? agent_output.txt\n?? placeholder.txt"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T13:26:03.581883"
+}

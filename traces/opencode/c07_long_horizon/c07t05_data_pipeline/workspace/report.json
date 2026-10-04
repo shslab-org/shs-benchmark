@@ -1,0 +1,18 @@
+{
+  "total_sales": 142.44,
+  "sales_by_region": {
+    "": 10.0,
+    "East": 42.5,
+    "North": 20.0,
+    "South": 10.0,
+    "West": 59.94
+  },
+  "sales_by_product": {
+    "Gadget": 34.5,
+    "Gizmo": 30.0,
+    "Widget": 77.94
+  },
+  "input_rows": 13,
+  "cleaned_rows": 8,
+  "dropped_rows": 5
+}

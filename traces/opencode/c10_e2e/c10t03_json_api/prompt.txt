@@ -1,0 +1,16 @@
+End-to-end task: a JSON API server using ONLY the Python standard library
+(http.server or socketserver - no frameworks).
+
+Endpoints:
+- GET  /health          -> 200 {"status": "ok"}
+- GET  /items           -> 200 [item, ...]
+- POST /items           -> 201 with the created item (accepts {"name": ...});
+                           400 on invalid JSON
+- GET  /items/{id}      -> 200 item | 404 when missing
+- DELETE /items/{id}    -> 204 | 404
+
+Build `server.py` runnable as `python server.py --port N`. Items persist to
+a JSON file so restarts keep data. Handle malformed requests gracefully
+(400/404/405, never a crash). Write tests or a self-check script that
+exercises every endpoint (start server, hit it, assert) and RUN it. Include
+a README.md. Deliver a verified working server.

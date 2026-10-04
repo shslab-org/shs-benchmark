@@ -1,0 +1,29 @@
+agent: opencode
+category: c10_e2e
+task: c10t05_plugin_calc
+started: 2026-10-04T13:54:02.129433
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef8ce8ddaffeMxf72jwewbGysK
+rc: 0
+duration_s: 189.8
+steps_cap: 45
+timeout_cap: 540
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All green:
+
+- `calculator.py` - core `Calculator` with `register`/`calculate`/`operations`
+- `plugins/{add,subtract,multiply,divide}.py` - each exposes `register(calc)`; divide raises `ZeroDivisionError` on zero divisor (documented in docstring)
+- `main.py` - wires core + plugins, prints 2+2=4, 10-4=6, 3*3=9, 9/2=4.5
+- `tests/test_calculator.py` - 13 tests covering core (incl. `KeyError` for unknown ops) and all four plugins (incl. zero-divisor)
+- `README.md` - 3-step plugin guide
+
+13/13 tests passed, `main.py` output confirmed.
+
+=== STDERR ===
+

@@ -1,0 +1,1 @@
+Build and RUN the data pipeline described in TASK.md in this directory. Do not modify data/sales_raw.csv. Produce report.json and double-check the numbers before finishing.

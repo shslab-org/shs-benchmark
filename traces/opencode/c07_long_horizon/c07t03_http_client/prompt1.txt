@@ -1,0 +1,16 @@
+Build a retrying HTTP client library using ONLY the Python standard
+library (urllib.request - no requests/httpx).
+
+Deliverables in this directory:
+1. `httpclient.py` exposing:
+       fetch_with_retry(url, retries=3, backoff=0.5, timeout=5) -> (data, status)
+   - retries on connection errors AND 5xx responses: up to `retries` extra
+     attempts, sleeping `backoff` seconds after each failure, doubling the
+     backoff each retry (exponential)
+   - returns (body-as-text-or-parsed-json, final_http_status)
+   - 4xx responses are NOT retried
+2. `tests/` with pytest tests you write yourself: cover success,
+   retry-then-success, give-up-after-retries, and 4xx-no-retry (mock or stub
+   the HTTP layer; you may also spin up a local http.server in a thread)
+3. A short README.md documenting the API
+Run your tests until they pass. Plan, build, test, fix, verify.

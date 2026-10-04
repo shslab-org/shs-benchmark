@@ -1,0 +1,42 @@
+{
+  "task": "c10t04",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "report generator exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/opencode/c10_e2e/c10t04_report_gen/generate_report.py"
+    },
+    {
+      "name": "report.txt produced",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/opencode/c10_e2e/c10t04_report_gen/report.txt"
+    },
+    {
+      "name": "total revenue == 313.00 (+-0.05)",
+      "ok": true,
+      "points": 5,
+      "detail": "313.00"
+    },
+    {
+      "name": "top product by revenue named (Gadget)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "region breakdown present (north/south/east/west)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "order count = 8",
+      "ok": true,
+      "points": 1
+    }
+  ]
+}

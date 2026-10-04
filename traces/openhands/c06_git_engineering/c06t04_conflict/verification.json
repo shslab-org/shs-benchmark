@@ -1,0 +1,42 @@
+{
+  "task": "c06t04",
+  "agent": "openhands",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "no conflict markers left",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "combined greeting produced",
+      "ok": true,
+      "points": 6,
+      "detail": "Hey there, valued user of DemoApp (v2)!"
+    },
+    {
+      "name": "merge commit exists on main",
+      "ok": true,
+      "points": 4,
+      "detail": "a100aa9 Merge feature/b-casual-greeting"
+    },
+    {
+      "name": "combined-greeting test added",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "test suite passes on final state",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ]
+}

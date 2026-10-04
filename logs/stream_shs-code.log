@@ -550,3 +550,19 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T12:45:52] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 1)
 [2026-10-04T12:53:17] DONE c04t01_stringutils_qa score=14/20 passed=False dur=420s
 [2026-10-04T12:53:17] RUN c04t02_stats_qa agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:00:17] RETRY c04t02_stats_qa (provider/timeout issue, attempt 1)
+[2026-10-04T13:05:49] DONE c04t02_stats_qa score=20/20 passed=True dur=306.1s
+[2026-10-04T13:05:49] RUN c04t03_argparse_qa agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:11:55] RETRY c04t03_argparse_qa (provider/timeout issue, attempt 1)
+[2026-10-04T13:15:59] DONE c04t03_argparse_qa score=20/20 passed=True dur=219.6s
+[2026-10-04T13:15:59] RUN c04t04_jsonutils_qa agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:22:59] RETRY c04t04_jsonutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T13:30:24] DONE c04t04_jsonutils_qa score=20/20 passed=True dur=420s
+[2026-10-04T13:30:24] RUN c04t05_regression_daterange agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:35:05] RETRY c04t05_regression_daterange (provider/timeout issue, attempt 1)
+[2026-10-04T13:39:50] DONE c04t05_regression_daterange score=20/20 passed=True dur=261.0s
+[2026-10-04T13:39:50] RUN c05t01_dedupe agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:45:23] RETRY c05t01_dedupe (provider/timeout issue, attempt 1)
+[2026-10-04T13:52:45] DONE c05t01_dedupe score=20/20 passed=True dur=420s
+[2026-10-04T13:52:45] RUN c05t02_globals_to_class agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T13:58:16] RETRY c05t02_globals_to_class (provider/timeout issue, attempt 1)
