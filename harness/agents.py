@@ -71,11 +71,11 @@ def run_opencode(ws, prompts, steps, timeout):
         else:
             cmd = [OPENCODE, "run", "-m", "agnes/agnes-3.0-flash", "-s", session_id, p]
         try:
-            r = subprocess.run(cmd, cwd=ws, capture_output=True, text=True, timeout=timeout)
+            r = subprocess.run(cmd, cwd=ws, capture_output=True, text=True, timeout=timeout, stdin=subprocess.DEVNULL)
             raw = r.stdout
             if i == 0:
                 # extract sessionID from first JSON event line
-                m = re.search(r'"sessionID":"([0-9a-f-]+)"', raw)
+                m = re.search(r'"sessionID":"([^"]+)"', raw)
                 session_id = m.group(1) if m else None
                 # also grab human-readable text parts
                 texts = re.findall(r'"type":"text","text":"((?:[^"\\]|\\.)*)"', raw)
