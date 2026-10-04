@@ -1,0 +1,8 @@
+{
+  "id": "c01t01_bracket_validator",
+  "category": "c01_code_generation",
+  "category_title": "Code Generation",
+  "title": "Bracket validator",
+  "max_points": 20,
+  "prompt": "Implement a bracket validator in the file `solution.py` in this directory.\n\nRequired API:\n    def is_balanced(s: str) -> bool\n\nRules:\n- It must handle three bracket types: (), [], {}\n- Every opening bracket must be closed by the same type in LIFO order\n- Non-bracket characters must be ignored\n- An empty string is balanced\nReturn True when balanced, False otherwise. Use an explicit stack (no recursion\non each character). Add a brief docstring. Do not create any other files."
+}

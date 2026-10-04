@@ -1,0 +1,8 @@
+{
+  "id": "c04t05_regression_daterange",
+  "category": "c04_testing_qa",
+  "category_title": "Testing & QA",
+  "title": "Issue #47 regression test",
+  "max_points": 20,
+  "prompt": "Your job for task c04t05 is described in `ISSUE_47.md` and `daterange.py`\ndocstrings in this directory. Write ONLY the regression test:\n`tests_agent/test_daterange_regression.py` (create the directory). It must\nFAIL against the shipped module and PASS against a correctly fixed module.\nDo NOT modify daterange.py."
+}

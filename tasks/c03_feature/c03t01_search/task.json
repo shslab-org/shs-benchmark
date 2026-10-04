@@ -1,0 +1,8 @@
+{
+  "id": "c03t01_search",
+  "category": "c03_feature",
+  "category_title": "Feature Implementation",
+  "title": "Inventory search feature",
+  "max_points": 20,
+  "prompt": "This directory contains a small inventory package: `inventory.py` (class\nInventory) and `test_inventory.py` (existing, passing tests).\n\nAdd a NEW feature to the Inventory class:\n\n    def search(self, keyword: str) -> list\n        # returns all items whose name contains keyword, case-insensitive,\n        # in the same sorted-by-name order as list_items()\n\nRequirements:\n- Existing methods and their behavior must remain unchanged\n- Existing tests must keep passing\n- Add at least 2 new tests for search() to test_inventory.py (append, do not\n  remove anything)\n- Run the full suite and make sure everything passes"
+}

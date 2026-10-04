@@ -1,0 +1,9 @@
+{
+  "id": "c08t01_config_facts",
+  "category": "c08_memory",
+  "category_title": "Memory & Context Retention",
+  "title": "Retain project facts across turns",
+  "max_points": 20,
+  "prompt": "Hi! Quick context before we start working together on this project:\n\n- The project codename is PURPLE-TIGER\n- The service will run on port 8734\n- We have decided to use the 'requests' library for all HTTP calls (not urllib)\n\nJust acknowledge this for now - do not create any files yet.",
+  "prompt2": "Now, based on what we agreed earlier, create a file `config.py` in this\ndirectory defining three constants:\n\n    CODENAME = ...   # the project codename we agreed on\n    PORT = ...       # the port number we agreed on\n    HTTP_LIBRARY = ...   # the HTTP library name we agreed on\n\nUse exactly the values from our earlier discussion."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "c02t04_email_regex",
+  "category": "c02_debugging",
+  "category_title": "Debugging & Bug Fixing",
+  "title": "Fix email regex",
+  "max_points": 20,
+  "prompt": "`validators.py` validates emails with a broken regex; `test_validators.py`\ndocuments the expected behavior and currently FAILS.\n\nDiagnose the regex problems (it rejects many valid addresses and accepts some\ninvalid ones), then fix `is_valid_email` so ALL tests pass, keeping:\n- the same function name/signature\n- a regex-based implementation (still use `re`)\n\nPractical email syntax to support: local part letters/digits/._%+- (no leading\nor consecutive dots), @, domain labels with hyphens, TLD of 2+ letters.\nDo NOT modify test_validators.py, do not create new files."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "c07t03_http_client",
+  "category": "c07_long_horizon",
+  "category_title": "Long-Horizon Autonomous Task",
+  "title": "Retrying HTTP client + tests",
+  "max_points": 20,
+  "prompt": "Build a retrying HTTP client library using ONLY the Python standard\nlibrary (urllib.request - no requests/httpx).\n\nDeliverables in this directory:\n1. `httpclient.py` exposing:\n       fetch_with_retry(url, retries=3, backoff=0.5, timeout=5) -> (data, status)\n   - retries on connection errors AND 5xx responses: up to `retries` extra\n     attempts, sleeping `backoff` seconds after each failure, doubling the\n     backoff each retry (exponential)\n   - returns (body-as-text-or-parsed-json, final_http_status)\n   - 4xx responses are NOT retried\n2. `tests/` with pytest tests you write yourself: cover success,\n   retry-then-success, give-up-after-retries, and 4xx-no-retry (mock or stub\n   the HTTP layer; you may also spin up a local http.server in a thread)\n3. A short README.md documenting the API\nRun your tests until they pass. Plan, build, test, fix, verify."
+}

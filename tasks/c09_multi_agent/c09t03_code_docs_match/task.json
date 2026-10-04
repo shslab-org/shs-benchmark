@@ -1,0 +1,8 @@
+{
+  "id": "c09t03_code_docs_match",
+  "category": "c09_multi_agent",
+  "category_title": "Multi-Agent / Parallel Engineering",
+  "title": "API + consistent docs",
+  "max_points": 20,
+  "prompt": "Parallel workstreams task: API implementation and documentation must be\nproduced so they stay consistent. Deliver:\n\n1. `api.py` - an in-memory task API:\n       create_task(title: str) -> dict          # returns {\"id\": int, \"title\": ..., \"done\": False}\n       list_tasks() -> list[dict]\n       complete_task(task_id: int) -> dict      # marks done=True, returns the task; unknown id raises ValueError\n       delete_task(task_id: int) -> None        # unknown id raises ValueError\n2. `DOCS.md` - documentation for every function with its EXACT signature\n   (same parameter names and order as the code) and a one-line description\n   plus one usage example per function.\n\nConsistency will be mechanically verified: the signatures in DOCS.md must\nmatch api.py exactly. Work on code and docs as separate workstreams, then\ncross-check them before finishing."
+}

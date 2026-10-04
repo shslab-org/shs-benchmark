@@ -1,0 +1,8 @@
+{
+  "id": "c07t04_repo_maintenance",
+  "category": "c07_long_horizon",
+  "category_title": "Long-Horizon Autonomous Task",
+  "title": "Repo maintenance batch",
+  "max_points": 20,
+  "prompt": "Do the entire maintenance task described in TASK.md in this directory (fix bugs, add feature + tests, update README, make at least 2 descriptive git commits; full test suite must pass at the end)."
+}

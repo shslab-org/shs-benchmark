@@ -1,0 +1,8 @@
+{
+  "id": "c05t03_god_function",
+  "category": "c05_refactoring",
+  "category_title": "Refactoring & Code Quality",
+  "title": "Split god function",
+  "max_points": 20,
+  "prompt": "Refactor `report.py` in this directory. Read HINT.md first. `process_orders` is a god function: split it into at least 3 focused helper functions. Behavior must remain EXACTLY identical - hidden tests will check parsing, discounts, aggregation, rounding and the empty-input case. Keep process_orders as the public entry point."
+}

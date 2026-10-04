@@ -1,0 +1,8 @@
+{
+  "id": "c03t05_discount",
+  "category": "c03_feature",
+  "category_title": "Feature Implementation",
+  "title": "Inventory discounts",
+  "max_points": 20,
+  "prompt": "This directory contains a small inventory package: `inventory.py` (class\nInventory) and `test_inventory.py` (existing, passing tests).\n\nAdd a NEW feature to the Inventory class:\n\npercentage discounting:\n    def apply_discount(self, sku: str, pct: float) -> None\n        # sets a discount percentage (0 <= pct <= 100) for that sku\n        # raises ValueError for unknown sku or pct outside 0..100\n    def price_with_discount(self, sku: str) -> float\n        # current unit price after the sku's discount (no discount set = full price)\n\nRequirements:\n- Existing methods and their behavior must remain unchanged\n- Existing tests must keep passing\n- Add at least 3 new tests for discounting to test_inventory.py (append only)\n- Run the full suite and make sure everything passes"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "c09t01_three_modules",
+  "category": "c09_multi_agent",
+  "category_title": "Multi-Agent / Parallel Engineering",
+  "title": "3 modules + integration",
+  "max_points": 20,
+  "prompt": "Multi-part engineering task - decompose it (implement the three modules\nindependently, then integrate). This directory is the workspace.\n\nModule 1 - `textutils.py`:\n    def word_count(text: str) -> int        # whitespace-separated tokens\n\nModule 2 - `validators.py`:\n    def is_email(s: str) -> bool            # simple practical check: x@y.z\n\nModule 3 - `formatters.py`:\n    def as_table(rows: list[list[str]]) -> str\n        # renders a Markdown-style table, first row = header\n\nIntegration - `main.py`:\n    def build_report(text: str) -> str\n        # uses ALL three modules: counts words (module 1), extracts candidate\n        # emails from the text and validates them (module 2), and renders a\n        # summary table [metric, value] including word count and found valid\n        # emails (module 3). Returns the rendered table string.\n\nVerify: each module standalone + the integration path before finishing."
+}

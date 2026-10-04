@@ -1,0 +1,9 @@
+{
+  "id": "c08t04_memory_file",
+  "category": "c08_memory",
+  "category_title": "Memory & Context Retention",
+  "title": "Decision log drives later work",
+  "max_points": 20,
+  "prompt": "We are building a tiny notes app in this directory. Working agreement:\n\n1. Keep a decision log in a file called MEMORY.md: every time we make a\n   decision, you record the date, the decision, and a one-line rationale.\n2. Decision made RIGHT NOW: \"Storage format: JSON (not CSV) - because our\n   data is nested and JSON round-trips types losslessly.\"\n\nFor this first turn: just create MEMORY.md recording that decision and\nacknowledge. Do not write any code yet.",
+  "prompt2": "Now, consulting our decision log (MEMORY.md), implement `storage.py` in\nthis directory implementing the storage backend we chose (and explicitly\nNOT the one we rejected):\n\n    def save_notes(notes: list, path: str) -> None\n    def load_notes(path: str) -> list\n        # round-trip save/load; load of a missing file returns []\n\nAdd a line to MEMORY.md recording that storage.py was implemented per the\nearlier decision. Verify save/load round-trips before finishing."
+}

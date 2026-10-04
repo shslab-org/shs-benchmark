@@ -1,0 +1,9 @@
+{
+  "id": "c08t03_resume_reuse",
+  "category": "c08_memory",
+  "category_title": "Memory & Context Retention",
+  "title": "Extend earlier function, reuse it",
+  "max_points": 20,
+  "prompt": "Implement `phone.py` in this directory with ONE function:\n\n    def normalize_phone(p: str) -> str\n        # strips everything except digits; returns \"\" for no digits at all\n        # examples: \"+1 (555) 123-4567\" -> \"15551234567\"; \"abc\" -> \"\"\n\nInclude 2-3 quick self-checks (in comments or a __main__ block). Do not\ncreate other files.",
+  "prompt2": "Extend phone.py with a SECOND function:\n\n    def format_intl(p: str) -> str\n        # normalizes the phone number using normalize_phone (reuse it!), then\n        # formats as: +<country_code> <rest with spaces every 3 digits>\n        # country code rule: the first 1 digit when the number starts with 1,\n        # otherwise the first 2 digits; the remainder is grouped in chunks\n        # of 3 (left to right), joined by single spaces:\n        # \"+1 (555) 123-4567\" -> \"+1 555 123 456 7\"\n        # \"44 20 7123 0000\"   -> \"+44 207 123 000 0\"\nIf the input has no digits, return \"\". Verify both functions still work."
+}

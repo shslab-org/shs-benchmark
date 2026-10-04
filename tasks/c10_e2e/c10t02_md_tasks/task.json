@@ -1,0 +1,8 @@
+{
+  "id": "c10t02_md_tasks",
+  "category": "c10_e2e",
+  "category_title": "End-to-End Software Engineering",
+  "title": "Markdown task manager",
+  "max_points": 20,
+  "prompt": "End-to-end task: a markdown-backed task manager.\n\nProduct requirement: tasks live as human-editable markdown files.\n\nBuild:\n1. `tasks_cli.py`: `python tasks_cli.py <command> [args]`\n   - `add <title> [--priority low|med|high]` - creates one markdown file per\n     task in the tasks directory (path from TASKS_DIR env var, default ./tasks):\n     the file contains the title as heading, a status line (open/done), and\n     the priority\n   - `list [--all]` - prints open tasks (or all with --all) as a table with\n     id, status, priority, title\n   - `done <id>` - flips the status to done (updates the markdown file)\n   - `rm <id>` - deletes the task file\n2. IDs are stable small integers (1, 2, ...).\n3. README.md with usage.\n4. Self-test the full lifecycle before finishing. Verification runs the CLI\n   as a black box against TASKS_DIR."
+}

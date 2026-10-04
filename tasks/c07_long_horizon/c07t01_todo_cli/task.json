@@ -1,0 +1,8 @@
+{
+  "id": "c07t01_todo_cli",
+  "category": "c07_long_horizon",
+  "category_title": "Long-Horizon Autonomous Task",
+  "title": "TODO CLI app",
+  "max_points": 20,
+  "prompt": "Build a complete, working command-line TODO application in this\ndirectory. Long-horizon task - plan, implement, test, verify, deliver.\n\nRequirements:\n- File `todo.py`, runnable as `python todo.py <command> [args]`\n- Commands: `add <text>`, `list`, `done <number>` (1-based position), `rm <number>`\n- Items persist across runs in a JSON file whose path comes from the\n  TODO_FILE environment variable (default: ./todos.json)\n- `list` output shows one item per line with a checkbox: `[ ]` pending, `[x]` done\n- Errors handled gracefully (bad numbers, missing args -> exit code != 0 with\n  a clear message on stderr)\n- Include a `--help`\n\nVerification runs the CLI as a black box (add/list/done + persistence across\nseparate invocations). Self-test everything before finishing."
+}

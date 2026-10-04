@@ -1,0 +1,8 @@
+{
+  "id": "c03t03_export_csv",
+  "category": "c03_feature",
+  "category_title": "Feature Implementation",
+  "title": "Inventory CSV export",
+  "max_points": 20,
+  "prompt": "This directory contains a small inventory package: `inventory.py` (class\nInventory) and `test_inventory.py` (existing, passing tests).\n\nAdd a NEW feature to the Inventory class:\n\n    def export_csv(self) -> str\n        # returns the inventory as CSV text with header\n        # sku,name,price,qty  \u2014 one row per item, same order as list_items()\n\nRequirements:\n- Existing methods and their behavior must remain unchanged\n- Existing tests must keep passing\n- Add at least 2 new tests for export_csv to test_inventory.py (append only)\n- Run the full suite and make sure everything passes"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "c09t04_transforms",
+  "category": "c09_multi_agent",
+  "category_title": "Multi-Agent / Parallel Engineering",
+  "title": "Transform framework + 4 plugins",
+  "max_points": 20,
+  "prompt": "Map-reduce style decomposition. Build a small transformation framework:\n\n1. `pipeline.py`:\n       class Transform:\n           def __init__(self, name: str, fn, enabled: bool = True): ...\n           def apply(self, value): ...          # returns fn(value)\n       def run_pipeline(value, transforms: list, collect_errors: bool = False):\n           # applies transforms in order; a transform raising an exception\n           # is SKIPPED (value unchanged); when collect_errors=True the\n           # function returns (result, errors) where errors lists the names\n           # of failed transforms; otherwise just the result.\n\n2. Four INDEPENDENT example transforms (each could be developed/verified on\n   its own) in the same file or modules - `upper`, `strip`, `reverse`,\n   `word_count_wrap` (returns the word count as str) - and a `__main__`\n   block that runs them over the string \"  hello benchmark  \" and prints\n   each intermediate result.\n\nVerify each transform individually AND the pipeline (including one failing\ntransform being skipped with collect_errors) before finishing."
+}

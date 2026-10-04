@@ -1,0 +1,8 @@
+{
+  "id": "c05t01_dedupe",
+  "category": "c05_refactoring",
+  "category_title": "Refactoring & Code Quality",
+  "title": "Extract duplicated pricing logic",
+  "max_points": 20,
+  "prompt": "Refactor `pricing.py` in this directory. Read HINT.md first.\nGoal: remove the duplicated rounding/tax logic by extracting helper function(s) and reusing them from both public functions. Behavior must stay EXACTLY identical (same rounding, same results). Keep the public API unchanged. Verify with a few examples before finishing."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "c02t02_mutable_defaults",
+  "category": "c02_debugging",
+  "category_title": "Debugging & Bug Fixing",
+  "title": "Fix mutable default args",
+  "max_points": 20,
+  "prompt": "`cart.py` has failing tests in `test_cart.py`. The root cause is the classic\nPython pitfall involving default argument values that are mutable.\n\n1. Run python -m pytest test_cart.py -q to see the failures\n2. Fix the bug(s) in `cart.py` while keeping the exact same public API and\n   call signatures (callers may pass an explicit list/dict, or nothing at all)\n3. Make ALL tests pass. Do NOT modify test_cart.py, do not create new files."
+}

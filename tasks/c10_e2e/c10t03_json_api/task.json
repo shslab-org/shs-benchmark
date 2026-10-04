@@ -1,0 +1,8 @@
+{
+  "id": "c10t03_json_api",
+  "category": "c10_e2e",
+  "category_title": "End-to-End Software Engineering",
+  "title": "Stdlib JSON API server",
+  "max_points": 20,
+  "prompt": "End-to-end task: a JSON API server using ONLY the Python standard library\n(http.server or socketserver - no frameworks).\n\nEndpoints:\n- GET  /health          -> 200 {\"status\": \"ok\"}\n- GET  /items           -> 200 [item, ...]\n- POST /items           -> 201 with the created item (accepts {\"name\": ...});\n                           400 on invalid JSON\n- GET  /items/{id}      -> 200 item | 404 when missing\n- DELETE /items/{id}    -> 204 | 404\n\nBuild `server.py` runnable as `python server.py --port N`. Items persist to\na JSON file so restarts keep data. Handle malformed requests gracefully\n(400/404/405, never a crash). Write tests or a self-check script that\nexercises every endpoint (start server, hit it, assert) and RUN it. Include\na README.md. Deliver a verified working server."
+}

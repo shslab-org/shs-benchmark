@@ -1,0 +1,8 @@
+{
+  "id": "c03t04_event_log",
+  "category": "c03_feature",
+  "category_title": "Feature Implementation",
+  "title": "Inventory event log",
+  "max_points": 20,
+  "prompt": "This directory contains a small inventory package: `inventory.py` (class\nInventory) and `test_inventory.py` (existing, passing tests).\n\nAdd a NEW feature to the Inventory class:\n\nan append-only event log that is updated automatically:\n    def get_events(self) -> list\n        # chronological list of events; every add_item and every\n        # remove_stock call appends one event containing at minimum:\n        # an ISO-8601 timestamp, the action (\"add\"/\"remove\"), the sku\n\nRequirements:\n- Existing methods and their behavior must remain unchanged\n  (implement remove_stock as well if you add event tracking that needs it:\n   remove_stock(sku, qty) decreases qty, raising ValueError on unknown sku,\n   qty <= 0, or qty > available)\n- Existing tests must keep passing\n- Add at least 3 new tests for the event log to test_inventory.py (append only)\n- Run the full suite and make sure everything passes"
+}

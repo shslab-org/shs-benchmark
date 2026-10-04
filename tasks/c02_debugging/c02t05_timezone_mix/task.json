@@ -1,0 +1,8 @@
+{
+  "id": "c02t05_timezone_mix",
+  "category": "c02_debugging",
+  "category_title": "Debugging & Bug Fixing",
+  "title": "Fix naive/aware datetime mix",
+  "max_points": 20,
+  "prompt": "`schedule.py` mixes naive and timezone-aware datetimes and crashes or\nsilently drops UTC information. `test_schedule.py` defines correct behavior\nand currently FAILS.\n\nFix `schedule.py` so that:\n- a 'Z' stamp keeps its UTC awareness (no tzinfo stripping)\n- a stamp with numeric offset keeps that offset\n- a naive stamp is interpreted as UTC (attach UTC, do not leave it naive)\n- minutes_between works for aware inputs in different offsets\n- add_minutes preserves awareness across day boundaries\n\nKeep all three function names/signatures. Make ALL tests pass. Do NOT modify\ntest_schedule.py, do not create new files."
+}

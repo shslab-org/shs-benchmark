@@ -1,0 +1,8 @@
+{
+  "id": "c10t05_plugin_calc",
+  "category": "c10_e2e",
+  "category_title": "End-to-End Software Engineering",
+  "title": "Plugin calculator",
+  "max_points": 20,
+  "prompt": "End-to-end task: a plugin-style calculator.\n\nArchitecture requirement: a minimal CORE + independent PLUGINS.\n\n1. Core (`calculator.py`):\n       class Calculator:\n           def register(self, name: str, fn) -> None      # registers an operation\n           def calculate(self, name: str, *args): ...     # applies it; unknown name raises KeyError\n           def operations(self) -> list                   # names of registered ops\n2. Plugins: `plugins/` directory with four modules (add, subtract, multiply,\n   divide). Each plugin module exposes `register(calc)` that registers its\n   operation on a Calculator instance. Divide must raise ZeroDivisionError\n   on zero divisor (document that in its docstring).\n3. `main.py` wires core + plugins, then demonstrates 2+2, 10-4, 3*3, 9/2.\n4. `tests/test_calculator.py` - pytest suite for the core AND the plugins.\n5. README.md - how to add a new plugin in 3 steps.\n\nRun the suite until green; run main.py to confirm the wiring works."
+}

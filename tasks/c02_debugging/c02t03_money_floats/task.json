@@ -1,0 +1,8 @@
+{
+  "id": "c02t03_money_floats",
+  "category": "c02_debugging",
+  "category_title": "Debugging & Bug Fixing",
+  "title": "Fix float money math",
+  "max_points": 20,
+  "prompt": "`money.py` handles currency amounts as floats and its tests in\n`test_money.py` FAIL because binary floating point cannot represent decimal\ncents exactly (0.1 + 0.2 != 0.3, etc).\n\nFix `money.py` so that:\n- add_prices(0.1, 0.2) returns exactly 0.3\n- total_price accumulates with exact cent precision (work in integer cents\n  internally or use decimal.Decimal \u2014 both are acceptable)\n- apply_tax rounds half-up to the cent: apply_tax(19.99, 0.0725) == 21.44\n- format_usd keeps formatting with exactly two decimals\n\nKeep every public function name/signature unchanged. Make ALL tests pass.\nDo NOT modify test_money.py, do not create new files."
+}

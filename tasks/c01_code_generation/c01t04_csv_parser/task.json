@@ -1,0 +1,8 @@
+{
+  "id": "c01t04_csv_parser",
+  "category": "c01_code_generation",
+  "category_title": "Code Generation",
+  "title": "CSV parser state machine",
+  "max_points": 20,
+  "prompt": "Implement an RFC-4180-style CSV parser in `csvparse.py` in this directory \u2014\nWITHOUT importing the stdlib `csv` module (write the state machine yourself).\n\nRequired API:\n    def parse_csv(text: str) -> list[list[str]]\n\nMust support:\n- comma-separated fields, one record per line\n- quoted fields with double quotes: commas, newlines and escaped quotes\n  (doubled quotes, i.e. \"\" -> \") inside quotes must be handled\n- empty fields (a,,b) and a trailing newline at the end of the input\n\nInclude a docstring. Do not create other files."
+}

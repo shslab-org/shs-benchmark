@@ -1,0 +1,8 @@
+{
+  "id": "c07t05_data_pipeline",
+  "category": "c07_long_horizon",
+  "category_title": "Long-Horizon Autonomous Task",
+  "title": "Dirty CSV pipeline",
+  "max_points": 20,
+  "prompt": "Build and RUN the data pipeline described in TASK.md in this directory. Do not modify data/sales_raw.csv. Produce report.json and double-check the numbers before finishing."
+}

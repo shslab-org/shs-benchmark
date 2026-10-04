@@ -1,0 +1,8 @@
+{
+  "id": "c07t02_site_generator",
+  "category": "c07_long_horizon",
+  "category_title": "Long-Horizon Autonomous Task",
+  "title": "Static site generator",
+  "max_points": 20,
+  "prompt": "Build the static site generator described in TASK.md in this directory. Plan, implement, RUN the generator, and verify the produced HTML before finishing. Keep docs/ untouched."
+}

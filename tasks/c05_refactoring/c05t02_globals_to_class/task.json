@@ -1,0 +1,8 @@
+{
+  "id": "c05t02_globals_to_class",
+  "category": "c05_refactoring",
+  "category_title": "Refactoring & Code Quality",
+  "title": "Replace globals with a class",
+  "max_points": 20,
+  "prompt": "Refactor `sessions.py` in this directory. Read HINT.md first. Convert the module-level global state into a `SessionStore` class with the same operations (create, close, active_count; constructor starts empty). Module functions must no longer use `global`. Behavior of the operations must remain identical. Verify with quick tests across at least two store instances before finishing."
+}

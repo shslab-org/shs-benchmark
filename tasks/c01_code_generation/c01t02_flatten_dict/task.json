@@ -1,0 +1,8 @@
+{
+  "id": "c01t02_flatten_dict",
+  "category": "c01_code_generation",
+  "category_title": "Code Generation",
+  "title": "Nested dict flattener",
+  "max_points": 20,
+  "prompt": "Implement a dictionary flattener in `flatten.py` in this directory.\n\nRequired API:\n    def flatten(obj: dict, sep: str = \".\") -> dict\n\nRules:\n- Nested dicts are flattened by joining keys with `sep` (e.g. {\"a\": {\"b\": 1}} -> {\"a.b\": 1})\n- Lists inside are indexed by position (e.g. {\"a\": [10]} -> {\"a.0\": 10})\n- Empty dicts/lists are kept as leaf values under their key\n- Non-dict/list scalars (str, int, float, bool, None) are leaf values\n- The input object must not be mutated\nInclude a docstring. Do not create other files."
+}

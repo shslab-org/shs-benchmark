@@ -1,0 +1,8 @@
+{
+  "id": "c01t05_matrix_ops",
+  "category": "c01_code_generation",
+  "category_title": "Code Generation",
+  "title": "Matrix rotation + spiral",
+  "max_points": 20,
+  "prompt": "Implement matrix operations in `matrix.py` in this directory.\n\nRequired API:\n    def rotate_90(matrix: list[list[int]]) -> list[list[int]]\n        # returns a NEW matrix rotated 90 degrees clockwise; must NOT mutate input\n    def spiral_traverse(matrix: list[list[int]]) -> list[int]\n        # returns elements in clockwise spiral order, starting top-left\n\nBoth functions must handle square and rectangular matrices, plus 1x1.\nInclude docstrings. Do not create other files."
+}

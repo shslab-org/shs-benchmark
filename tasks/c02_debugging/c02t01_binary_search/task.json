@@ -1,0 +1,8 @@
+{
+  "id": "c02t01_binary_search",
+  "category": "c02_debugging",
+  "category_title": "Debugging & Bug Fixing",
+  "title": "Fix binary search",
+  "max_points": 20,
+  "prompt": "The file `search.py` in this directory contains `binary_search`, and\n`test_search.py` contains its test suite. The tests are FAILING.\n\n1. Run the tests to see the failures (python -m pytest test_search.py -q)\n2. Identify the root cause of the bug(s) in binary_search\n3. Fix `search.py` so that ALL tests pass\n4. Re-run the tests to confirm\n\nRules: keep the same function signature and O(log n) complexity. Do NOT modify\ntest_search.py. Do not create new files."
+}

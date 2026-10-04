@@ -1,0 +1,9 @@
+{
+  "id": "c08t05_arch_decision",
+  "category": "c08_memory",
+  "category_title": "Memory & Context Retention",
+  "title": "Architecture decision retention + QA",
+  "max_points": 20,
+  "prompt": "Architecture decision for our project (record this, we will build on it\nin a later step):\n\nWe will use SQLite (stdlib sqlite3) as the storage engine - NOT Postgres,\nNOT MongoDB. Rationale: the app must run fully local-first on a laptop with\nzero external services; SQLite is embedded, file-based, and needs no server.\n\nPlease acknowledge this decision. Do not create any files yet.",
+  "prompt2": "Two things now:\n\n1. Implement `db.py` in this directory with the engine we decided on earlier:\n\n       def put(key: str, value) -> None      # value is JSON-serializable\n       def get(key: str, default=None)\n   persisting to ./appdata.db. Verify put/get round-trips.\n\n2. Then answer this question in your final reply (and write it to WHY.md):\n   Why did we choose SQLite for this project? Give the reasons from our\n   earlier discussion."
+}

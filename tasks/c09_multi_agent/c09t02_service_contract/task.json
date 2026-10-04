@@ -1,0 +1,8 @@
+{
+  "id": "c09t02_service_contract",
+  "category": "c09_multi_agent",
+  "category_title": "Multi-Agent / Parallel Engineering",
+  "title": "Two services + shared contract",
+  "max_points": 20,
+  "prompt": "Decomposed services task. Implement THREE independent components that\nintegrate through a shared contract:\n\n1. `contract.py` (shared types):\n       now_ts() -> int                         # int(time.time())\n       class Token: value: str, user: str, expires: int\n       # Token.to_dict()/from_dict() provided\n\n2. `auth.py` (token service) - depends ONLY on contract.py:\n       issue_token(user: str) -> Token         # expires in 3600s; value must be unguessable (secrets module)\n       verify_token(token_or_str) -> str|None  # returns username when valid+unexpired, else None\n\n3. `users.py` (user service) - depends ONLY on contract.py:\n       register(username, password) -> None    # duplicate username raises ValueError; store salted sha256\n       authenticate(username, password) -> bool\n\nIntegration requirement: auth.py must NOT import users.py and users.py must\nNOT import auth.py (they integrate through the contract only).\nVerify the full flow: register -> authenticate -> issue_token -> verify_token,\nplus a forged-token rejection, before finishing."
+}

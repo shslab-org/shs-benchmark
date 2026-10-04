@@ -1,0 +1,8 @@
+{
+  "id": "c03t02_remove_stock",
+  "category": "c03_feature",
+  "category_title": "Feature Implementation",
+  "title": "Inventory stock removal",
+  "max_points": 20,
+  "prompt": "This directory contains a small inventory package: `inventory.py` (class\nInventory) and `test_inventory.py` (existing, passing tests).\n\nAdd a NEW feature to the Inventory class:\n\n    def remove_stock(self, sku: str, qty: int) -> None\n        # decreases available qty by qty\n        # raises ValueError when: sku unknown, qty <= 0, or qty > available\n\nRequirements:\n- Existing methods and their behavior must remain unchanged\n- Existing tests must keep passing\n- Add at least 3 new tests for remove_stock to test_inventory.py (append only)\n- Run the full suite and make sure everything passes"
+}

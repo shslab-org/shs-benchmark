@@ -1,0 +1,8 @@
+{
+  "id": "c04t04_jsonutils_qa",
+  "category": "c04_testing_qa",
+  "category_title": "Testing & QA",
+  "title": "JSON utils QA suite",
+  "max_points": 20,
+  "prompt": "Your job for task c04t04 is described in `SPEC.md` in this directory.\nThe module `jsonutils.py` is shipped WITH defects.\nWrite your pytest suite in `tests_agent/test_jsonutils.py` (create the\n`tests_agent` directory). The suite must FAIL against the shipped module and\nPASS against a correct implementation of the spec. Do NOT modify jsonutils.py."
+}

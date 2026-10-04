@@ -1,0 +1,8 @@
+{
+  "id": "c04t01_stringutils_qa",
+  "category": "c04_testing_qa",
+  "category_title": "Testing & QA",
+  "title": "String utils QA suite",
+  "max_points": 20,
+  "prompt": "SPEC for stringutils.py (the module under test):\n\n- slugify(text): lowercase text, replace every run of non-alphanumeric\n  characters with a single hyphen, and REMOVE leading/trailing hyphens.\n  slugify(\"  Hello, World!  \") == \"hello-world\"\n\n- truncate(text, width, ellipsis=\"...\"): if text fits within width return it\n  unchanged; otherwise cut it so the result is EXACTLY width characters long\n  including the ellipsis. If width is smaller than the ellipsis itself,\n  return a prefix of the ellipsis cut to width.\n  truncate(\"hello world\", 8) == \"hello...\"\n  truncate(\"hi\", 5) == \"hi\"\n  truncate(\"abcdef\", 2) == \"..\"\n\n- camel_to_snake(name): convert CamelCase (including acronym runs like\n  \"HTTPServer\") to snake_case.\n  camel_to_snake(\"HTTPServer\") == \"http_server\"\n  camel_to_snake(\"myVarName\") == \"my_var_name\"\n\n- count_vowels(text): number of vowels a,e,i,o,u (case-insensitive).\n  count_vowels(\"Banana\") == 3\n\nYOUR JOB: write a pytest suite in tests_agent/test_stringutils.py that would\nFAIL against a module violating this spec (the shipped module DOES violate it\nin at least 3 places) and PASS against a correct implementation.\nDo NOT modify or delete stringutils.py."
+}

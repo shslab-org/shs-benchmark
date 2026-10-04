@@ -1,0 +1,8 @@
+{
+  "id": "c05t05_error_handling",
+  "category": "c05_refactoring",
+  "category_title": "Refactoring & Code Quality",
+  "title": "Type exception handling",
+  "max_points": 20,
+  "prompt": "Refactor `loader.py` in this directory. Read HINT.md first. Replace every bare `except:` with precise typed exception handling per the required behavior. All other behavior must stay the same. Verify with quick tests before finishing."
+}

@@ -1,0 +1,3 @@
+random scratch notes, should NOT be committed
+log.txt junk
+debug_dump.json junk

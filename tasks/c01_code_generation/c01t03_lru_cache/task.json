@@ -1,0 +1,8 @@
+{
+  "id": "c01t03_lru_cache",
+  "category": "c01_code_generation",
+  "category_title": "Code Generation",
+  "title": "LRU cache class",
+  "max_points": 20,
+  "prompt": "Design and implement an LRU Cache in `lru_cache.py` in this directory.\n\nRequired API:\n    class LRUCache:\n        def __init__(self, capacity: int)   # capacity >= 1\n        def get(self, key) -> any           # returns -1 when key is absent\n        def put(self, key, value) -> None\n\nSemantics:\n- Both get and put must run in O(1) average time\n- get/put count as \"use\"; when capacity is exceeded, evict the LEAST recently used entry\n- put on an existing key updates the value AND its recency\n\nYou may use collections.OrderedDict or build your own doubly linked list + hash\nmap. Add docstrings. Do not create other files."
+}

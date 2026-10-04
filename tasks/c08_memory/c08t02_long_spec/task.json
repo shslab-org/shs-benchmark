@@ -1,0 +1,9 @@
+{
+  "id": "c08t02_long_spec",
+  "category": "c08_memory",
+  "category_title": "Memory & Context Retention",
+  "title": "Retain 10-point spec, implement later",
+  "max_points": 20,
+  "prompt": "We are designing a user management module. Here is the FULL specification\nwe agreed on - remember it, we will implement it later (do NOT write code\nyet, just acknowledge):\n\n1. create_user(username, email, password) returns a user dict\n2. emails are stored lowercased\n3. usernames are unique, case-insensitively (second registration of the same\n   name in any casing raises ValueError)\n4. usernames are stored lowercased\n5. minimum password length is 12 characters (shorter raises ValueError)\n6. the returned dict has keys: username, email, password_hash, created_at\n7. passwords are never returned in plain text - password_hash contains a\n   salted sha256 hexdigest, and repr() of the user never shows the plain\n   password\n8. duplicate email registrations raise ValueError\n9. all errors are ValueError (no bare exceptions)\n10. the module is a single file usermgmt.py with no external dependencies",
+  "prompt2": "Now implement the user management module we specified earlier. Follow the\nspecification from our previous discussion exactly - all 10 points. Write\nusermgmt.py and verify it yourself with a few quick checks."
+}

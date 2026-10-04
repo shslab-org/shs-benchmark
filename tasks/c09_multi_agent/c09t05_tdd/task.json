@@ -1,0 +1,8 @@
+{
+  "id": "c09t05_tdd",
+  "category": "c09_multi_agent",
+  "category_title": "Multi-Agent / Parallel Engineering",
+  "title": "TDD: tests first, then impl",
+  "max_points": 20,
+  "prompt": "TDD-style parallel workstreams task. You are the coordinator for two\nworkstreams: TESTS and IMPLEMENTATION.\n\nWorkstream A (tests first): write `test_cart.py` - a complete pytest suite\nfor a shopping cart class you have NOT implemented yet. Cover: add (with\ndefault qty 1 and explicit qty), items() snapshot, remove existing and\nremove missing (ValueError), total(price_map) summing qty*unit_price for\nknown skus, unknown sku in total raises KeyError.\n\nWorkstream B: implement `cart.py` with class Cart satisfying that suite:\n    Cart() / .add(sku, qty=1) / .remove(sku) / .items() -> dict /\n    .total(price_map) -> float\n\nRun the tests, iterate until green, then finish. Both workstreams must end\nconsistent with each other."
+}

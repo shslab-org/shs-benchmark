@@ -1,0 +1,8 @@
+{
+  "id": "c10t01_url_shortener",
+  "category": "c10_e2e",
+  "category_title": "End-to-End Software Engineering",
+  "title": "URL shortener lib",
+  "max_points": 20,
+  "prompt": "End-to-end task: build a URL shortener library.\n\nProduct requirement: users can shorten long URLs and resolve them back.\n\nBuild in this directory:\n1. `shortener.py` (or a small package) exposing:\n       shorten(url: str, alias: str | None = None) -> str\n           # returns the short code; deterministic for the same url\n           # (hash-based, e.g. 6+ chars); custom alias honored; alias\n           # collision raises ValueError\n       resolve(code: str) -> str | None\n           # returns the original url, or None when unknown\n   Storage: in-memory dict + JSON file persistence (auto-load/save a\n   data file next to the module) so codes survive process restarts.\n2. `tests/test_shortener.py` - pytest suite covering: round-trip,\n   determinism, custom alias, alias collision, unknown code.\n3. README.md - usage example in under 20 lines.\n\nRun the suite, make it pass, verify persistence by using the module from a\nsecond python process. Deliver everything working."
+}
