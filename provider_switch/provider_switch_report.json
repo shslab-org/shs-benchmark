@@ -1,0 +1,54 @@
+{
+  "started": "2026-10-04T18:48:11.213439",
+  "agent": "SHS Code v4.4.0",
+  "test": "provider switch: Agnes -> Atria Dawn Preview -> Agnes",
+  "steps": [
+    {
+      "phase": "phase1_agnes_baseline",
+      "config": "\nprovider    = \"universal\"\nmodel       = \"agnes-3.0-flash\"\nbase_url    = \"https://apihub.agnes-ai.com/v1\"\nmax_tokens  = 8192\ntemperature = 0.0\nmax_retries = 6\ntimeout     = 600\n\n[conversation]\nmax_ite",
+      "prompt": "Create p1.txt containing AGNES_OK. Then stop.",
+      "rc": 0,
+      "duration_s": 83.1,
+      "stdout_tail": "\ud83e\udd16 ASSISTANT\nThe task did not finish: the step budget was exhausted after 12 steps and 11    \ntool calls. Progress so far is checkpointed \u2014 run /resume to continue it.       \n\u2699 SYSTEM: session: 490cbb76-b2f\n",
+      "stderr_tail": "attempt 1/40). Retry-After=None. Waiting 2.0s \u2014 state preserved.\n18:48:54 | WARNING  | SHSCode@11 [8cf9867c-a0eb-4fbf-b946-8800aa9f9a06] \u2014 [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.3s \u2014 state preserved.\n18:48:58 | WARNING  | SHSCode@11 [8cf9867c-a0eb-4fbf-b946-8800aa9f9a06] \u2014 [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.6s \u2014 state preserved.\n18:49:04 | WARNING  | SHSCode@11 [8cf9867c-a0eb-4fbf-b946-8800aa9f9a06] \u2014 [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 8.7s \u2014 state preserved.\n18:49:12 | WARNING  | SHSCode@11 [8cf9867c-a0eb-4fbf-b946-8800aa9f9a06] \u2014 [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 13.5s \u2014 state preserved.\n18:49:34 | WARNING  | SHSCode@12 [8cf9867c-a0eb-4fbf-b946-8800aa9f9a06] \u2014 Max steps reached (12).\n",
+      "workspace_files": [
+        "workspace",
+        "logs",
+        "p1.txt"
+      ]
+    },
+    {
+      "phase": "phase2_atria_switch",
+      "config": "\nprovider    = \"universal\"\nmodel       = \"Atria-Dawn-Preview\"\nbase_url    = \"https://api.atria-asi.ai/v1/\"\nmax_tokens  = 8192\ntemperature = 0.0\napi_key_env  = \"ATRIA_API_KEY\"\nmax_retries = 6\ntimeout  ",
+      "prompt": "Reply with the single word SWITCHED and nothing else. Do not create files.",
+      "rc": 0,
+      "duration_s": 7.4,
+      "stdout_tail": "\ud83e\udd16 ASSISTANT\nSWITCHED                                                                        \n\u2699 SYSTEM: session: 9f94181f-ad2\n",
+      "stderr_tail": "[Config] unknown key 'llm.api_key_env' (ignored \u2014 not a [llm] setting)\n",
+      "workspace_files": [
+        "workspace",
+        "logs"
+      ]
+    },
+    {
+      "phase": "phase3_agnes_restore",
+      "config": "\nprovider    = \"universal\"\nmodel       = \"agnes-3.0-flash\"\nbase_url    = \"https://apihub.agnes-ai.com/v1\"\nmax_tokens  = 8192\ntemperature = 0.0\nmax_retries = 6\ntimeout     = 600\n\n[conversation]\nmax_ite",
+      "prompt": "Create p3.txt containing AGNES_RESTORED. Then stop.",
+      "rc": 0,
+      "duration_s": 78.9,
+      "stdout_tail": "\ud83e\udd16 ASSISTANT\nAll plan nodes are now 100% closed (completed or explicitly skipped). The user's\nrequest \u2014 \"Create p3.txt containing AGNES_RESTORED. Then stop.\" \u2014 is fully      \nsatisfied:                                                                      \n\n \u2022 p3.txt exists at the working directory with exact content AGNES_RESTORED (14 \n   bytes including trailing newline), verified via view.                        \n \u2022 Persisted plan: \"Create p3\" \u2713, \"txt containing AGNES_RESTORED\" \u2713, \"Then stop\"\n   \u2713; \"Inspect project architecture\" skipped (already auto-indexed at session   \n   start), \"Run build/test verification\" skipped (no build/test infrastructure  \n   exists for a bare text-file artifact; content verified byte-exact instead).  \n\nNo further tool call is needed.                                                 \n\u2699 SYSTEM: session: ed1d70db-b27\n",
+      "stderr_tail": "erved.\n18:50:00 | WARNING  | SHSCode@9 [343194b5-c22b-46ae-ae54-ecd8066c866e] \u2014 [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.8s \u2014 state preserved.\n18:50:04 | WARNING  | SHSCode@9 [343194b5-c22b-46ae-ae54-ecd8066c866e] \u2014 [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 6.6s \u2014 state preserved.\n18:50:10 | WARNING  | SHSCode@9 [343194b5-c22b-46ae-ae54-ecd8066c866e] \u2014 [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 10.2s \u2014 state preserved.\n18:50:21 | WARNING  | SHSCode@9 [343194b5-c22b-46ae-ae54-ecd8066c866e] \u2014 [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 16.2s \u2014 state preserved.\n18:50:44 | WARNING  | SHSCode@11 [343194b5-c22b-46ae-ae54-ecd8066c866e] \u2014 [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s \u2014 state preserved.\n",
+      "workspace_files": [
+        "workspace",
+        "p3.txt",
+        "logs"
+      ]
+    }
+  ],
+  "verdict": {
+    "agnes_baseline_ok": true,
+    "atria_switch_accepted": true,
+    "agnes_restore_ok": true,
+    "switch_test_passed": true
+  }
+}

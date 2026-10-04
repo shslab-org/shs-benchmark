@@ -1,0 +1,39 @@
+{
+  "agent": "hermes",
+  "category": "c09_multi_agent",
+  "task": "c09t02_service_contract",
+  "title": "Two services + shared contract",
+  "started": "2026-10-04T16:49:53.467602",
+  "duration_s": 183.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "git.8b66a51 (2026.9.24)",
+  "session_id": "20261004_164957_c59603",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "contract.py exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t02_service_contract/contract.py"
+    },
+    {
+      "name": "auth + users components exist",
+      "ok": true,
+      "points": 3,
+      "detail": "auth=/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t02_service_contract/auth.py users=/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t02_service_contract/users.py"
+    },
+    {
+      "name": "cross-service integration (auth<->users via contract)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T16:52:59.064090"
+}

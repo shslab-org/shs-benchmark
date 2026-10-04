@@ -1,0 +1,15 @@
+{
+  "task": "c09t01",
+  "agent": "hermes",
+  "points": 0,
+  "max_points": 6,
+  "passed": false,
+  "checks": [
+    {
+      "name": "all 4 files exist",
+      "ok": false,
+      "points": 6,
+      "detail": "{'textutils': None, 'validators': None, 'formatters': None, 'main': None}"
+    }
+  ]
+}

@@ -41,7 +41,7 @@ default_provider = "github"
 
 ATRIA_CFG = AGNES_CFG.replace(
     'model       = "agnes-3.0-flash"\nbase_url    = "https://apihub.agnes-ai.com/v1"',
-    'model       = "atria-dawn-preview"\nbase_url    = "https://api.atria-asi.ai/v1/"',
+    'model       = "Atria-Dawn-Preview"\nbase_url    = "https://api.atria-asi.ai/v1/"',
 ).replace('temperature = 0.0', 'temperature = 0.0\napi_key_env  = "ATRIA_API_KEY"')
 
 REPORT = {"started": datetime.datetime.now().isoformat(), "agent": "SHS Code v4.4.0",
@@ -53,7 +53,16 @@ def run_phase(name, cfg_text, prompt, ws, env_key):
     with open(CFG, "w") as f:
         f.write(cfg_text)
     env = dict(os.environ)
+    # SHS may prefer OPENAI_API_KEY over LLM_API_KEY — route ALL key vars to
+    # the active provider so the credential cannot be cross-wired
+    for k in ("LLM_API_KEY", "OPENAI_API_KEY", "SHSCODE_GITHUB_TOKEN",
+              "LLM_MODEL", "LLM_MODEL_OVERRIDE", "LLM_BASE_URL"):
+        # LLM_MODEL/LLM_BASE_URL override config.toml (config.py:623) —
+        # removed so the config file is the single source of truth
+        if k in env:
+            del env[k]
     env["LLM_API_KEY"] = env[env_key]
+    env["OPENAI_API_KEY"] = env[env_key]
     env["SHSCODE_MAX_STEPS"] = "12"
     t0 = datetime.datetime.now()
     r = subprocess.run([SHS, "--max-steps", "12", "--no-color", prompt], cwd=ws,

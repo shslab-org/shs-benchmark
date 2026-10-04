@@ -1,0 +1,37 @@
+agent: hermes
+category: c10_e2e
+task: c10t03_json_api
+started: 2026-10-04T17:21:59.028014
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_172203_280e92
+rc: 0
+duration_s: 282.7
+steps_cap: 45
+timeout_cap: 540
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done. Deliverables in /home/z/my-project/bench_ws/hermes/c10_e2e/c10t03_json_api/:
+
+- server.py — stdlib-only API server (ThreadingHTTPServer + ItemStore). All 5 endpoints implemented, items persisted to a JSON file via atomic temp+rename writes, corrupt data files boot into an empty store instead of crashing. Every malformed request gets a structured 400/404/405 JSON error — the dispatch is wrapped so client input can never crash the server.
+- check.py — end-to-end self-check that starts the real server as a subprocess on a free port and asserts on it.
+- README.md — endpoints table, run instructions, curl examples.
+
+Verification (actually run):
+- python check.py → 31 passed, 0 failed, exit 0. Covers: /health 200; POST /items 201 (with id/name/created_at); GET /items 200 listing; malformed JSON, empty body, missing name, non-string name → 400; GET/DELETE by id 200/204; unknown item and unknown path → 404; POST /health, DELETE /items, PUT /items → 405; restart persistence (data file survives, deleted item stays gone); corrupt data file recovery.
+- Extra smoke test against a live server: HEAD and OPTIONS also answered 405 without crashing.
+
+Run it: python server.py --port 8000 (options --host, --data-file). Verify anytime: python check.py.
+
+/home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
+  minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
+
+session_id: 20261004_172203_280e92
+
+
+=== STDERR ===
+

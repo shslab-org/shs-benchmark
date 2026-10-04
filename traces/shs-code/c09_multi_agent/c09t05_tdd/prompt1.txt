@@ -1,0 +1,15 @@
+TDD-style parallel workstreams task. You are the coordinator for two
+workstreams: TESTS and IMPLEMENTATION.
+
+Workstream A (tests first): write `test_cart.py` - a complete pytest suite
+for a shopping cart class you have NOT implemented yet. Cover: add (with
+default qty 1 and explicit qty), items() snapshot, remove existing and
+remove missing (ValueError), total(price_map) summing qty*unit_price for
+known skus, unknown sku in total raises KeyError.
+
+Workstream B: implement `cart.py` with class Cart satisfying that suite:
+    Cart() / .add(sku, qty=1) / .remove(sku) / .items() -> dict /
+    .total(price_map) -> float
+
+Run the tests, iterate until green, then finish. Both workstreams must end
+consistent with each other.

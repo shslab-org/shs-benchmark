@@ -1,0 +1,51 @@
+{
+  "agent": "shs-code",
+  "category": "c09_multi_agent",
+  "task": "c09t05_tdd",
+  "title": "TDD: tests first, then impl",
+  "started": "2026-10-04T16:39:10.091222",
+  "duration_s": 112.8,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c09t05_tdd",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "Cart implementation exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t05_tdd/cart.py"
+    },
+    {
+      "name": "test suite exists (written FIRST per TDD)",
+      "ok": true,
+      "points": 5,
+      "detail": "['/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t05_tdd/test_cart.py']"
+    },
+    {
+      "name": ">= 6 test functions",
+      "ok": true,
+      "points": 2,
+      "detail": "12"
+    },
+    {
+      "name": "agent's own suite passes against own implementation",
+      "ok": true,
+      "points": 3,
+      "detail": "passed"
+    },
+    {
+      "name": "implementation satisfies reference tests",
+      "ok": true,
+      "points": 5,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T16:44:49.808722"
+}

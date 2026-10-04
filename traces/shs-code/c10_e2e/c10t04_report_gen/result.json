@@ -1,0 +1,54 @@
+{
+  "agent": "shs-code",
+  "category": "c10_e2e",
+  "task": "c10t04_report_gen",
+  "title": "Report generator from CSV",
+  "started": "2026-10-04T17:11:10.107833",
+  "duration_s": 140.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c10t04_report_gen",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "report generator exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c10_e2e/c10t04_report_gen/generate_report.py"
+    },
+    {
+      "name": "report.txt produced",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c10_e2e/c10t04_report_gen/report.txt"
+    },
+    {
+      "name": "total revenue == 313.00 (+-0.05)",
+      "ok": true,
+      "points": 5,
+      "detail": "313.00"
+    },
+    {
+      "name": "top product by revenue named (Gadget)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "region breakdown present (north/south/east/west)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "order count = 8",
+      "ok": true,
+      "points": 1
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T17:13:30.389863"
+}

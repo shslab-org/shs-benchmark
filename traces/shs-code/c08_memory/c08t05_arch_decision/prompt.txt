@@ -1,0 +1,8 @@
+Architecture decision for our project (record this, we will build on it
+in a later step):
+
+We will use SQLite (stdlib sqlite3) as the storage engine - NOT Postgres,
+NOT MongoDB. Rationale: the app must run fully local-first on a laptop with
+zero external services; SQLite is embedded, file-based, and needs no server.
+
+Please acknowledge this decision. Do not create any files yet.

@@ -1,0 +1,33 @@
+{
+  "task": "c07t03",
+  "agent": "hermes",
+  "points": 18,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "httpclient.py with fetch_with_retry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t03_http_client/httpclient.py"
+    },
+    {
+      "name": "agent-authored tests exist",
+      "ok": true,
+      "points": 4,
+      "detail": "['/home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t03_http_client/tests/conftest.py']"
+    },
+    {
+      "name": "hidden behavior tests (retry-then-succeed + give-up)",
+      "ok": true,
+      "points": 9,
+      "detail": "passed"
+    },
+    {
+      "name": "agent's own tests pass",
+      "ok": false,
+      "points": 2,
+      "detail": "\nno tests ran in 0.07s\n"
+    }
+  ]
+}

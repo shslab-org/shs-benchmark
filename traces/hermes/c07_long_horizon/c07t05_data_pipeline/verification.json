@@ -1,0 +1,49 @@
+{
+  "task": "c07t05",
+  "agent": "hermes",
+  "points": 16,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "pipeline.py exists",
+      "ok": true,
+      "points": 2,
+      "detail": "/home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t05_data_pipeline/pipeline.py"
+    },
+    {
+      "name": "report.json produced",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t05_data_pipeline/report.json"
+    },
+    {
+      "name": "row counts present (input/cleaned/dropped)",
+      "ok": true,
+      "points": 4,
+      "detail": "{\"total_sales\": 142.44, \"sales_by_region\": {\"\": 10.0, \"east\": 42.5, \"north\": 20.0, \"south\": 10.0, \"west\": 59.94}, \"sales_by_product\": {\"gadget\": 34.5, \"gizmo\": 30.0, \"widget\": 77.94}, \"input_rows\": 13"
+    },
+    {
+      "name": "aggregates present (total + by_region + by_product)",
+      "ok": true,
+      "points": 5
+    },
+    {
+      "name": "cleaned_rows == 7 (exact computation)",
+      "ok": false,
+      "points": 2,
+      "detail": "got: 8"
+    },
+    {
+      "name": "total_sales == 132.44 (+-0.05)",
+      "ok": false,
+      "points": 2,
+      "detail": "got: 142.44"
+    },
+    {
+      "name": "input data untouched",
+      "ok": true,
+      "points": 1
+    }
+  ]
+}

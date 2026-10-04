@@ -1,0 +1,27 @@
+{
+  "task": "c09t02",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "contract.py exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t02_service_contract/contract.py"
+    },
+    {
+      "name": "auth + users components exist",
+      "ok": true,
+      "points": 3,
+      "detail": "auth=/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t02_service_contract/auth.py users=/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t02_service_contract/users.py"
+    },
+    {
+      "name": "cross-service integration (auth<->users via contract)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    }
+  ]
+}

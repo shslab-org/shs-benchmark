@@ -1,0 +1,45 @@
+{
+  "agent": "shs-code",
+  "category": "c10_e2e",
+  "task": "c10t05_plugin_calc",
+  "title": "Plugin calculator",
+  "started": "2026-10-04T17:13:30.393428",
+  "duration_s": 87.1,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c10t05_plugin_calc",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "calculator core with registry exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c10_e2e/c10t05_plugin_calc/calculator.py"
+    },
+    {
+      "name": "registry + calculate semantics",
+      "ok": true,
+      "points": 8,
+      "detail": "passed"
+    },
+    {
+      "name": "4 operation plugins registered",
+      "ok": true,
+      "points": 4,
+      "detail": "5 registrations in 8 plugin files"
+    },
+    {
+      "name": "tests exist and pass",
+      "ok": true,
+      "points": 3,
+      "detail": "['/home/z/my-project/bench_ws/shs-code/c10_e2e/c10t05_plugin_calc/tests/test_calculator.py']"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T17:18:45.466693"
+}

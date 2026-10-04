@@ -1,0 +1,32 @@
+{
+  "agent": "shs-code",
+  "category": "c08_memory",
+  "task": "c08t05_arch_decision",
+  "title": "Architecture decision retention + QA",
+  "started": "2026-10-04T16:00:04.343049",
+  "duration_s": 53.9,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c08t05_arch_decision",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 0,
+  "max_points": 6,
+  "passed": false,
+  "checks": [
+    {
+      "name": "storage module exists",
+      "ok": false,
+      "points": 4,
+      "detail": "None"
+    },
+    {
+      "name": "SQLite rationale retained in answer (local/embedded/no-server reasons)",
+      "ok": false,
+      "points": 2
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T16:04:33.128493"
+}

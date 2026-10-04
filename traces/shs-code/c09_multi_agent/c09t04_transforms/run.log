@@ -1,0 +1,41 @@
+agent: shs-code
+category: c09_multi_agent
+task: c09t04_transforms
+started: 2026-10-04T16:31:02.949048
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: v4.4.0 (897b5d6)
+session_id: bench-c09t04_transforms
+rc: 0
+duration_s: 270.7
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 rc=0 ---
+⚙ SYSTEM: Session bench-c09t04_transforms not found — starting a new session.
+🤖 ASSISTANT
+All 11 plan nodes are complete, all tests passed, syntax compiled clean.        
+Terminating.                                                                    
+⚙ SYSTEM: session: 9febfc6c-e6f
+
+[stderr]
+ [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.5s — state preserved.
+16:35:21 | WARNING  | SHSCode@7 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+16:35:23 | WARNING  | SHSCode@7 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.7s — state preserved.
+16:35:27 | WARNING  | SHSCode@7 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.7s — state preserved.
+16:35:33 | WARNING  | SHSCode@7 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 9.0s — state preserved.
+16:37:01 | WARNING  | SHSCode@17 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [CredentialPool] Key ...84oG8c exhausted, cooling 60s
+16:37:01 | WARNING  | SHSCode@17 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+16:37:03 | WARNING  | SHSCode@17 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.3s — state preserved.
+16:37:06 | WARNING  | SHSCode@17 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.9s — state preserved.
+16:37:12 | WARNING  | SHSCode@17 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 9.6s — state preserved.
+16:37:27 | WARNING  | SHSCode@19 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+16:37:32 | WARNING  | SHSCode@20 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+16:37:34 | WARNING  | SHSCode@20 [26bdabe6-899c-4e3a-aea4-e0cd97db738b] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.6s — state preserved.
+
+
+=== STDERR ===
+

@@ -1,0 +1,39 @@
+{
+  "task": "c09t05",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "Cart implementation exists",
+      "ok": true,
+      "points": 5,
+      "detail": "/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t05_tdd/cart.py"
+    },
+    {
+      "name": "test suite exists (written FIRST per TDD)",
+      "ok": true,
+      "points": 5,
+      "detail": "['/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t05_tdd/test_cart.py']"
+    },
+    {
+      "name": ">= 6 test functions",
+      "ok": true,
+      "points": 2,
+      "detail": "9"
+    },
+    {
+      "name": "agent's own suite passes against own implementation",
+      "ok": true,
+      "points": 3,
+      "detail": "passed"
+    },
+    {
+      "name": "implementation satisfies reference tests",
+      "ok": true,
+      "points": 5,
+      "detail": "passed"
+    }
+  ]
+}

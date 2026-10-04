@@ -617,3 +617,35 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T15:57:31] RETRY c08t04_memory_file (provider/timeout issue, attempt 1)
 [2026-10-04T16:00:04] DONE c08t04_memory_file score=9/13 passed=False dur=132.4s
 [2026-10-04T16:00:04] RUN c08t05_arch_decision agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T16:03:19] RETRY c08t05_arch_decision (provider/timeout issue, attempt 1)
+[2026-10-04T16:04:33] DONE c08t05_arch_decision score=0/6 passed=False dur=53.9s
+[2026-10-04T16:04:33] RUN c09t01_three_modules agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T16:11:26] RETRY c09t01_three_modules (provider/timeout issue, attempt 1)
+[2026-10-04T16:17:12] DONE c09t01_three_modules score=20/20 passed=True dur=322.4s
+[2026-10-04T16:17:12] RUN c09t02_service_contract agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T16:21:25] RETRY c09t02_service_contract (provider/timeout issue, attempt 1)
+[2026-10-04T16:23:11] DONE c09t02_service_contract score=20/20 passed=True dur=83.3s
+[2026-10-04T16:23:11] RUN c09t03_code_docs_match agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T16:26:44] RETRY c09t03_code_docs_match (provider/timeout issue, attempt 1)
+[2026-10-04T16:31:02] DONE c09t03_code_docs_match score=16/20 passed=False dur=236.3s
+[2026-10-04T16:31:02] RUN c09t04_transforms agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T16:34:17] RETRY c09t04_transforms (provider/timeout issue, attempt 1)
+[2026-10-04T16:39:10] DONE c09t04_transforms score=20/20 passed=True dur=270.7s
+[2026-10-04T16:39:10] RUN c09t05_tdd agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T16:42:31] RETRY c09t05_tdd (provider/timeout issue, attempt 1)
+[2026-10-04T16:44:49] DONE c09t05_tdd score=20/20 passed=True dur=112.8s
+[2026-10-04T16:44:49] RUN c10t01_url_shortener agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T16:47:38] RETRY c10t01_url_shortener (provider/timeout issue, attempt 1)
+[2026-10-04T16:51:16] DONE c10t01_url_shortener score=4/20 passed=False dur=196.5s
+[2026-10-04T16:51:16] RUN c10t02_md_tasks agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T16:56:26] RETRY c10t02_md_tasks (provider/timeout issue, attempt 1)
+[2026-10-04T16:59:43] DONE c10t02_md_tasks score=20/20 passed=True dur=177.4s
+[2026-10-04T16:59:43] RUN c10t03_json_api agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T17:07:58] RETRY c10t03_json_api (provider/timeout issue, attempt 1)
+[2026-10-04T17:11:10] DONE c10t03_json_api score=20/20 passed=True dur=169.1s
+[2026-10-04T17:11:10] RUN c10t04_report_gen agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T17:13:30] DONE c10t04_report_gen score=20/20 passed=True dur=140.2s
+[2026-10-04T17:13:30] RUN c10t05_plugin_calc agent=shs-code steps=45 timeout=540s turns=1
+[2026-10-04T17:16:56] RETRY c10t05_plugin_calc (provider/timeout issue, attempt 1)
+[2026-10-04T17:18:45] DONE c10t05_plugin_calc score=20/20 passed=True dur=87.1s
+[2026-10-04T17:18:45] === stream end agent=shs-code subtotal=872/1000 ===

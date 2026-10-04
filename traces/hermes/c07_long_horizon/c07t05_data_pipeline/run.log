@@ -1,0 +1,46 @@
+agent: hermes
+category: c07_long_horizon
+task: c07t05_data_pipeline
+started: 2026-10-04T16:23:30.188060
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_162421_059856
+rc: 0
+duration_s: 102.0
+steps_cap: 45
+timeout_cap: 540
+attempts: 2
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done. Built and ran the pipeline; report.json written to the task root.
+
+Files:
+- /home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t05_data_pipeline/pipeline.py
+- /home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t05_data_pipeline/report.json
+- data/sales_raw.csv untouched (read-only)
+
+Report contents:
+- total_sales: 142.44
+- sales_by_region: West 59.94, East 42.50, North 20.00, South 10.00, "" 10.00
+- sales_by_product: Widget 77.94, Gadget 34.50, Gizmo 30.00
+- input_rows 13, cleaned_rows 8, dropped_rows 5
+
+Hand-verification against the CSV:
+- Dropped 5 rows: 1003 (qty=0), 1005 (qty=-2), 1007 (price "not_a_price"), duplicate 1001 (kept first), 1012 (empty price).
+- Kept 8 rows: 1001 (2×9.99=19.98 West), 1002 (1×24.50 East), 1004 (3×5.00=15.00 North), 1006 (4×9.99=39.96 West), 1008 (2×5.00=10.00 South), 1009 (1×5.00 North), 1010 (12×1.50=18.00 East), 1011 (1×10.00, region empty).
+- West 19.98+39.96=59.94; East 24.50+18.00=42.50; North 15+5=20.00; South 10.00; empty region 10.00 → sum 142.44 ✓
+- Products: Widget 19.98+39.96+18.00=77.94; Gadget 24.50+10.00=34.50; Gizmo 15+10+5=30.00 → sum 142.44 ✓
+
+One judgment call: row 1011 has an empty region and no rule drops it, so it's kept and reported under "" in sales_by_region.
+
+/home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
+  minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
+
+session_id: 20261004_162421_059856
+
+
+=== STDERR ===
+

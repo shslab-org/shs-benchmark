@@ -1,0 +1,35 @@
+agent: hermes
+category: c10_e2e
+task: c10t02_md_tasks
+started: 2026-10-04T17:16:20.210034
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_171624_974acb
+rc: 0
+duration_s: 338.6
+steps_cap: 45
+timeout_cap: 540
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done. Deliverables in /home/z/my-project/bench_ws/hermes/c10_e2e/c10t02_md_tasks:
+
+- tasks_cli.py — `add` (creates `<id>.md` with `# title`, `Status: open`, `Priority:`), `list [--all]` (ID/STATUS/PRIORITY/TITLE table), `done <id>` (flips status in the file), `rm <id>` (deletes the file). TASKS_DIR env, default ./tasks. Stdlib only (argparse/os/re/sys).
+- README.md — usage, examples, file-format notes (tolerant line-oriented parsing: hand edits are picked up; a missing `Status:` line gets inserted under the title).
+- selftest.sh — the black-box lifecycle test (kept for re-runs; it resets its own scratch dir via a non-heredoc Python cleanup step... actually it uses a heredoc, which the shell tooling here blocks in single-query mode — it did run fine once when invoked as `bash selftest.sh`).
+
+Verification: `bash selftest.sh` passed the full lifecycle — add x3, table output, done 2, list excludes done without --all, rm 1, next id is 4 (not reused), rm/done on missing id error out with exit 1, hand-editing `Status: open` → `done` in a file is reflected, done adds a missing Status line under the title, and the default ./tasks path works.
+
+One bug was caught and fixed by the test: the sort key in `load_tasks` called `int(name)` on the whole filename (`int('1.md')` → crash on every list/add after the first task); now it parses the numeric stem and leaves non-numeric files at a sentinel so they're ignored.
+
+/home/z/my-project/repos/hermes-agent/pm/shell.py:13: SyntaxWarning: "\W" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\W"? A raw string is also an option.
+  minus C:\Windows\System32\bash.exe (the WSL launcher stub, first on PATH
+
+session_id: 20261004_171624_974acb
+
+
+=== STDERR ===
+

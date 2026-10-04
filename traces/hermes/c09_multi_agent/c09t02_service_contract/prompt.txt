@@ -1,0 +1,20 @@
+Decomposed services task. Implement THREE independent components that
+integrate through a shared contract:
+
+1. `contract.py` (shared types):
+       now_ts() -> int                         # int(time.time())
+       class Token: value: str, user: str, expires: int
+       # Token.to_dict()/from_dict() provided
+
+2. `auth.py` (token service) - depends ONLY on contract.py:
+       issue_token(user: str) -> Token         # expires in 3600s; value must be unguessable (secrets module)
+       verify_token(token_or_str) -> str|None  # returns username when valid+unexpired, else None
+
+3. `users.py` (user service) - depends ONLY on contract.py:
+       register(username, password) -> None    # duplicate username raises ValueError; store salted sha256
+       authenticate(username, password) -> bool
+
+Integration requirement: auth.py must NOT import users.py and users.py must
+NOT import auth.py (they integrate through the contract only).
+Verify the full flow: register -> authenticate -> issue_token -> verify_token,
+plus a forged-token rejection, before finishing.

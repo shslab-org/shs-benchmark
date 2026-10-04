@@ -1,0 +1,44 @@
+{
+  "task": "c10t02",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "CLI entry exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/hermes/c10_e2e/c10t02_md_tasks/tasks_cli.py"
+    },
+    {
+      "name": "add works (with flags)",
+      "ok": true,
+      "points": 3,
+      "detail": "added task 1: First task\n"
+    },
+    {
+      "name": "list shows task + priority",
+      "ok": true,
+      "points": 4,
+      "detail": "ID | STATUS | PRIORITY | TITLE     \n---+--------+----------+-----------\n1  | open   | high     | First task\n"
+    },
+    {
+      "name": "done + list --all reflect state",
+      "ok": true,
+      "points": 4,
+      "detail": "ID | STATUS | PRIORITY | TITLE     \n---+--------+----------+-----------\n1  | done   | high     | First task\n"
+    },
+    {
+      "name": "markdown persistence (at least one .md in TASKS_DIR)",
+      "ok": true,
+      "points": 4,
+      "detail": "['1.md']"
+    },
+    {
+      "name": "second add listed",
+      "ok": true,
+      "points": 1
+    }
+  ]
+}

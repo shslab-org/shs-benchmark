@@ -1,0 +1,8 @@
+Implement `phone.py` in this directory with ONE function:
+
+    def normalize_phone(p: str) -> str
+        # strips everything except digits; returns "" for no digits at all
+        # examples: "+1 (555) 123-4567" -> "15551234567"; "abc" -> ""
+
+Include 2-3 quick self-checks (in comments or a __main__ block). Do not
+create other files.

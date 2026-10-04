@@ -1,0 +1,38 @@
+{
+  "task": "c07t01",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "todo.py exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/hermes/c07_long_horizon/c07t01_todo_cli/todo.py"
+    },
+    {
+      "name": "add command works",
+      "ok": true,
+      "points": 3,
+      "detail": "Added: Write benchmark report\n"
+    },
+    {
+      "name": "list shows added items",
+      "ok": true,
+      "points": 4,
+      "detail": "[ ] Write benchmark report\n[ ] Ship it\n"
+    },
+    {
+      "name": "done marks item (visible in list)",
+      "ok": true,
+      "points": 4,
+      "detail": "[x] Write benchmark report\n[ ] Ship it\n"
+    },
+    {
+      "name": "state persisted to JSON between runs",
+      "ok": true,
+      "points": 5
+    }
+  ]
+}

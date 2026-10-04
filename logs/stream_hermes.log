@@ -111,3 +111,66 @@
 [2026-10-04T15:56:45] RUN c06t05_rebase agent=hermes steps=30 timeout=420s turns=1
 [2026-10-04T15:57:02] RETRY c06t05_rebase (provider/timeout issue, attempt 1)
 [2026-10-04T15:58:35] RETRY c06t05_rebase (provider/timeout issue, attempt 2)
+[2026-10-04T16:00:31] DONE c06t05_rebase score=17/20 passed=False dur=55.4s
+[2026-10-04T16:00:31] RUN c07t01_todo_cli agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T16:00:47] RETRY c07t01_todo_cli (provider/timeout issue, attempt 1)
+[2026-10-04T16:02:37] RETRY c07t01_todo_cli (provider/timeout issue, attempt 2)
+[2026-10-04T16:08:39] DONE c07t01_todo_cli score=20/20 passed=True dur=301.9s
+[2026-10-04T16:08:39] RUN c07t02_site_generator agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T16:09:52] RETRY c07t02_site_generator (provider/timeout issue, attempt 1)
+[2026-10-04T16:11:03] RETRY c07t02_site_generator (provider/timeout issue, attempt 2)
+[2026-10-04T16:12:42] DONE c07t02_site_generator score=20/20 passed=True dur=38.7s
+[2026-10-04T16:12:42] RUN c07t03_http_client agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T16:13:18] RETRY c07t03_http_client (provider/timeout issue, attempt 1)
+[2026-10-04T16:17:49] DONE c07t03_http_client score=18/20 passed=False dur=236.2s
+[2026-10-04T16:17:49] RUN c07t04_repo_maintenance agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T16:18:05] RETRY c07t04_repo_maintenance (provider/timeout issue, attempt 1)
+[2026-10-04T16:20:43] RETRY c07t04_repo_maintenance (provider/timeout issue, attempt 2)
+[2026-10-04T16:23:30] DONE c07t04_repo_maintenance score=20/20 passed=True dur=104.2s
+[2026-10-04T16:23:30] RUN c07t05_data_pipeline agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T16:23:47] RETRY c07t05_data_pipeline (provider/timeout issue, attempt 1)
+[2026-10-04T16:25:59] DONE c07t05_data_pipeline score=16/20 passed=False dur=102.0s
+[2026-10-04T16:25:59] RUN c08t01_config_facts agent=hermes steps=25 timeout=330s turns=2
+[2026-10-04T16:26:42] DONE c08t01_config_facts score=20/20 passed=True dur=43.2s
+[2026-10-04T16:26:42] RUN c08t02_long_spec agent=hermes steps=25 timeout=330s turns=2
+[2026-10-04T16:30:10] RETRY c08t02_long_spec (provider/timeout issue, attempt 1)
+[2026-10-04T16:32:42] DONE c08t02_long_spec score=20/20 passed=True dur=120.3s
+[2026-10-04T16:32:42] RUN c08t03_resume_reuse agent=hermes steps=25 timeout=330s turns=2
+[2026-10-04T16:34:38] RETRY c08t03_resume_reuse (provider/timeout issue, attempt 1)
+[2026-10-04T16:35:56] RETRY c08t03_resume_reuse (provider/timeout issue, attempt 2)
+[2026-10-04T16:37:56] DONE c08t03_resume_reuse score=20/20 passed=True dur=57.1s
+[2026-10-04T16:37:56] RUN c08t04_memory_file agent=hermes steps=25 timeout=330s turns=2
+[2026-10-04T16:39:15] RETRY c08t04_memory_file (provider/timeout issue, attempt 1)
+[2026-10-04T16:40:31] RETRY c08t04_memory_file (provider/timeout issue, attempt 2)
+[2026-10-04T16:42:07] DONE c08t04_memory_file score=9/13 passed=False dur=35.6s
+[2026-10-04T16:42:07] RUN c08t05_arch_decision agent=hermes steps=25 timeout=330s turns=2
+[2026-10-04T16:43:49] RETRY c08t05_arch_decision (provider/timeout issue, attempt 1)
+[2026-10-04T16:47:01] RETRY c08t05_arch_decision (provider/timeout issue, attempt 2)
+[2026-10-04T16:49:04] DONE c08t05_arch_decision score=20/20 passed=True dur=60.2s
+[2026-10-04T16:49:04] RUN c09t01_three_modules agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T16:49:53] DONE c09t01_three_modules score=0/6 passed=False dur=49.3s
+[2026-10-04T16:49:53] RUN c09t02_service_contract agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T16:52:59] DONE c09t02_service_contract score=20/20 passed=True dur=183.2s
+[2026-10-04T16:52:59] RUN c09t03_code_docs_match agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T16:55:50] RETRY c09t03_code_docs_match (provider/timeout issue, attempt 1)
+[2026-10-04T16:57:56] RETRY c09t03_code_docs_match (provider/timeout issue, attempt 2)
+[2026-10-04T16:59:16] DONE c09t03_code_docs_match score=16/20 passed=False dur=17.2s
+[2026-10-04T16:59:16] RUN c09t04_transforms agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T17:00:46] DONE c09t04_transforms score=20/20 passed=True dur=87.7s
+[2026-10-04T17:00:46] RUN c09t05_tdd agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T17:03:36] RETRY c09t05_tdd (provider/timeout issue, attempt 1)
+[2026-10-04T17:08:09] RETRY c09t05_tdd (provider/timeout issue, attempt 2)
+[2026-10-04T17:09:30] DONE c09t05_tdd score=20/20 passed=True dur=16.3s
+[2026-10-04T17:09:30] RUN c10t01_url_shortener agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T17:10:38] RETRY c10t01_url_shortener (provider/timeout issue, attempt 1)
+[2026-10-04T17:15:01] RETRY c10t01_url_shortener (provider/timeout issue, attempt 2)
+[2026-10-04T17:16:20] DONE c10t01_url_shortener score=20/20 passed=True dur=16.2s
+[2026-10-04T17:16:20] RUN c10t02_md_tasks agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T17:21:59] DONE c10t02_md_tasks score=20/20 passed=True dur=338.6s
+[2026-10-04T17:21:59] RUN c10t03_json_api agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T17:26:43] DONE c10t03_json_api score=20/20 passed=True dur=282.7s
+[2026-10-04T17:26:43] RUN c10t04_report_gen agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T17:27:42] DONE c10t04_report_gen score=20/20 passed=True dur=58.3s
+[2026-10-04T17:27:42] RUN c10t05_plugin_calc agent=hermes steps=45 timeout=540s turns=1
+[2026-10-04T17:29:31] DONE c10t05_plugin_calc score=20/20 passed=True dur=107.0s
+[2026-10-04T17:29:31] === stream end agent=hermes subtotal=783/1000 ===

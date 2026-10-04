@@ -1,0 +1,21 @@
+Multi-part engineering task - decompose it (implement the three modules
+independently, then integrate). This directory is the workspace.
+
+Module 1 - `textutils.py`:
+    def word_count(text: str) -> int        # whitespace-separated tokens
+
+Module 2 - `validators.py`:
+    def is_email(s: str) -> bool            # simple practical check: x@y.z
+
+Module 3 - `formatters.py`:
+    def as_table(rows: list[list[str]]) -> str
+        # renders a Markdown-style table, first row = header
+
+Integration - `main.py`:
+    def build_report(text: str) -> str
+        # uses ALL three modules: counts words (module 1), extracts candidate
+        # emails from the text and validates them (module 2), and renders a
+        # summary table [metric, value] including word count and found valid
+        # emails (module 3). Returns the rendered table string.
+
+Verify: each module standalone + the integration path before finishing.

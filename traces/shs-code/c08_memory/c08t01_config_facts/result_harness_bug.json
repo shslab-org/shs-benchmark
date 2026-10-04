@@ -1,0 +1,27 @@
+{
+  "agent": "shs-code",
+  "category": "c08_memory",
+  "task": "c08t01_config_facts",
+  "title": "Retain project facts across turns",
+  "started": "2026-10-04T15:50:09.467405",
+  "duration_s": 42.6,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c08t01_config_facts",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 0,
+  "max_points": 5,
+  "passed": false,
+  "checks": [
+    {
+      "name": "config file exists",
+      "ok": false,
+      "points": 5,
+      "detail": "None"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T15:52:25.272795"
+}

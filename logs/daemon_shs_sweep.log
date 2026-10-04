@@ -1,0 +1,22 @@
+[2026-10-04T17:35:18] === stream start agent=shs-code tasks=5 ===
+[2026-10-04T17:35:18] RUN c08t01_config_facts agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T17:40:18] RETRY c08t01_config_facts (provider/timeout issue, attempt 1)
+[2026-10-04T17:44:37] RETRY c08t01_config_facts (provider/timeout issue, attempt 2)
+[2026-10-04T17:46:55] DONE c08t01_config_facts score=20/20 passed=True dur=77.6s
+[2026-10-04T17:46:55] RUN c08t02_long_spec agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T17:50:37] RETRY c08t02_long_spec (provider/timeout issue, attempt 1)
+[2026-10-04T17:54:03] RETRY c08t02_long_spec (provider/timeout issue, attempt 2)
+[2026-10-04T17:58:13] DONE c08t02_long_spec score=20/20 passed=True dur=187.2s
+[2026-10-04T17:58:13] RUN c08t03_resume_reuse agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T18:01:55] RETRY c08t03_resume_reuse (provider/timeout issue, attempt 1)
+[2026-10-04T18:07:08] RETRY c08t03_resume_reuse (provider/timeout issue, attempt 2)
+[2026-10-04T18:10:40] DONE c08t03_resume_reuse score=20/20 passed=True dur=149.5s
+[2026-10-04T18:10:40] RUN c08t04_memory_file agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T18:14:53] RETRY c08t04_memory_file (provider/timeout issue, attempt 1)
+[2026-10-04T18:18:00] RETRY c08t04_memory_file (provider/timeout issue, attempt 2)
+[2026-10-04T18:20:55] DONE c08t04_memory_file score=20/20 passed=True dur=115.2s
+[2026-10-04T18:20:55] RUN c08t05_arch_decision agent=shs-code steps=25 timeout=330s turns=2
+[2026-10-04T18:23:12] RETRY c08t05_arch_decision (provider/timeout issue, attempt 1)
+[2026-10-04T18:25:27] RETRY c08t05_arch_decision (provider/timeout issue, attempt 2)
+[2026-10-04T18:27:57] DONE c08t05_arch_decision score=20/20 passed=True dur=88.5s
+[2026-10-04T18:27:57] === stream end agent=shs-code subtotal=100/100 ===

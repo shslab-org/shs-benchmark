@@ -1,0 +1,27 @@
+agent: hermes
+category: c10_e2e
+task: c10t01_url_shortener
+started: 2026-10-04T17:09:30.405718
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: git.8b66a51 (2026.9.24)
+session_id: 20261004_171606_4798c1
+rc: 0
+duration_s: 16.2
+steps_cap: 45
+timeout_cap: 540
+attempts: 3
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 ---
+custom rate-limited every one of 3 attempts — it looks temporarily unavailable. Wait a minute and send /retry, or switch models with /model. To avoid this in future, add a backup provider with `hermes fallback add`.
+
+Provider said: HTTP 429: You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 2026100417161710571172759kMzENL)
+
+
+session_id: 20261004_171606_4798c1
+
+
+=== STDERR ===
+

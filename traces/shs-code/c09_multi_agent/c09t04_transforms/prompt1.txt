@@ -1,0 +1,20 @@
+Map-reduce style decomposition. Build a small transformation framework:
+
+1. `pipeline.py`:
+       class Transform:
+           def __init__(self, name: str, fn, enabled: bool = True): ...
+           def apply(self, value): ...          # returns fn(value)
+       def run_pipeline(value, transforms: list, collect_errors: bool = False):
+           # applies transforms in order; a transform raising an exception
+           # is SKIPPED (value unchanged); when collect_errors=True the
+           # function returns (result, errors) where errors lists the names
+           # of failed transforms; otherwise just the result.
+
+2. Four INDEPENDENT example transforms (each could be developed/verified on
+   its own) in the same file or modules - `upper`, `strip`, `reverse`,
+   `word_count_wrap` (returns the word count as str) - and a `__main__`
+   block that runs them over the string "  hello benchmark  " and prints
+   each intermediate result.
+
+Verify each transform individually AND the pipeline (including one failing
+transform being skipped with collect_errors) before finishing.

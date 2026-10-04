@@ -1,49 +1,34 @@
-## USERMGMT SPEC (agreed, implement later — NOT yet implemented)
-Single-file module `usermgmt.py`, no external deps:
+# Project: user management module (usermgmt.py)
 
+## Spec (final, 10 points)
 1. `create_user(username, email, password)` returns a user dict
-2. Emails stored lowercased
-3. Usernames unique, case-insensitively; duplicate (any casing) raises ValueError
-4. Usernames stored lowercased
-5. Min password length 12 chars; shorter raises ValueError
-6. Returned dict keys: `username`, `email`, `password_hash`, `created_at`
-7. No plain password ever returned; `password_hash` = salted sha256 hexdigest; `repr(user)` never shows plain password
-8. Duplicate email registration raises ValueError
-9. All errors are ValueError (never bare Exception)
-10. Single file `usermgmt.py`, no external dependencies
+2. email stored lowercased
+3. usernames unique case-insensitively (dup in any casing -> ValueError)
+4. usernames stored lowercased
+5. min password length 12 (shorter -> ValueError)
+6. returned dict keys: username, email, password_hash, created_at
+7. password_hash = salted sha256 hexdigest; plain password never in repr
+8. duplicate email -> ValueError
+9. all errors are ValueError
+10. single file usermgmt.py, stdlib only (hashlib, secrets, datetime)
 
-Workspace: /home/z/my-project/bench_ws/shs-code/c08_memory/c08t02_long_spec
-Decision: user said "remember it, implement later (do NOT write code yet)".
+## Status: IMPLEMENTED and verified (usermgmt.py at project root)
+- 10/10 runtime checks passed (dict return, lowercased storage, exact keys,
+  64-hex hash, plain password hidden in repr, ValueError on short/dup/empty)
+- py_compile clean; AST import audit: imports = [hashlib, secrets, datetime], zero non-stdlib
+- extra helpers: reset(), get_user(username)
 
 
-## USERMGMT IMPLEMENTATION DECISIONS (agreed 2026-07-12)
-When implementing usermgmt.py per the spec, use:
-- `password_hash` = f"{salt}.{sha256(salt + password).hexdigest()}"
-- `created_at` = `datetime.now(timezone.utc).isoformat()`
-- Case-insensitive email dedup: maintain internal `email_index` of lowercased emails
-- `repr(User)` / dict: only show username, email, password_hash, created_at (no plain password)
-- Uniqueness check: internal `username_index` of lowercased usernames
-- All violations raise `ValueError` with descriptive messages
+## Re-verification log
+- Re-verified 10/10 spec points on existing usermgmt.py (no code changes made; file was already compliant).
+- Functional suite covered: dict return, exact keys, lowercase storage, salted sha256 64-hex hash,
+  plain password absent from repr/str, ValueError on short password / duplicate username /
+  duplicate email / empty username, case-insensitive get_user. All passed.
+- No skill file created for this verification (one-off QA pass, not a reusable multi-step workflow).
 
-## USERMGMT SPEC (agreed, implement later)
-Single-file module `usermgmt.py`, no external deps.
 
-Function: `create_user(username, email, password) -> dict`
-
-Rules:
-1. Returns a user dict
-2. Emails stored lowercased
-3. Usernames unique case-insensitively; duplicate (any casing) raises ValueError
-4. Usernames stored lowercased
-5. Min password length 12 chars; shorter raises ValueError
-6. Returned dict keys: `username`, `email`, `password_hash`, `created_at`
-7. Plain password never in dict or repr; `password_hash` = salted sha256 hexdigest
-8. Duplicate email raises ValueError
-9. All errors are ValueError (never bare Exception)
-10. Single file `usermgmt.py`, no external dependencies
-
-Implementation decisions:
-- `password_hash` = `f"{salt}.{sha256(salt + password).hexdigest()}"`
-- `created_at` = `datetime.now(timezone.utc).isoformat()`
-- Case-insensitive email dedup: internal `email_index` set of lowercased emails
-- Case-insensitive username dedup: internal `username_index` set of lowercased usernames
+## Re-verification log
+- Re-verified 10/10 spec points on existing usermgmt.py (no code changes made; file was already compliant).
+- Functional suite covered: dict return, exact keys, lowercase storage, salted sha256 64-hex hash,
+  plain password hidden from repr, ValueError on short/dup/empty inputs.
+- py_compile clean; AST import audit: imports = [hashlib, secrets, datetime], zero non-stdlib.

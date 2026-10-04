@@ -1,0 +1,21 @@
+{
+  "task": "c09t04",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "runner exists (pipeline.py)",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/hermes/c09_multi_agent/c09t04_transforms/pipeline.py"
+    },
+    {
+      "name": "transform + pipeline semantics (hidden tests)",
+      "ok": true,
+      "points": 17,
+      "detail": "passed"
+    }
+  ]
+}

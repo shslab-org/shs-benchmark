@@ -1,0 +1,55 @@
+{
+  "agent": "shs-code",
+  "category": "c09_multi_agent",
+  "task": "c09t03_code_docs_match",
+  "title": "API + consistent docs",
+  "started": "2026-10-04T16:23:11.270381",
+  "duration_s": 236.3,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "v4.4.0 (897b5d6)",
+  "session_id": "bench-c09t03_code_docs_match",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 16,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "api.py exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t03_code_docs_match/api.py"
+    },
+    {
+      "name": "DOCS.md exists",
+      "ok": true,
+      "points": 3,
+      "detail": "/home/z/my-project/bench_ws/shs-code/c09_multi_agent/c09t03_code_docs_match/DOCS.md"
+    },
+    {
+      "name": "4 required functions implemented",
+      "ok": true,
+      "points": 5
+    },
+    {
+      "name": "docs mention all 4 functions",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "documented signatures match code",
+      "ok": false,
+      "points": 4,
+      "detail": "mismatched: ['create_task(title)', 'complete_task(task_id)', 'delete_task(task_id)']"
+    },
+    {
+      "name": "task lifecycle works",
+      "ok": true,
+      "points": 2,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T16:31:02.945842"
+}

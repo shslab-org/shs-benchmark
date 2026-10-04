@@ -1,0 +1,36 @@
+{
+  "task": "c08t05",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "storage module exists",
+      "ok": true,
+      "points": 4,
+      "detail": "/home/z/my-project/bench_ws/hermes/c08_memory/c08t05_arch_decision/db.py"
+    },
+    {
+      "name": "uses sqlite (per architecture decision)",
+      "ok": true,
+      "points": 6
+    },
+    {
+      "name": "no postgres dependency (decision respected)",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "put/get works (hidden test)",
+      "ok": true,
+      "points": 4,
+      "detail": "passed"
+    },
+    {
+      "name": "SQLite rationale retained in answer (local/embedded/no-server reasons)",
+      "ok": true,
+      "points": 2
+    }
+  ]
+}
