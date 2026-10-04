@@ -1,0 +1,20 @@
+{
+  "task": "c01t01",
+  "agent": "hermes",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "solution.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite",
+      "ok": true,
+      "points": 18,
+      "detail": "all hidden tests passed"
+    }
+  ]
+}

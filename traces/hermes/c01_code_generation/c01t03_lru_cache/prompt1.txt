@@ -1,0 +1,15 @@
+Design and implement an LRU Cache in `lru_cache.py` in this directory.
+
+Required API:
+    class LRUCache:
+        def __init__(self, capacity: int)   # capacity >= 1
+        def get(self, key) -> any           # returns -1 when key is absent
+        def put(self, key, value) -> None
+
+Semantics:
+- Both get and put must run in O(1) average time
+- get/put count as "use"; when capacity is exceeded, evict the LEAST recently used entry
+- put on an existing key updates the value AND its recency
+
+You may use collections.OrderedDict or build your own doubly linked list + hash
+map. Add docstrings. Do not create other files.

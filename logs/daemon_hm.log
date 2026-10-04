@@ -1,2 +1,12 @@
 [2026-10-04T14:00:45] === stream start agent=hermes tasks=50 ===
 [2026-10-04T14:00:45] RUN c01t01_bracket_validator agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:01:28] RETRY c01t01_bracket_validator (provider/timeout issue, attempt 1)
+[2026-10-04T14:02:36] RETRY c01t01_bracket_validator (provider/timeout issue, attempt 2)
+[2026-10-04T14:04:28] DONE c01t01_bracket_validator score=20/20 passed=True dur=49.6s
+[2026-10-04T14:04:28] RUN c01t02_flatten_dict agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:05:30] DONE c01t02_flatten_dict score=20/20 passed=True dur=60.0s
+[2026-10-04T14:05:30] RUN c01t03_lru_cache agent=hermes steps=30 timeout=420s turns=1
+[2026-10-04T14:05:46] RETRY c01t03_lru_cache (provider/timeout issue, attempt 1)
+[2026-10-04T14:07:35] RETRY c01t03_lru_cache (provider/timeout issue, attempt 2)
+[2026-10-04T14:08:53] DONE c01t03_lru_cache score=0/2 passed=False dur=18.1s
+[2026-10-04T14:08:53] RUN c01t04_csv_parser agent=hermes steps=30 timeout=420s turns=1

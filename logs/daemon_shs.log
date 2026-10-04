@@ -566,3 +566,6 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T13:52:45] DONE c05t01_dedupe score=20/20 passed=True dur=420s
 [2026-10-04T13:52:45] RUN c05t02_globals_to_class agent=shs-code steps=30 timeout=420s turns=1
 [2026-10-04T13:58:16] RETRY c05t02_globals_to_class (provider/timeout issue, attempt 1)
+[2026-10-04T14:02:14] DONE c05t02_globals_to_class score=20/20 passed=True dur=216.4s
+[2026-10-04T14:02:14] RUN c05t03_god_function agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T14:09:14] RETRY c05t03_god_function (provider/timeout issue, attempt 1)

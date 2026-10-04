@@ -1,0 +1,13 @@
+Implement an RFC-4180-style CSV parser in `csvparse.py` in this directory —
+WITHOUT importing the stdlib `csv` module (write the state machine yourself).
+
+Required API:
+    def parse_csv(text: str) -> list[list[str]]
+
+Must support:
+- comma-separated fields, one record per line
+- quoted fields with double quotes: commas, newlines and escaped quotes
+  (doubled quotes, i.e. "" -> ") inside quotes must be handled
+- empty fields (a,,b) and a trailing newline at the end of the input
+
+Include a docstring. Do not create other files.

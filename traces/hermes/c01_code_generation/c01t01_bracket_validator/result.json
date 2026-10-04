@@ -1,0 +1,32 @@
+{
+  "agent": "hermes",
+  "category": "c01_code_generation",
+  "task": "c01t01_bracket_validator",
+  "title": "Bracket validator",
+  "started": "2026-10-04T14:00:45.083655",
+  "duration_s": 49.6,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "git.8b66a51 (2026.9.24)",
+  "session_id": "20261004_140340_bfbe1b",
+  "rc": 0,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "solution.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite",
+      "ok": true,
+      "points": 18,
+      "detail": "all hidden tests passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T14:04:28.060441"
+}

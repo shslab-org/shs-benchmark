@@ -1,0 +1,7 @@
+Hi! Quick context before we start working together on this project:
+
+- The project codename is PURPLE-TIGER
+- The service will run on port 8734
+- We have decided to use the 'requests' library for all HTTP calls (not urllib)
+
+Just acknowledge this for now - do not create any files yet.

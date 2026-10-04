@@ -1,0 +1,30 @@
+{
+  "task": "c05t02",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "sessions.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "SessionStore class behavior",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "no global statements remain",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "SessionStore class defined",
+      "ok": true,
+      "points": 2
+    }
+  ]
+}

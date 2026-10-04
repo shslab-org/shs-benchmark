@@ -600,3 +600,10 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T13:59:46] DONE c07t05_data_pipeline score=16/20 passed=False dur=149.6s
 [2026-10-04T13:59:46] RUN c08t01_config_facts agent=openhands steps=25 timeout=330s turns=2
 [2026-10-04T14:00:14] RETRY c08t01_config_facts (provider/timeout issue, attempt 1)
+[2026-10-04T14:02:16] DONE c08t01_config_facts score=20/20 passed=True dur=101.5s
+[2026-10-04T14:02:16] RUN c08t02_long_spec agent=openhands steps=25 timeout=330s turns=2
+[2026-10-04T14:06:44] RETRY c08t02_long_spec (provider/timeout issue, attempt 1)
+[2026-10-04T14:08:37] DONE c08t02_long_spec score=20/20 passed=True dur=89.0s
+[2026-10-04T14:08:37] RUN c08t03_resume_reuse agent=openhands steps=25 timeout=330s turns=2
+[2026-10-04T14:09:44] DONE c08t03_resume_reuse score=20/20 passed=True dur=63.5s
+[2026-10-04T14:09:44] RUN c08t04_memory_file agent=openhands steps=25 timeout=330s turns=2
