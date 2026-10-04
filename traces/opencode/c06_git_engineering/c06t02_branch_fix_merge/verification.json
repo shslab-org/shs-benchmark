@@ -1,0 +1,44 @@
+{
+  "task": "c06t02",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "branch fix/divide-by-zero exists",
+      "ok": true,
+      "points": 4,
+      "detail": "fix/divide-by-zero"
+    },
+    {
+      "name": "main has >= 2 commits (initial + fix via merge/ff)",
+      "ok": true,
+      "points": 3,
+      "detail": "2"
+    },
+    {
+      "name": "fix branch has its own commit",
+      "ok": true,
+      "points": 3,
+      "detail": "2"
+    },
+    {
+      "name": "tests PASS on main after merge",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "clean working tree",
+      "ok": true,
+      "points": 1,
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+[2026-10-04T11:07:00] === stream start agent=opencode tasks=50 ===
+[2026-10-04T11:07:00] RUN c01t01_bracket_validator agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:09:09] DONE c01t01_bracket_validator score=20/20 passed=True dur=125.8s
+[2026-10-04T11:09:09] RUN c01t02_flatten_dict agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:10:38] DONE c01t02_flatten_dict score=20/20 passed=True dur=86.3s
+[2026-10-04T11:10:38] RUN c01t03_lru_cache agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:14:43] DONE c01t03_lru_cache score=20/20 passed=True dur=243.3s
+[2026-10-04T11:14:43] RUN c01t04_csv_parser agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:21:43] RETRY c01t04_csv_parser (provider/timeout issue, attempt 1)
+[2026-10-04T11:29:13] RETRY c01t04_csv_parser (provider/timeout issue, attempt 2)
+[2026-10-04T11:34:42] DONE c01t04_csv_parser score=20/20 passed=True dur=266.4s
+[2026-10-04T11:34:42] RUN c01t05_matrix_ops agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:36:01] DONE c01t05_matrix_ops score=20/20 passed=True dur=76.5s
+[2026-10-04T11:36:01] RUN c02t01_binary_search agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:36:42] DONE c02t01_binary_search score=20/20 passed=True dur=37.3s
+[2026-10-04T11:36:42] RUN c02t02_mutable_defaults agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:38:49] DONE c02t02_mutable_defaults score=20/20 passed=True dur=124.8s
+[2026-10-04T11:38:49] RUN c02t03_money_floats agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:40:02] DONE c02t03_money_floats score=20/20 passed=True dur=70.8s
+[2026-10-04T11:40:02] RUN c02t04_email_regex agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:43:15] DONE c02t04_email_regex score=18/20 passed=False dur=188.1s
+[2026-10-04T11:43:15] RUN c02t05_timezone_mix agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:44:33] DONE c02t05_timezone_mix score=20/20 passed=True dur=75.9s
+[2026-10-04T11:44:33] RUN c03t01_search agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:45:51] DONE c03t01_search score=20/20 passed=True dur=75.5s
+[2026-10-04T11:45:51] RUN c03t02_remove_stock agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:47:07] DONE c03t02_remove_stock score=20/20 passed=True dur=74.4s
+[2026-10-04T11:47:07] RUN c03t03_export_csv agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:50:31] DONE c03t03_export_csv score=20/20 passed=True dur=201.2s
+[2026-10-04T11:50:31] RUN c03t04_event_log agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:52:50] DONE c03t04_event_log score=20/20 passed=True dur=136.9s
+[2026-10-04T11:52:50] RUN c03t05_discount agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T11:54:34] DONE c03t05_discount score=20/20 passed=True dur=102.4s
+[2026-10-04T11:54:34] RUN c04t01_stringutils_qa agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:01:35] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T12:06:26] DONE c04t01_stringutils_qa score=14/20 passed=False dur=256.2s
+[2026-10-04T12:06:26] RUN c04t02_stats_qa agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:13:21] DONE c04t02_stats_qa score=20/20 passed=True dur=408.6s
+[2026-10-04T12:13:21] RUN c04t03_argparse_qa agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:14:40] DONE c04t03_argparse_qa score=20/20 passed=True dur=74.3s
+[2026-10-04T12:14:40] RUN c04t04_jsonutils_qa agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:20:16] DONE c04t04_jsonutils_qa score=14/20 passed=False dur=331.3s
+[2026-10-04T12:20:16] RUN c04t05_regression_daterange agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:23:49] DONE c04t05_regression_daterange score=20/20 passed=True dur=207.6s
+[2026-10-04T12:23:49] RUN c05t01_dedupe agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:24:13] DONE c05t01_dedupe score=20/20 passed=True dur=22.6s
+[2026-10-04T12:24:13] RUN c05t02_globals_to_class agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:26:35] DONE c05t02_globals_to_class score=20/20 passed=True dur=138.6s
+[2026-10-04T12:26:35] RUN c05t03_god_function agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:27:42] DONE c05t03_god_function score=20/20 passed=True dur=64.2s
+[2026-10-04T12:27:42] RUN c05t04_naming_docs agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:31:02] DONE c05t04_naming_docs score=10/20 passed=False dur=198.5s
+[2026-10-04T12:31:02] RUN c05t05_error_handling agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:32:08] DONE c05t05_error_handling score=20/20 passed=True dur=63.6s
+[2026-10-04T12:32:08] RUN c06t01_init_commits agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:34:59] DONE c06t01_init_commits score=20/20 passed=True dur=170.8s
+[2026-10-04T12:34:59] RUN c06t02_branch_fix_merge agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:41:59] RETRY c06t02_branch_fix_merge (provider/timeout issue, attempt 1)
+[2026-10-04T12:44:13] DONE c06t02_branch_fix_merge score=20/20 passed=True dur=101.9s
+[2026-10-04T12:44:13] RUN c06t03_changelog agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:47:31] DONE c06t03_changelog score=2/13 passed=False dur=198.0s
+[2026-10-04T12:47:31] RUN c06t04_conflict agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:52:57] DONE c06t04_conflict score=20/20 passed=True dur=323.2s
+[2026-10-04T12:52:57] RUN c06t05_rebase agent=opencode steps=30 timeout=420s turns=1
+[2026-10-04T12:54:11] RETRY c06t05_rebase (provider/timeout issue, attempt 1)
+[2026-10-04T12:57:00] DONE c06t05_rebase score=17/20 passed=False dur=139.6s
+[2026-10-04T12:57:00] RUN c07t01_todo_cli agent=opencode steps=45 timeout=540s turns=1

@@ -530,3 +530,50 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T11:05:00] DONE c02t05_timezone_mix score=20/20 passed=True dur=220.4s
 [2026-10-04T11:05:00] RUN c03t01_search agent=openhands steps=30 timeout=420s turns=1
 [2026-10-04T11:06:35] RETRY c03t01_search (provider/timeout issue, attempt 1)
+[2026-10-04T11:09:17] DONE c03t01_search score=20/20 passed=True dur=137.6s
+[2026-10-04T11:09:17] RUN c03t02_remove_stock agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:11:51] RETRY c03t02_remove_stock (provider/timeout issue, attempt 1)
+[2026-10-04T11:13:38] DONE c03t02_remove_stock score=20/20 passed=True dur=83.4s
+[2026-10-04T11:13:38] RUN c03t03_export_csv agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:17:22] RETRY c03t03_export_csv (provider/timeout issue, attempt 1)
+[2026-10-04T11:19:52] DONE c03t03_export_csv score=20/20 passed=True dur=125.9s
+[2026-10-04T11:19:52] RUN c03t04_event_log agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:22:42] RETRY c03t04_event_log (provider/timeout issue, attempt 1)
+[2026-10-04T11:23:47] DONE c03t04_event_log score=20/20 passed=True dur=39.4s
+[2026-10-04T11:23:47] RUN c03t05_discount agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:26:48] DONE c03t05_discount score=20/20 passed=True dur=178.5s
+[2026-10-04T11:26:48] RUN c04t01_stringutils_qa agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:32:56] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T11:40:22] DONE c04t01_stringutils_qa score=14/20 passed=False dur=420s
+[2026-10-04T11:40:22] RUN c04t02_stats_qa agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:43:43] RETRY c04t02_stats_qa (provider/timeout issue, attempt 1)
+[2026-10-04T11:51:08] DONE c04t02_stats_qa score=14/20 passed=False dur=420s
+[2026-10-04T11:51:08] RUN c04t03_argparse_qa agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T11:55:43] RETRY c04t03_argparse_qa (provider/timeout issue, attempt 1)
+[2026-10-04T11:58:40] DONE c04t03_argparse_qa score=20/20 passed=True dur=152.1s
+[2026-10-04T11:58:40] RUN c04t04_jsonutils_qa agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:05:20] RETRY c04t04_jsonutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T12:12:45] DONE c04t04_jsonutils_qa score=14/20 passed=False dur=420s
+[2026-10-04T12:12:45] RUN c04t05_regression_daterange agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:14:44] RETRY c04t05_regression_daterange (provider/timeout issue, attempt 1)
+[2026-10-04T12:17:59] DONE c04t05_regression_daterange score=20/20 passed=True dur=168.6s
+[2026-10-04T12:17:59] RUN c05t01_dedupe agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:19:33] RETRY c05t01_dedupe (provider/timeout issue, attempt 1)
+[2026-10-04T12:21:29] DONE c05t01_dedupe score=20/20 passed=True dur=93.0s
+[2026-10-04T12:21:29] RUN c05t02_globals_to_class agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:24:08] RETRY c05t02_globals_to_class (provider/timeout issue, attempt 1)
+[2026-10-04T12:26:36] DONE c05t02_globals_to_class score=20/20 passed=True dur=123.1s
+[2026-10-04T12:26:36] RUN c05t03_god_function agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:28:53] RETRY c05t03_god_function (provider/timeout issue, attempt 1)
+[2026-10-04T12:33:43] DONE c05t03_god_function score=20/20 passed=True dur=267.5s
+[2026-10-04T12:33:43] RUN c05t04_naming_docs agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:38:47] RETRY c05t04_naming_docs (provider/timeout issue, attempt 1)
+[2026-10-04T12:41:41] DONE c05t04_naming_docs score=20/20 passed=True dur=150.7s
+[2026-10-04T12:41:41] RUN c05t05_error_handling agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:44:00] RETRY c05t05_error_handling (provider/timeout issue, attempt 1)
+[2026-10-04T12:45:36] DONE c05t05_error_handling score=20/20 passed=True dur=72.7s
+[2026-10-04T12:45:36] RUN c06t01_init_commits agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:50:16] RETRY c06t01_init_commits (provider/timeout issue, attempt 1)
+[2026-10-04T12:52:24] DONE c06t01_init_commits score=20/20 passed=True dur=106.5s
+[2026-10-04T12:52:24] RUN c06t02_branch_fix_merge agent=openhands steps=30 timeout=420s turns=1
+[2026-10-04T12:56:10] RETRY c06t02_branch_fix_merge (provider/timeout issue, attempt 1)

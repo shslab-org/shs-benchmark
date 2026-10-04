@@ -1,0 +1,17 @@
+This directory contains a small inventory package: `inventory.py` (class
+Inventory) and `test_inventory.py` (existing, passing tests).
+
+Add a NEW feature to the Inventory class:
+
+percentage discounting:
+    def apply_discount(self, sku: str, pct: float) -> None
+        # sets a discount percentage (0 <= pct <= 100) for that sku
+        # raises ValueError for unknown sku or pct outside 0..100
+    def price_with_discount(self, sku: str) -> float
+        # current unit price after the sku's discount (no discount set = full price)
+
+Requirements:
+- Existing methods and their behavior must remain unchanged
+- Existing tests must keep passing
+- Add at least 3 new tests for discounting to test_inventory.py (append only)
+- Run the full suite and make sure everything passes

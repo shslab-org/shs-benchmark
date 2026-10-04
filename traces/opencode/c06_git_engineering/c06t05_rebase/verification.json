@@ -1,0 +1,47 @@
+{
+  "task": "c06t05",
+  "agent": "opencode",
+  "points": 17,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "git repo exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "linear history (no merge commits on main)",
+      "ok": true,
+      "points": 5,
+      "detail": ""
+    },
+    {
+      "name": "all 5 commits present on main after ff-merge",
+      "ok": true,
+      "points": 4,
+      "detail": "Continue feature\nAdd feature\nAdd three\nAdd two\nAdd one\n"
+    },
+    {
+      "name": "main.txt contains one/two/three",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "feature.txt contains feature work + continuation",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "root commit is 'Add one' (real history)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "clean working tree",
+      "ok": false,
+      "points": 3,
+      "detail": "?? TASK.md\n?? placeholder.txt"
+    }
+  ]
+}

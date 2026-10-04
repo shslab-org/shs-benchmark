@@ -1,0 +1,49 @@
+{
+  "agent": "opencode",
+  "category": "c04_testing_qa",
+  "task": "c04t01_stringutils_qa",
+  "title": "String utils QA suite",
+  "started": "2026-10-04T11:54:34.967925",
+  "duration_s": 256.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef935087cffe3MMixopeFiCFoW",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 14,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_stringutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (stringutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module (defects detected)",
+      "ok": true,
+      "points": 6,
+      "detail": " + -hello-world-\nE     ? +           +\n=========================== short test summary info ============================\nFAILED ../benchverify_zpmft468/t_buggy.py::TestSlugify::test_spec_example - A...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.32s\n"
+    },
+    {
+      "name": "tests PASS on the correct module (no false positives)",
+      "ok": false,
+      "points": 6,
+      "detail": "- abc\nE     + ...\n=========================== short test summary info ============================\nFAILED ../benchverify_wvq_tql4/t_fixed.py::TestTruncate::test_text_exactly_width_unchanged\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 13 passed in 0.27s\n"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 36"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T12:06:26.652866"
+}

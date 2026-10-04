@@ -1,0 +1,32 @@
+{
+  "agent": "opencode",
+  "category": "c03_feature",
+  "task": "c03t03_export_csv",
+  "title": "Inventory CSV export",
+  "started": "2026-10-04T11:47:07.767262",
+  "duration_s": 201.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef942bd29ffeQLL6QA3TPp3rWH",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "inventory.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "export_csv feature + regression",
+      "ok": true,
+      "points": 18,
+      "detail": "passed"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T11:50:31.126065"
+}

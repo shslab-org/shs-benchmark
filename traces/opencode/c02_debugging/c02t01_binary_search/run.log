@@ -1,0 +1,21 @@
+agent: opencode
+category: c02_debugging
+task: c02t01_binary_search
+started: 2026-10-04T11:36:01.046631
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef94ce97cffei3MC4g50UrV7E9
+rc: 0
+duration_s: 37.3
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Fixed. The bug was the loop condition `while lo < hi` — it stopped before checking the last candidate (where `lo == hi`), so targets at the ends of the array or in single-element arrays were never found. Changing it to `while lo <= hi` in search.py:7 makes all 7 tests pass.
+
+=== STDERR ===
+

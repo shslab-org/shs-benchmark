@@ -1,0 +1,31 @@
+agent: opencode
+category: c04_testing_qa
+task: c04t05_regression_daterange
+started: 2026-10-04T12:20:16.723725
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef92463c0ffeBSsqZh73yzmZMm
+rc: 0
+duration_s: 207.6
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Done. Created `tests_agent/test_daterange_regression.py` with 3 tests:
+
+1. **`test_overlaps_touching_at_end_of_first`** — first range's last day equals second range's first day → must overlap.
+2. **`test_overlaps_touching_at_end_of_second`** — same scenario reversed → must overlap.
+3. **`test_no_overlap_when_separated_by_one_day`** — ranges with a gap of one full day → must NOT overlap.
+
+Verified:
+- **Against the shipped (buggy) module**: all 3 tests **FAIL** ✔
+- **Against a correctly fixed module**: all 3 tests **PASS** ✔
+
+`daterange.py` was not modified.
+
+=== STDERR ===
+

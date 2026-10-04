@@ -1,0 +1,37 @@
+{
+  "agent": "opencode",
+  "category": "c01_code_generation",
+  "task": "c01t03_lru_cache",
+  "title": "LRU cache class",
+  "started": "2026-10-04T11:10:38.060129",
+  "duration_s": 243.3,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef96426b5ffetrgPOuFUHtlaPQ",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "lru_cache.py found",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite (behavior)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "O(1) structure (hash map + doubly linked list or OrderedDict)",
+      "ok": true,
+      "points": 4
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T11:14:43.637240"
+}

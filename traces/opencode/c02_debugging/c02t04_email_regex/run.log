@@ -1,0 +1,21 @@
+agent: opencode
+category: c02_debugging
+task: c02t04_email_regex
+started: 2026-10-04T11:40:02.620880
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef9493a28ffeBBHfA2wzA5DUD1
+rc: 0
+duration_s: 188.1
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All 8 tests pass. The old regex `^[a-z]+@[a-z]+\.[a-z]{2}$` was too strict: only lowercase letters in the local part, no hyphens in domains, no subdomains, 2-letter TLDs only. The new regex allows `a-z0-9._%+-` in the local part (no leading or consecutive dots), hyphenated domain labels with subdomains, and 2+ letter TLDs.
+
+=== STDERR ===
+

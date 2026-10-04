@@ -1,0 +1,26 @@
+SPEC for stringutils.py (the module under test):
+
+- slugify(text): lowercase text, replace every run of non-alphanumeric
+  characters with a single hyphen, and REMOVE leading/trailing hyphens.
+  slugify("  Hello, World!  ") == "hello-world"
+
+- truncate(text, width, ellipsis="..."): if text fits within width return it
+  unchanged; otherwise cut it so the result is EXACTLY width characters long
+  including the ellipsis. If width is smaller than the ellipsis itself,
+  return a prefix of the ellipsis cut to width.
+  truncate("hello world", 8) == "hello..."
+  truncate("hi", 5) == "hi"
+  truncate("abcdef", 2) == ".."
+
+- camel_to_snake(name): convert CamelCase (including acronym runs like
+  "HTTPServer") to snake_case.
+  camel_to_snake("HTTPServer") == "http_server"
+  camel_to_snake("myVarName") == "my_var_name"
+
+- count_vowels(text): number of vowels a,e,i,o,u (case-insensitive).
+  count_vowels("Banana") == 3
+
+YOUR JOB: write a pytest suite in tests_agent/test_stringutils.py that would
+FAIL against a module violating this spec (the shipped module DOES violate it
+in at least 3 places) and PASS against a correct implementation.
+Do NOT modify or delete stringutils.py.

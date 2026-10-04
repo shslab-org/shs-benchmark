@@ -1,0 +1,25 @@
+agent: opencode
+category: c05_refactoring
+task: c05t05_error_handling
+started: 2026-10-04T12:31:02.729308
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef91a8822ffewsFj7406C1Bg8N
+rc: 0
+duration_s: 63.6
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All 8 tests pass. Changes made:
+
+- **`load`**: removed the bare `except:` — `FileNotFoundError` and `json.JSONDecodeError` now propagate naturally; valid JSON still returns the parsed dict.
+- **`get`**: bare `except:` replaced with `except (KeyError, TypeError)` — the only two exceptions reachable via `data[k]` on a dict/int, everything else propagates.
+- **`save`**: removed the `try/except` entirely — `OSError` (disk full, permission denied) now raises; success still returns `True`.
+
+=== STDERR ===
+

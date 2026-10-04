@@ -1,0 +1,37 @@
+{
+  "task": "c04t01",
+  "agent": "shs-code",
+  "points": 14,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_stringutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (stringutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module (defects detected)",
+      "ok": true,
+      "points": 6,
+      "detail": " + -hello-world-\nE     ? +           +\n=========================== short test summary info ============================\nFAILED ../benchverify_q7hax972/t_buggy.py::test_slugify_basic_spec_example - ...\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.28s\n"
+    },
+    {
+      "name": "tests PASS on the correct module (no false positives)",
+      "ok": false,
+      "points": 6,
+      "detail": "   \nE     - hi\nE     + ..\n=========================== short test summary info ============================\nFAILED ../benchverify_z9afoqts/t_fixed.py::test_truncate_passthrough_when_text_fits\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 6 passed in 0.28s\n"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 22"
+    }
+  ]
+}

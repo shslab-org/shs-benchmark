@@ -1,0 +1,42 @@
+{
+  "agent": "opencode",
+  "category": "c02_debugging",
+  "task": "c02t03_money_floats",
+  "title": "Fix float money math",
+  "started": "2026-10-04T11:38:49.666989",
+  "duration_s": 70.8,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef94a56ecffesj5MHvBOQ15Wzk",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "money.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes (exact cent arithmetic)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "uses decimal or integer cents (no raw float math)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "format_usd still exists with same signature",
+      "ok": true,
+      "points": 2
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T11:40:02.619700"
+}

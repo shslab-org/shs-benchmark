@@ -1,0 +1,14 @@
+This directory contains a small inventory package: `inventory.py` (class
+Inventory) and `test_inventory.py` (existing, passing tests).
+
+Add a NEW feature to the Inventory class:
+
+    def export_csv(self) -> str
+        # returns the inventory as CSV text with header
+        # sku,name,price,qty  — one row per item, same order as list_items()
+
+Requirements:
+- Existing methods and their behavior must remain unchanged
+- Existing tests must keep passing
+- Add at least 2 new tests for export_csv to test_inventory.py (append only)
+- Run the full suite and make sure everything passes

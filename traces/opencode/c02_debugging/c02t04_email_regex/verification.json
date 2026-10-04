@@ -1,0 +1,31 @@
+{
+  "task": "c02t04",
+  "agent": "opencode",
+  "points": 18,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "validators.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "still regex-based validation (kept approach)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden edge cases",
+      "ok": false,
+      "points": 2,
+      "detail": " is_valid_email('USER@x.com')\n=========================== short test summary info ============================\nFAILED ../../../../../../../tmp/benchverify_5au16g_q/test_hidden.py::test_uppercase_local\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.08s\n"
+    }
+  ]
+}

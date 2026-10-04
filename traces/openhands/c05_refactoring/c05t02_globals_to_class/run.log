@@ -1,0 +1,38 @@
+agent: openhands
+category: c05_refactoring
+task: c05t02_globals_to_class
+started: 2026-10-04T12:21:29.849700
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.11.0 (sdk 1.34.0)
+session_id: 7b721670-1e49-4b6e-a946-71f1b3d367bc
+rc: 3
+duration_s: 123.1
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+[no final assistant message captured]
+
+=== STDERR ===
+metry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+[10/04/26 12:26:20] ERROR    litellm.RateLimitError:          retry_mixin.py:140
+                             RateLimitError: OpenAIException                    
+                             - You’ve reached the API rate                      
+                             limit for free users. Upgrade to                   
+                             a Token Plan to unlock higher                      
+                             limits and continue using the                      
+                             API without interruption.                          
+                             (request id:                                       
+                             202610041226202620139355N9jSLZl)                   
+                             . Attempt #1 | You can customize                   
+                             retry values in the                                
+                             configuration.                                     
+/home/z/my-project/repos/openhands-venv/lib/python3.12/site-packages/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=agnes-3.0-flash, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+  warnings.warn(f"Cost calculation failed: {e}")
+

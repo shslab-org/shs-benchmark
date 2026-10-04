@@ -1,0 +1,27 @@
+agent: opencode
+category: c05_refactoring
+task: c05t01_dedupe
+started: 2026-10-04T12:23:49.058772
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef9212597ffe0cWvXGvaJeYFAQ
+rc: 0
+duration_s: 22.6
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All examples match the original logic (e.g. `2.46 + 4.99 = 7.45 → ×1.10 = 8.195 → 8.2`; wholesale discount only when total qty ≥ min_qty).
+
+Refactoring complete in pricing.py:
+- `_subtotal(items)` — shared price×qty sum
+- `_round_half_up_cents(x)` — the identical half-up-to-cents rounding
+- `_apply_tax(base)` — ×1.10 + rounding
+- Both `retail_total` and `wholesale_total` now reuse these helpers; public API and docstrings unchanged, behavior identical.
+
+=== STDERR ===
+

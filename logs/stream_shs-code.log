@@ -514,3 +514,39 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/z/my-project/benc
 [2026-10-04T10:59:12] RETRY c01t04_csv_parser (provider/timeout issue, attempt 1)
 [2026-10-04T11:06:19] DONE c01t04_csv_parser score=20/20 passed=True dur=405.0s
 [2026-10-04T11:06:19] RUN c01t05_matrix_ops agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:13:19] RETRY c01t05_matrix_ops (provider/timeout issue, attempt 1)
+[2026-10-04T11:17:10] DONE c01t05_matrix_ops score=20/20 passed=True dur=208.9s
+[2026-10-04T11:17:10] RUN c02t01_binary_search agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:20:01] RETRY c02t01_binary_search (provider/timeout issue, attempt 1)
+[2026-10-04T11:23:47] DONE c02t01_binary_search score=20/20 passed=True dur=200.4s
+[2026-10-04T11:23:47] RUN c02t02_mutable_defaults agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:26:19] RETRY c02t02_mutable_defaults (provider/timeout issue, attempt 1)
+[2026-10-04T11:29:49] DONE c02t02_mutable_defaults score=20/20 passed=True dur=187.6s
+[2026-10-04T11:29:49] RUN c02t03_money_floats agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:35:29] RETRY c02t03_money_floats (provider/timeout issue, attempt 1)
+[2026-10-04T11:40:19] DONE c02t03_money_floats score=20/20 passed=True dur=266.9s
+[2026-10-04T11:40:19] RUN c02t04_email_regex agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:47:19] RETRY c02t04_email_regex (provider/timeout issue, attempt 1)
+[2026-10-04T11:50:45] DONE c02t04_email_regex score=20/20 passed=True dur=181.7s
+[2026-10-04T11:50:45] RUN c02t05_timezone_mix agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T11:54:19] RETRY c02t05_timezone_mix (provider/timeout issue, attempt 1)
+[2026-10-04T11:58:18] DONE c02t05_timezone_mix score=20/20 passed=True dur=215.8s
+[2026-10-04T11:58:18] RUN c03t01_search agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:02:39] RETRY c03t01_search (provider/timeout issue, attempt 1)
+[2026-10-04T12:04:52] DONE c03t01_search score=20/20 passed=True dur=111.4s
+[2026-10-04T12:04:52] RUN c03t02_remove_stock agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:10:10] RETRY c03t02_remove_stock (provider/timeout issue, attempt 1)
+[2026-10-04T12:13:12] DONE c03t02_remove_stock score=20/20 passed=True dur=159.4s
+[2026-10-04T12:13:12] RUN c03t03_export_csv agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:17:20] RETRY c03t03_export_csv (provider/timeout issue, attempt 1)
+[2026-10-04T12:22:51] DONE c03t03_export_csv score=20/20 passed=True dur=308.3s
+[2026-10-04T12:22:51] RUN c03t04_event_log agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:27:44] RETRY c03t04_event_log (provider/timeout issue, attempt 1)
+[2026-10-04T12:30:00] DONE c03t04_event_log score=20/20 passed=True dur=114.0s
+[2026-10-04T12:30:00] RUN c03t05_discount agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:35:04] RETRY c03t05_discount (provider/timeout issue, attempt 1)
+[2026-10-04T12:38:52] DONE c03t05_discount score=20/20 passed=True dur=206.2s
+[2026-10-04T12:38:52] RUN c04t01_stringutils_qa agent=shs-code steps=30 timeout=420s turns=1
+[2026-10-04T12:45:52] RETRY c04t01_stringutils_qa (provider/timeout issue, attempt 1)
+[2026-10-04T12:53:17] DONE c04t01_stringutils_qa score=14/20 passed=False dur=420s
+[2026-10-04T12:53:17] RUN c04t02_stats_qa agent=shs-code steps=30 timeout=420s turns=1

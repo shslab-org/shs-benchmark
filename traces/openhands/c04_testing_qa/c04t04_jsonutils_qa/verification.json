@@ -1,0 +1,37 @@
+{
+  "task": "c04t04",
+  "agent": "openhands",
+  "points": 14,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_jsonutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (jsonutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "\n=========================== short test summary info ============================\nFAILED ../benchverify_hci40q7y/t_buggy.py::test_safe_get_non_numeric_index_on_list_returns_default_not_raise\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 4 passed in 0.27s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": false,
+      "points": 6,
+      "detail": "har 16)\n=========================== short test summary info ============================\nFAILED ../benchverify_2bblobwk/t_fixed.py::test_parse_lenient_does_not_corrupt_apostrophes_in_values\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 19 passed in 0.28s\n"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 21"
+    }
+  ]
+}

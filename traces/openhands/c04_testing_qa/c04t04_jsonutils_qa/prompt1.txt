@@ -1,0 +1,5 @@
+Your job for task c04t04 is described in `SPEC.md` in this directory.
+The module `jsonutils.py` is shipped WITH defects.
+Write your pytest suite in `tests_agent/test_jsonutils.py` (create the
+`tests_agent` directory). The suite must FAIL against the shipped module and
+PASS against a correct implementation of the spec. Do NOT modify jsonutils.py.

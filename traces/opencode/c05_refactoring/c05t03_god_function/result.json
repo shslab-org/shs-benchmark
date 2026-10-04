@@ -1,0 +1,43 @@
+{
+  "agent": "opencode",
+  "category": "c05_refactoring",
+  "task": "c05t03_god_function",
+  "title": "Split god function",
+  "started": "2026-10-04T12:26:35.596983",
+  "duration_s": 64.2,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.18.34",
+  "session_id": "ses_ef91e98bcffeiKO8caVUrblg8p",
+  "rc": 0,
+  "provider_error_retry": false,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "report.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "behavior preserved (hidden tests)",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "split into >= 4 functions total",
+      "ok": true,
+      "points": 4,
+      "detail": "functions: ['parse_line', 'compute_line_total', 'aggregate', 'process_orders']"
+    },
+    {
+      "name": "process_orders still public entry",
+      "ok": true,
+      "points": 2
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T12:27:42.028001"
+}

@@ -1,0 +1,44 @@
+{
+  "agent": "openhands",
+  "category": "c05_refactoring",
+  "task": "c05t01_dedupe",
+  "title": "Extract duplicated pricing logic",
+  "started": "2026-10-04T12:17:59.358490",
+  "duration_s": 93.0,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "db892042-0cf7-48e2-9850-ca30580db9f0",
+  "rc": 3,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "pricing.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "behavior preserved (hidden tests)",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "rounding logic extracted (appears once)",
+      "ok": true,
+      "points": 4,
+      "detail": "tax+round block appears 1x"
+    },
+    {
+      "name": "new helper function defined",
+      "ok": true,
+      "points": 2,
+      "detail": "functions: ['_subtotal', '_round_cents', '_apply_tax', 'retail_total', 'wholesale_total']"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T12:21:29.848127"
+}

@@ -1,0 +1,1 @@
+Refactor `loader.py` in this directory. Read HINT.md first. Replace every bare `except:` with precise typed exception handling per the required behavior. All other behavior must stay the same. Verify with quick tests before finishing.

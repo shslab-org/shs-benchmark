@@ -1,0 +1,25 @@
+{
+  "task": "c01t03",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "lru_cache.py found",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "hidden pytest suite (behavior)",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "O(1) structure (hash map + doubly linked list or OrderedDict)",
+      "ok": true,
+      "points": 4
+    }
+  ]
+}

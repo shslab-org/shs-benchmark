@@ -1,0 +1,6 @@
+notes.txt
+*.log
+*.tmp
+agent_events.jsonl
+agent_meta.json
+agent_output.txt

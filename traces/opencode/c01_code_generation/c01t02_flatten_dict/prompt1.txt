@@ -1,0 +1,12 @@
+Implement a dictionary flattener in `flatten.py` in this directory.
+
+Required API:
+    def flatten(obj: dict, sep: str = ".") -> dict
+
+Rules:
+- Nested dicts are flattened by joining keys with `sep` (e.g. {"a": {"b": 1}} -> {"a.b": 1})
+- Lists inside are indexed by position (e.g. {"a": [10]} -> {"a.0": 10})
+- Empty dicts/lists are kept as leaf values under their key
+- Non-dict/list scalars (str, int, float, bool, None) are leaf values
+- The input object must not be mutated
+Include a docstring. Do not create other files.

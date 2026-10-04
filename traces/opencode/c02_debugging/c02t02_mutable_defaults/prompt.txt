@@ -1,0 +1,7 @@
+`cart.py` has failing tests in `test_cart.py`. The root cause is the classic
+Python pitfall involving default argument values that are mutable.
+
+1. Run python -m pytest test_cart.py -q to see the failures
+2. Fix the bug(s) in `cart.py` while keeping the exact same public API and
+   call signatures (callers may pass an explicit list/dict, or nothing at all)
+3. Make ALL tests pass. Do NOT modify test_cart.py, do not create new files.

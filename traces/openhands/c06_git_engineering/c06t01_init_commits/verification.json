@@ -1,0 +1,42 @@
+{
+  "task": "c06t01",
+  "agent": "openhands",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "git repository initialized",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "at least 3 commits",
+      "ok": true,
+      "points": 5,
+      "detail": "3 commits"
+    },
+    {
+      "name": "app code tracked",
+      "ok": true,
+      "points": 3,
+      "detail": "['.gitignore', 'README.md', 'app.py', 'utils.py']"
+    },
+    {
+      "name": "scratch notes NOT tracked",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": ".gitignore exists and covers notes",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "commit messages are descriptive",
+      "ok": true,
+      "points": 2,
+      "detail": "['Add utility helper module', 'Add main application entry point', 'Add project readme and .gitignore']"
+    }
+  ]
+}

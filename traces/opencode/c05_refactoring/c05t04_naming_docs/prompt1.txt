@@ -1,0 +1,1 @@
+Refactor `taskrunner.py` in this directory. Read HINT.md first. Rename all cryptic identifiers (target public API: run_tasks(tasks, retries=3, backoff_seconds=0.5)) and add docstrings to every function. Behavior must remain identical: retries per task with backoff sleeps, stop on first success, per-task True/False result keyed by task id. Verify with quick tests before finishing.

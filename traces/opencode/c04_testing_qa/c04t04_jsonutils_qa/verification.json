@@ -1,0 +1,37 @@
+{
+  "task": "c04t04",
+  "agent": "opencode",
+  "points": 14,
+  "max_points": 20,
+  "passed": false,
+  "checks": [
+    {
+      "name": "tests_agent/test_jsonutils.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (jsonutils.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "base 10: 'b'\n=========================== short test summary info ============================\nFAILED ../benchverify_n4d2j___/t_buggy.py::TestSafeGet::test_bad_index_returns_default_no_escape\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 5 passed in 0.27s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": false,
+      "points": 6,
+      "detail": ")\n=========================== short test summary info ============================\nFAILED ../benchverify_x1hh3lty/t_fixed.py::TestParseLenient::test_apostrophe_in_string_value_not_corrupted\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 23 passed in 0.29s\n"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 26"
+    }
+  ]
+}

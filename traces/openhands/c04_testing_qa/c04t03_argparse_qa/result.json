@@ -1,0 +1,49 @@
+{
+  "agent": "openhands",
+  "category": "c04_testing_qa",
+  "task": "c04t03_argparse_qa",
+  "title": "CLI parser QA suite",
+  "started": "2026-10-04T11:51:08.596044",
+  "duration_s": 152.1,
+  "model": "agnes-3.0-flash",
+  "provider": "agnes-ai",
+  "agent_version": "1.11.0 (sdk 1.34.0)",
+  "session_id": "bac866ea-f620-489d-a23b-6b4006053c49",
+  "rc": 3,
+  "provider_error_retry": true,
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_argparsemini.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (argparsemini.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": " \nE     - alice\nE     + anon\n=========================== short test summary info ============================\nFAILED ../benchverify_2_3xfgz0/t_buggy.py::test_value_option_attached_equal_form\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 3 passed in 0.26s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 15"
+    }
+  ],
+  "verify_error": null,
+  "timestamp": "2026-10-04T11:58:40.751929"
+}

@@ -1,0 +1,10 @@
+Implement matrix operations in `matrix.py` in this directory.
+
+Required API:
+    def rotate_90(matrix: list[list[int]]) -> list[list[int]]
+        # returns a NEW matrix rotated 90 degrees clockwise; must NOT mutate input
+    def spiral_traverse(matrix: list[list[int]]) -> list[int]
+        # returns elements in clockwise spiral order, starting top-left
+
+Both functions must handle square and rectangular matrices, plus 1x1.
+Include docstrings. Do not create other files.

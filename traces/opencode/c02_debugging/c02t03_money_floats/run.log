@@ -1,0 +1,25 @@
+agent: opencode
+category: c02_debugging
+task: c02t03_money_floats
+started: 2026-10-04T11:38:49.666989
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef94a56ecffesj5MHvBOQ15Wzk
+rc: 0
+duration_s: 70.8
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All 5 tests pass. Fixed `money.py` to use `decimal.Decimal` (with `str()` conversion to avoid float representation issues):
+
+- `add_prices` / `total_price`: convert to integer cents, accumulate exactly, convert back
+- `apply_tax`: exact Decimal math, quantize to cents with `ROUND_HALF_UP`
+- `format_usd`: half-up quantize to 2 decimals
+
+=== STDERR ===
+

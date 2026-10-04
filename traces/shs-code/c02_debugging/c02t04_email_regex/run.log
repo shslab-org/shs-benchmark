@@ -1,0 +1,47 @@
+agent: shs-code
+category: c02_debugging
+task: c02t04_email_regex
+started: 2026-10-04T11:40:19.543319
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: v4.4.0 (897b5d6)
+session_id: bench-c02t04_email_regex
+rc: 0
+duration_s: 181.7
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+--- TURN 1 rc=0 ---
+⚙ SYSTEM: Session bench-c02t04_email_regex not found — starting a new session.
+🤖 ASSISTANT
+Diff check confirms: test_validators.py mtime is 09:43 (untouched, pre-dates any
+edits); validators.py mtime is 11:43 (the only source file modified). No other  
+project files were unexpectedly changed — logs/ and workspace/ are existing     
+runtime dirs, and git status for this project dir shows no tracked modifications
+beyond what's expected. Constraint satisfied.                                   
+
+Deviate from "terminate" (80%) recommendation: the final DAG node n5f9890 must  
+be marked complete via the task graph first. Running that now.                  
+⚙ SYSTEM: session: 5055af4f-0af
+
+[stderr]
+Code@4 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.9s — state preserved.
+11:48:33 | WARNING  | SHSCode@4 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 6.9s — state preserved.
+11:48:40 | WARNING  | SHSCode@4 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 10.5s — state preserved.
+11:49:09 | WARNING  | SHSCode@8 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [CredentialPool] Key ...84oG8c exhausted, cooling 60s
+11:49:09 | WARNING  | SHSCode@8 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+11:49:11 | WARNING  | SHSCode@8 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.1s — state preserved.
+11:49:14 | WARNING  | SHSCode@8 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.0s — state preserved.
+11:49:19 | WARNING  | SHSCode@8 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 7.9s — state preserved.
+11:49:29 | WARNING  | SHSCode@9 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 1/40). Retry-After=None. Waiting 2.0s — state preserved.
+11:49:31 | WARNING  | SHSCode@9 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 2/40). Retry-After=None. Waiting 3.4s — state preserved.
+11:49:34 | WARNING  | SHSCode@9 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 3/40). Retry-After=None. Waiting 5.7s — state preserved.
+11:49:40 | WARNING  | SHSCode@9 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 4/40). Retry-After=None. Waiting 8.5s — state preserved.
+11:49:49 | WARNING  | SHSCode@9 [4b80402a-ebf8-445a-9bcb-7f5d05216ea3] — [LLM] Rate limited (attempt 5/40). Retry-After=None. Waiting 13.1s — state preserved.
+
+
+=== STDERR ===
+

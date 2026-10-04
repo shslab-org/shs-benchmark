@@ -1,0 +1,6 @@
+Your job for task c04t03 is described in `SPEC.md` in this directory.
+The module `argparsemini.py` is shipped WITH defects.
+Write your pytest suite in `tests_agent/test_argparsemini.py` (create the
+`tests_agent` directory). The suite must FAIL against the shipped module and
+PASS against a correct implementation of the spec. Do NOT modify
+argparsemini.py.

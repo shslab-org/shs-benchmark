@@ -1,0 +1,1 @@
+Do the entire task described in TASK.md in this directory (details also in HISTORY.md), using real git commands. Work step by step; verify every requirement yourself before finishing.

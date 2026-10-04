@@ -1,0 +1,37 @@
+{
+  "task": "c04t02",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_stats.py exists",
+      "ok": true,
+      "points": 4
+    },
+    {
+      "name": "no source tampering (stats.py untouched)",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "tests FAIL on the buggy module",
+      "ok": true,
+      "points": 6,
+      "detail": "D NOT RAISE <class 'ValueError'>\n=========================== short test summary info ============================\nFAILED ../benchverify_zo6j9rve/t_buggy.py::test_mean_empty_raises_valueerror\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 4 passed in 0.34s\n"
+    },
+    {
+      "name": "tests PASS on the correct module",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    },
+    {
+      "name": "at least 8 test functions",
+      "ok": true,
+      "points": 1,
+      "detail": "found 28"
+    }
+  ]
+}

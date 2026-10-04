@@ -150,6 +150,14 @@ def run_task(cat, tid, tdir):
     with open(os.path.join(trace, "result.json"), "w") as f:
         json.dump(result, f, indent=2)
     shutil.copytree(ws, os.path.join(trace, "workspace"), dirs_exist_ok=True)
+    # git-task evidence: bundle full history into one file, then strip .git
+    # (nested repos cannot be committed to the benchmark repo)
+    gitdir = os.path.join(trace, "workspace", ".git")
+    if os.path.exists(gitdir):
+        subprocess.run(["git", "-C", os.path.join(trace, "workspace"), "bundle",
+                        "create", os.path.join(trace, "workspace_repo.bundle"), "--all"],
+                       capture_output=True, timeout=60)
+        shutil.rmtree(gitdir, ignore_errors=True)
     with open(os.path.join(ROOT, "logs", f"{AGENT}.jsonl"), "a") as f:
         f.write(json.dumps(result) + "\n")
     log(f"DONE {tid} score={result['points']}/{result['max_points']} passed={result['passed']} dur={result['duration_s']}s")

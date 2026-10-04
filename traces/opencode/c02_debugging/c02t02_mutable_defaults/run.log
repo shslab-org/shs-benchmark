@@ -1,0 +1,21 @@
+agent: opencode
+category: c02_debugging
+task: c02t02_mutable_defaults
+started: 2026-10-04T11:36:42.692002
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef94c4702ffeZWirnWHKz1O7GL
+rc: 0
+duration_s: 124.8
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All 3 tests pass. I replaced the mutable default arguments (`cart=[]`, `tags=[]`, `extra={}`) with `None` defaults in `cart.py:7` and `cart.py:17`, creating fresh containers on each call when no explicit argument is given. Public signatures and behavior are unchanged — callers can still pass their own list/dict.
+
+=== STDERR ===
+

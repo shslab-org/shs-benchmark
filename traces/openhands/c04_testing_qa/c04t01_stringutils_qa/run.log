@@ -1,0 +1,20 @@
+agent: openhands
+category: c04_testing_qa
+task: c04t01_stringutils_qa
+started: 2026-10-04T11:26:48.797550
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: ?
+session_id: 
+rc: 124
+duration_s: 420
+steps_cap: 30
+timeout_cap: 420
+attempts: 2
+provider_error_flag: True
+
+=== STDOUT ===
+
+
+=== STDERR ===
+agent timeout after 420s

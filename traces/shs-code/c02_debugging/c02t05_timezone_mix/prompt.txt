@@ -1,0 +1,13 @@
+`schedule.py` mixes naive and timezone-aware datetimes and crashes or
+silently drops UTC information. `test_schedule.py` defines correct behavior
+and currently FAILS.
+
+Fix `schedule.py` so that:
+- a 'Z' stamp keeps its UTC awareness (no tzinfo stripping)
+- a stamp with numeric offset keeps that offset
+- a naive stamp is interpreted as UTC (attach UTC, do not leave it naive)
+- minutes_between works for aware inputs in different offsets
+- add_minutes preserves awareness across day boundaries
+
+Keep all three function names/signatures. Make ALL tests pass. Do NOT modify
+test_schedule.py, do not create new files.

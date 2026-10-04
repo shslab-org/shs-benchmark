@@ -1,0 +1,28 @@
+agent: opencode
+category: c05_refactoring
+task: c05t03_god_function
+started: 2026-10-04T12:26:35.596983
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef91e98bcffeiKO8caVUrblg8p
+rc: 0
+duration_s: 64.2
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+Refactored `report.py` with 3 focused helpers, all verified identical to the original:
+
+- `parse_line(line)` — parses one line, returns tuple or `None` (report.py:4)
+- `compute_line_total(qty, price)` — line total with 5% bulk discount at qty ≥ 10 (report.py:20)
+- `aggregate(valid_lines)` — sums total and per-SKU with rounding (report.py:28)
+- `process_orders(raw_lines)` — remains the public entry point, same signature and return dict (report.py:38)
+
+Checked edge cases (empty input, invalid lines, blank sku, bulk-discount boundary qty=9 vs 10, negative/zero values) — output matches the original exactly.
+
+=== STDERR ===
+

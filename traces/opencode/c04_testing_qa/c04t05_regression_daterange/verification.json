@@ -1,0 +1,31 @@
+{
+  "task": "c04t05",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests_agent/test_daterange_regression.py exists",
+      "ok": true,
+      "points": 3
+    },
+    {
+      "name": "no source tampering (daterange.py untouched)",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "regression test FAILS on shipped buggy code (reproduces issue)",
+      "ok": true,
+      "points": 8,
+      "detail": "ge object at 0x7f87c664ff80>.overlaps\n=========================== short test summary info ============================\nFAILED ../benchverify_lb5rxrlc/t_buggy.py::test_overlaps_touching_at_end_of_first\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed in 0.25s\n"
+    },
+    {
+      "name": "regression test PASSES after correct fix (targeted, not over-broad)",
+      "ok": true,
+      "points": 7,
+      "detail": "passed"
+    }
+  ]
+}

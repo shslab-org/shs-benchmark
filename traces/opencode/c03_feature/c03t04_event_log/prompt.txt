@@ -1,0 +1,19 @@
+This directory contains a small inventory package: `inventory.py` (class
+Inventory) and `test_inventory.py` (existing, passing tests).
+
+Add a NEW feature to the Inventory class:
+
+an append-only event log that is updated automatically:
+    def get_events(self) -> list
+        # chronological list of events; every add_item and every
+        # remove_stock call appends one event containing at minimum:
+        # an ISO-8601 timestamp, the action ("add"/"remove"), the sku
+
+Requirements:
+- Existing methods and their behavior must remain unchanged
+  (implement remove_stock as well if you add event tracking that needs it:
+   remove_stock(sku, qty) decreases qty, raising ValueError on unknown sku,
+   qty <= 0, or qty > available)
+- Existing tests must keep passing
+- Add at least 3 new tests for the event log to test_inventory.py (append only)
+- Run the full suite and make sure everything passes

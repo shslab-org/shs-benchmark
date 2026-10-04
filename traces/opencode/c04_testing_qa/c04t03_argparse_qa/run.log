@@ -1,0 +1,43 @@
+agent: opencode
+category: c04_testing_qa
+task: c04t03_argparse_qa
+started: 2026-10-04T12:13:21.063834
+model: agnes-3.0-flash
+provider: Agnes AI (https://apihub.agnes-ai.com/v1)
+version: 1.18.34
+session_id: ses_ef92abb7cffejOMPEdIl5I6v1v
+rc: 0
+duration_s: 74.3
+steps_cap: 30
+timeout_cap: 420
+attempts: 1
+provider_error_flag: False
+
+=== STDOUT ===
+--- TURN 1 ---
+All 11 tests pass against the correct implementation and 6 fail against the shipped module.
+
+**Summary of defects caught by the suite:**
+
+1. **`--name=value` (attached syntax)** — shipped module treats `=` as part of the name, looks up `name=value` in spec, fails to find it, and appends the whole token as a positional.
+2. **Unknown flags** — shipped module silently appends them as positionals instead of raising `SystemExit(2)`.
+3. **`--` terminator** — shipped module doesn't recognise it, so `--verbose` after `--` is still parsed as an option.
+
+**Test breakdown:**
+
+| Test | Checks |
+|------|--------|
+| `test_flag_present` | `--verbose` sets `True` |
+| `test_flag_absent_uses_default` | absent flag uses default |
+| `test_value_flag_separated` | `--name Alice` works |
+| `test_value_flag_attached` | `--name=Alice` works (fails on shipped) |
+| `test_value_flag_attached_empty` | `--name=` gives `""` (fails on shipped) |
+| `test_unknown_flag_raises_systemexit` | `--unknown` → `SystemExit(2)` (fails on shipped) |
+| `test_unknown_flag_alone_raises_systemexit` | lone `--bogus` → `SystemExit(2)` (fails on shipped) |
+| `test_positional_tokens_collected_in_order` | positionals in order |
+| `test_double_dash_terminates_option_parsing` | `--` semantics (fails on shipped) |
+| `test_value_flag_mixed_syntax` | last-wins for value opts (fails on shipped) |
+| `test_multiple_positionals` | bare tokens |
+
+=== STDERR ===
+

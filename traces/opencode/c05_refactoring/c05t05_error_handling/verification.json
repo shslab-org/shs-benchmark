@@ -1,0 +1,30 @@
+{
+  "task": "c05t05",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "loader.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "no bare except remains",
+      "ok": true,
+      "points": 6
+    },
+    {
+      "name": "typed exception behavior (hidden tests)",
+      "ok": true,
+      "points": 10,
+      "detail": "passed"
+    },
+    {
+      "name": "get() catches only KeyError/TypeError",
+      "ok": true,
+      "points": 2
+    }
+  ]
+}

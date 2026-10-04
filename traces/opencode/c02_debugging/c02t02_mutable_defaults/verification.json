@@ -1,0 +1,26 @@
+{
+  "task": "c02t02",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "cart.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 14,
+      "detail": "passed"
+    },
+    {
+      "name": "no mutable default arguments remain",
+      "ok": true,
+      "points": 4,
+      "detail": "clean"
+    }
+  ]
+}

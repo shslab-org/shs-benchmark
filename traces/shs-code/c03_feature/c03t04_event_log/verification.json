@@ -1,0 +1,20 @@
+{
+  "task": "c03t04",
+  "agent": "shs-code",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "inventory.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "event log feature (add+remove, timestamps) + regression",
+      "ok": true,
+      "points": 18,
+      "detail": "passed"
+    }
+  ]
+}

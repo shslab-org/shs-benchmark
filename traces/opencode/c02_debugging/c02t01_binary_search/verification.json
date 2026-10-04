@@ -1,0 +1,26 @@
+{
+  "task": "c02t01",
+  "agent": "opencode",
+  "points": 20,
+  "max_points": 20,
+  "passed": true,
+  "checks": [
+    {
+      "name": "search.py exists",
+      "ok": true,
+      "points": 2
+    },
+    {
+      "name": "public test suite passes",
+      "ok": true,
+      "points": 12,
+      "detail": "passed"
+    },
+    {
+      "name": "extra edge cases (even length, empty, duplicates)",
+      "ok": true,
+      "points": 6,
+      "detail": "passed"
+    }
+  ]
+}
