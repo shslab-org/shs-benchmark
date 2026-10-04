@@ -17,6 +17,7 @@ is retried ONCE; agent failures are never retried.
 import datetime, json, os, shutil, subprocess, sys, time, traceback
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+WS_ROOT = "/home/z/my-project/bench_ws"  # OUTSIDE the git repo (agent tools resolve to git roots)
 sys.path.insert(0, os.path.join(ROOT, "harness"))
 import agents as A
 
@@ -55,8 +56,8 @@ def run_task(cat, tid, tdir):
         log(f"SKIP {tid} (already has result.json — immutability)")
         return json.load(open(os.path.join(trace, "result.json")))
 
-    ws = os.path.join(trace, "workspace")
-    shutil.rmtree(trace, ignore_errors=True)
+    ws = os.path.join(WS_ROOT, AGENT, cat, tid)
+    shutil.rmtree(os.path.join(WS_ROOT, AGENT, cat, tid), ignore_errors=True)
     os.makedirs(ws, exist_ok=True)
     baseline = os.path.join(tdir, "baseline")
     if os.path.isdir(baseline):
@@ -143,6 +144,7 @@ def run_task(cat, tid, tdir):
         json.dump(ver, f, indent=2)
     with open(os.path.join(trace, "result.json"), "w") as f:
         json.dump(result, f, indent=2)
+    shutil.copytree(ws, os.path.join(trace, "workspace"), dirs_exist_ok=True)
     with open(os.path.join(ROOT, "logs", f"{AGENT}.jsonl"), "a") as f:
         f.write(json.dumps(result) + "\n")
     log(f"DONE {tid} score={result['points']}/{result['max_points']} passed={result['passed']} dur={result['duration_s']}s")
