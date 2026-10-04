@@ -57,7 +57,8 @@ def run_task(cat, tid, tdir):
         return json.load(open(os.path.join(trace, "result.json")))
 
     ws = os.path.join(WS_ROOT, AGENT, cat, tid)
-    shutil.rmtree(os.path.join(WS_ROOT, AGENT, cat, tid), ignore_errors=True)
+    shutil.rmtree(ws, ignore_errors=True)
+    os.makedirs(trace, exist_ok=True)
     os.makedirs(ws, exist_ok=True)
     baseline = os.path.join(tdir, "baseline")
     if os.path.isdir(baseline):
@@ -73,9 +74,13 @@ def run_task(cat, tid, tdir):
 
     with open(os.path.join(trace, "prompt1.txt"), "w") as f:
         f.write(spec["prompt"])
+    with open(os.path.join(os.path.dirname(ws), "prompt1.txt"), "w") as f:
+        f.write(spec["prompt"])
     prompts = [spec["prompt"]]
     if spec.get("prompt2"):
         with open(os.path.join(trace, "prompt2.txt"), "w") as f:
+            f.write(spec["prompt2"])
+        with open(os.path.join(os.path.dirname(ws), "prompt2.txt"), "w") as f:
             f.write(spec["prompt2"])
         prompts.append(spec["prompt2"])
 
