@@ -61,6 +61,14 @@ def run_task(cat, tid, tdir):
     baseline = os.path.join(tdir, "baseline")
     if os.path.isdir(baseline):
         shutil.copytree(baseline, ws, dirs_exist_ok=True)
+    if spec.get("git_baseline"):
+        env = dict(os.environ)
+        for k, v in (("GIT_AUTHOR_NAME", "baseline"), ("GIT_AUTHOR_EMAIL", "baseline@bench"),
+                     ("GIT_COMMITTER_NAME", "baseline"), ("GIT_COMMITTER_EMAIL", "baseline@bench")):
+            env.setdefault(k, v)
+        subprocess.run(["git", "init", "-q"], cwd=ws, check=True)
+        subprocess.run(["git", "add", "-A"], cwd=ws, check=True)
+        subprocess.run(["git", "commit", "-qm", "Initial commit"], cwd=ws, check=True, env=env)
 
     with open(os.path.join(trace, "prompt1.txt"), "w") as f:
         f.write(spec["prompt"])

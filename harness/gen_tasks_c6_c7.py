@@ -722,18 +722,13 @@ def main():
     mk("c07_long_horizon", "c07t04_repo_maintenance", "Repo maintenance batch",
        "Do the entire maintenance task described in TASK.md in this directory (fix bugs, add feature + tests, update README, make at least 2 descriptive git commits; full test suite must pass at the end).",
        c07t04_verify, baseline=c07t04_baseline)
-    # c07t04 baseline must BE a git repo with 1 initial commit (per TASK.md)
-    import subprocess as _sp
-    _b = os.path.join(T, "c07_long_horizon", "c07t04_repo_maintenance", "baseline")
-    _sp.run(["git", "init", "-q"], cwd=_b, check=True)
-    _sp.run(["git", "add", "-A"], cwd=_b, check=True)
-    _e = dict(__import__("os").environ)
-    _e["GIT_AUTHOR_NAME"] = "baseline"
-    _e["GIT_AUTHOR_EMAIL"] = "baseline@bench"
-    _e["GIT_COMMITTER_NAME"] = "baseline"
-    _e["GIT_COMMITTER_EMAIL"] = "baseline@bench"
-    _sp.run(["git", "commit", "-qm", "Initial commit"], cwd=_b, check=True, env=_e)
-    print("c07t04 baseline git repo initialized")
+    # c07t04 baseline is turned into a git repo AT STREAM TIME (git_baseline flag)
+    _tp = os.path.join(T, "c07_long_horizon", "c07t04_repo_maintenance", "task.json")
+    import json as _json
+    _spec = _json.load(open(_tp))
+    _spec["git_baseline"] = True
+    _json.dump(_spec, open(_tp, "w"), indent=2)
+    print("c07t04 git_baseline flag set")
     mk("c07_long_horizon", "c07t05_data_pipeline", "Dirty CSV pipeline",
        "Build and RUN the data pipeline described in TASK.md in this directory. Do not modify data/sales_raw.csv. Produce report.json and double-check the numbers before finishing.",
        c07t05_verify, baseline=c07t05_baseline)
